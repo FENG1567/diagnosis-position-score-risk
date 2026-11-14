@@ -1,0 +1,153 @@
+{
+  "generated_utc": "2026-11-12T18:13:11.547221+00:00",
+  "validation_scope": "private rebuilt panel and verified filtered caches; no source event-table reads",
+  "version": "m58-mimic-iv-rebuild-2.3.0",
+  "index_rows": 68558,
+  "panel_rows": 68558,
+  "unique_admissions": 44363,
+  "unique_patients": 33769,
+  "duplicate_admission_disease_rows": 0,
+  "admissions_with_multiple_index_stays": 0,
+  "missing_outcomes": 0,
+  "score_complete_counts_match_manifest": true,
+  "score_complete_counts": {
+    "qsofa": 55245,
+    "qsofa_gcs15": 55245,
+    "curb65": 54458,
+    "bisap4": 48708,
+    "qsofa_ett_as1": 67647,
+    "qsofa_gcs15_ett_as1": 67647,
+    "curb65_ett_as1": 66681,
+    "bisap4_ett_as1": 60296
+  },
+  "cache_validation": {
+    "chartevents": {
+      "valid": true,
+      "bytes": 29191262,
+      "sha256": "b88fad4f8932a7fa30521c9461903f5de88801d18a40739948992206dcad96f4"
+    },
+    "labevents": {
+      "valid": true,
+      "bytes": 1561846,
+      "sha256": "82a959fdcadff41245ab4f0034b5243f3ea8249677886552adb46b5aa03a2a01"
+    }
+  },
+  "manifest_file_checks": {
+    "mimic_iv_v2_index.csv.gz": {
+      "matches_manifest": true,
+      "bytes": 5196876,
+      "sha256": "6c1b810c67c08e91fb1a76632d2ef67669a4eb0dd92075d2048750c8cd5bb156"
+    },
+    "mimic_iv_v2_score_panel.csv.gz": {
+      "matches_manifest": true,
+      "bytes": 8968152,
+      "sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c"
+    },
+    "mimic_iv_v2_score_coverage.csv": {
+      "matches_manifest": true,
+      "bytes": 18696,
+      "sha256": "343ed182d0f9a41dc1ede29c1d7862fd989c7110b9d247e6270a53bbb4ef57e0"
+    },
+    "mimic_iv_v2_gcs_ett_cache_qa.json": {
+      "matches_manifest": true,
+      "bytes": 2072,
+      "sha256": "747a75aebc4743bc84dcad91b64cdb8bbe7172acffcd64e8c290c3afc0e0a686"
+    }
+  },
+  "diagnosis_seq_num_quality": {
+    "scope": "all diagnosis rows in diagnoses_icd.csv.gz",
+    "diagnosis_rows": 6364488,
+    "seq_num_missing_rows": 0,
+    "seq_num_invalid_nonmissing_rows": 0,
+    "seq_num_nonpositive_rows": 0,
+    "seq_num_unranked_rows": 0,
+    "matching_diagnosis_unranked_rows_proven_zero": true
+  },
+  "by_disease": {
+    "heart failure": {
+      "panel_rows": 22819,
+      "unique_admissions": 22819,
+      "outcomes_observed": 22819,
+      "grp": {
+        "included_rows": 22662,
+        "grp_0": 2941,
+        "grp_1": 19721,
+        "grp_unknown": 0
+      },
+      "legacy_grp": {
+        "included_rows": 22819,
+        "grp_0": 2946,
+        "grp_1": 19873,
+        "grp_unknown": 0
+      }
+    },
+    "pneumonia": {
+      "panel_rows": 17023,
+      "unique_admissions": 17023,
+      "outcomes_observed": 17023,
+      "grp": {
+        "included_rows": 17023,
+        "grp_0": 1936,
+        "grp_1": 15087,
+        "grp_unknown": 0
+      },
+      "narrow_grp": {
+        "included_rows": 3487,
+        "grp_0": 362,
+        "grp_1": 3125,
+        "grp_unknown": 0
+      }
+    },
+    "COPD": {
+      "panel_rows": 12515,
+      "unique_admissions": 12515,
+      "outcomes_observed": 12515,
+      "grp": {
+        "included_rows": 11899,
+        "grp_0": 489,
+        "grp_1": 11410,
+        "grp_unknown": 0
+      },
+      "legacy_grp": {
+        "included_rows": 12515,
+        "grp_0": 522,
+        "grp_1": 11993,
+        "grp_unknown": 0
+      }
+    },
+    "sepsis": {
+      "panel_rows": 14306,
+      "unique_admissions": 14306,
+      "outcomes_observed": 14306,
+      "grp": {
+        "included_rows": 14122,
+        "grp_0": 8756,
+        "grp_1": 5366,
+        "grp_unknown": 0
+      },
+      "narrow_grp": {
+        "included_rows": 13610,
+        "grp_0": 8544,
+        "grp_1": 5066,
+        "grp_unknown": 0
+      }
+    },
+    "pancreatitis": {
+      "panel_rows": 1895,
+      "unique_admissions": 1895,
+      "outcomes_observed": 1895,
+      "grp": {
+        "included_rows": 1398,
+        "grp_0": 476,
+        "grp_1": 922,
+        "grp_unknown": 0
+      },
+      "legacy_grp": {
+        "included_rows": 1895,
+        "grp_0": 529,
+        "grp_1": 1366,
+        "grp_unknown": 0
+      }
+    }
+  }
+}

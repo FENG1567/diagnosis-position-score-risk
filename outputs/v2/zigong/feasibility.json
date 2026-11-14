@@ -1,0 +1,39 @@
+{
+  "n_admissions": 2790,
+  "n_patients": 2790,
+  "n_status_any_dead": 161,
+  "n_status_only_dead": 153,
+  "n_status_all_missing": 2,
+  "n_death_before_or_at_discharge": 446,
+  "official_endpoint_source": "https://physionet.org/content/icu-infection-zigong-fourth/1.1/",
+  "endpoint_decision": "Use diagnostic discharge status for hospital mortality, retain unknowns and mixed-status sensitivity.",
+  "n_nursing_rows": 1353620,
+  "n_complete_gcs_component_rows": 659575,
+  "gcs_component_nonmissing": {
+    "open_one's_eyes": 660090,
+    "language": 659625,
+    "motion": 659947
+  },
+  "consciousness_categories": {
+    "镇静状": 504982,
+    "浅昏迷": 214168,
+    "嗜睡": 260472,
+    "中昏迷": 94659,
+    "清醒": 62723,
+    "深嗜睡": 71331,
+    "深昏迷": 23209,
+    "昏睡": 33407,
+    "深嗜睡状": 7581,
+    "嗜睡状": 8969,
+    "全麻未醒": 4390,
+    "昏迷": 4103,
+    "谵妄": 1802,
+    "模糊": 648,
+    "浅昏迷状": 1696,
+    "昏迷状": 612,
+    "痴呆状": 270,
+    "全麻初醒": 180,
+    "other_or_unmapped": 81
+  },
+  "category_reporting": "Recognized labels combined after whitespace normalization, all other values aggregated."
+}

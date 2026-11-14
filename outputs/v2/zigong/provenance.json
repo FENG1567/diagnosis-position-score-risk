@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-11-12T11:58:16.865037+00:00",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "script_sha256": "e1cd7bb8f032b0f2dd1e9ca1a42dba2fd918109cc1ee73249dc4b28b51afdd7d",
+  "config_sha256": "f5451501ff53fa10733d87771bb5ca76d32ebc3e04ffd582d26699db1be31682",
+  "input_files": [
+    {
+      "name": "dtBaseline.csv",
+      "sha256": "6d096fc6ee2dd3403dd61eb256175bdca2e51a41408ed7cf8205856da36ac082",
+      "bytes": 294751
+    },
+    {
+      "name": "dtICD.csv",
+      "sha256": "03c7b55b42f37572019a0a7f475e8bd32195249a922e0479d4783e7513a563f8",
+      "bytes": 2838870
+    },
+    {
+      "name": "dtTransfer.csv",
+      "sha256": "4a654646196f8b7555b1c8e3e5063c22f5385e7ee4800dd4109c5f990fb3f636",
+      "bytes": 3244966
+    },
+    {
+      "name": "dtNursingChart.csv",
+      "sha256": "3b8e9e196be0b5b57f62d2df49b9a644137a21ad3f41a571d7325b3d21476654",
+      "bytes": 612448745
+    },
+    {
+      "name": "dtLab.csv",
+      "sha256": "238e395229609cdf2a822f587c0d863f5d6f422528ca27acdaa417318d91b7d1",
+      "bytes": 150910754
+    },
+    {
+      "name": "dtOutCome.csv",
+      "sha256": "a1f6a9deaf0ed9533f1b4104e2c4d147d0e54d6e6a70e82273b5d14e66eb8e61",
+      "bytes": 1015531
+    },
+    {
+      "name": "datDictionary.csv",
+      "sha256": "9a94e6e1b918a9bbcb08a5b4720bda2c8e59f45a2af013bef4a03af6f054abe4",
+      "bytes": 9942
+    }
+  ],
+  "private_panel_sha256": "a979429a888758de3f33471fc8f846c56a0a2cd21206e234bde6aed88afb1f97",
+  "outcome_source": "https://physionet.org/content/icu-infection-zigong-fourth/1.1/"
+}

@@ -1,0 +1,8 @@
+﻿Design,A: interval output; target coverage (n),B: interval output; target coverage (n),C: interval output; target coverage (n),A: off-target intervals,Target support matched
+Few large clusters,"100.00%; 93.30% (n=1,000)",97.50%; 93.33% (n=975),0.00%; — (0 on-target intervals),0.00%,100.00%
+Fine cells (sparse),"100.00%; 95.20% (n=1,000)",0.00%; — (no emitted intervals),0.00%; — (no emitted intervals),not separately summarized,not separately summarized
+Near-boundary risks,"100.00%; 95.70% (n=1,000)","100.00%; 95.70% (n=1,000)",61.70%; 95.95% (n=617),0.00%,100.00%
+"Null, balanced IID","100.00%; 94.40% (n=1,000)","100.00%; 94.40% (n=1,000)","100.00%; 94.40% (n=1,000)",0.00%,100.00%
+Rare common-support holdout,100.00%; 95.37% (n=691),0.00%; — (0 on-target intervals),0.00%; — (0 on-target intervals),30.90%,69.10%
+Cross-group repeated admissions,"100.00%; 94.10% (n=1,000)","100.00%; 94.10% (n=1,000)","100.00%; 94.10% (n=1,000)",0.00%,100.00%
+Tiny arm (sparse),"100.00%; 63.60% (n=1,000)",0.00%; — (no emitted intervals),0.00%; — (no emitted intervals),not separately summarized,not separately summarized

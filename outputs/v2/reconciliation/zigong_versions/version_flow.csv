@@ -1,0 +1,6 @@
+disease,n_original,n_revised,n_matched,n_outcome_changed,n_revised_complete,n_matching_records_with_rank_group_changed
+sepsis,541,541,541,168,138,0
+pneumonia,1698,1698,1698,484,431,0
+pancreatitis,110,110,110,26,28,0
+heart failure,608,606,606,185,148,0
+COPD,641,591,591,160,164,2

@@ -1,0 +1,11 @@
+{
+  "run_id": "run02_final_sources",
+  "process_id": 29056,
+  "launched_utc": "2026-11-12T20:04:43.3461956Z",
+  "python": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "driver": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\bootstrap_precision\\run_bootstrap_precision.py",
+  "stdout_log": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\bootstrap_precision\\run02_final_sources\\stdout.log",
+  "stderr_log": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\bootstrap_precision\\run02_final_sources\\stderr.log",
+  "status_file": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\bootstrap_precision\\run02_final_sources\\run_status.json",
+  "final_after_mimic3_repair": true
+}

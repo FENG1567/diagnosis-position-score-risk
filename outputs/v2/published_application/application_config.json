@@ -1,0 +1,63 @@
+{
+  "source_repository": "https://github.com/hlzhou/peer-score",
+  "source_commit": "bad2996b233cb118302d7453f6bb356e72912176",
+  "sql_sha256": "6eb95f1a3fd141a673f1a5776236c265129d246b3da25c679de604992d486dd9",
+  "inclusion_diagnosis_strings": [
+    "infectious diseases|chest/pulmonary infections|pneumonia|ventilator-associated",
+    "surgery|respiratory failure|ARDS|pulmonary etiology|pneumonia",
+    "infectious diseases|chest/pulmonary infections|pneumonia|community-acquired|viral",
+    "infectious diseases|chest/pulmonary infections|pneumonia",
+    "infectious diseases|chest/pulmonary infections|lung abscess|secondary to pneumonia",
+    "pulmonary|pulmonary infections|pneumonia|community-acquired|viral|respiratory syncytial",
+    "pulmonary|pulmonary infections|pneumonia|community-acquired",
+    "surgery|infections|pneumonia|hospital acquired (not ventilator-associated)",
+    "infectious diseases|chest/pulmonary infections|empyema|associated with pneumonia",
+    "pulmonary|pulmonary infections|pneumonia|hospital acquired (not ventilator-associated)",
+    "pulmonary|pulmonary infections|pneumonia|hospital acquired (not ventilator-associated)",
+    "infectious diseases|chest/pulmonary infections|pneumonia|opportunistic",
+    "surgery|respiratory failure|acute lung injury|pulmonary etiology|pneumonia",
+    "pulmonary|respiratory failure|acute lung injury|pulmonary etiology|pneumonia",
+    "infectious diseases|chest/pulmonary infections|pneumonia|community-acquired",
+    "surgery|infections|pneumonia",
+    "pulmonary|pulmonary infections|pneumonia|community-acquired|viral",
+    "infectious diseases|chest/pulmonary infections|pneumonia|hospital acquired (not ventilator-associated)",
+    "pulmonary|respiratory failure|ARDS|pulmonary etiology|pneumonia",
+    "pulmonary|pulmonary infections|pneumonia|hospital acquired (not ventilator-associated)|viral",
+    "transplant|s/p bone marrow transplant|idiopathic pneumonia syndrome - bone marrow transplant",
+    "pulmonary|pulmonary infections|lung abscess|secondary to pneumonia",
+    "infectious diseases|chest/pulmonary infections|pneumonia|community-acquired|viral|respiratory syncytial",
+    "pulmonary|pulmonary infections|pneumonia",
+    "pulmonary|pulmonary infections|pneumonia|ventilator-associated",
+    "pulmonary|pulmonary infections|pneumonia|opportunistic",
+    "surgery|infections|pneumonia|community-acquired"
+  ],
+  "hepatic_exceptions": [
+    "gastrointestinal|post-GI surgery|s/p hepatic surgery",
+    "gastrointestinal|hepatic disease|toxic hepatitis",
+    "infectious diseases|GI infections|intra-abdominal abscess|hepatic|bacterial",
+    "burns/trauma|trauma - abdomen|hepatic trauma",
+    "gastrointestinal|abdominal/ general|intra-abdominal abscess|subhepatic",
+    "gastrointestinal|hepatic disease|hepatorenal syndrome",
+    "gastrointestinal|hepatic disease|hepatic infarction",
+    "cardiovascular|shock / hypotension|sepsis|sepsis with single organ dysfunction-acute hepatic failure",
+    "toxicology|drug overdose|acetaminophen overdose|hepatic injury expected",
+    "gastrointestinal|hepatic disease|hepatic dysfunction|pregnancy related",
+    "gastrointestinal|hepatic disease|hepatic dysfunction",
+    "gastrointestinal|trauma|hepatic trauma",
+    "toxicology|drug overdose|acetaminophen overdose|hepatic injury unexpected"
+  ],
+  "age_range": [
+    18,
+    70
+  ],
+  "source_diagnosis_scope": "index ICU stay",
+  "adaptations": [
+    "first ICU per hospital admission",
+    "missing age excluded",
+    "complete-component CURB-65 with GCS<15 confusion proxy",
+    "no cohort median imputation",
+    "hospital death reconciled across linked ICU episodes"
+  ],
+  "comparison": "never clinical Primary vs clinical Primary among matching published diagnosis rows",
+  "interpretation": "published-cohort application, original PEER model and validation conclusions unreproduced"
+}

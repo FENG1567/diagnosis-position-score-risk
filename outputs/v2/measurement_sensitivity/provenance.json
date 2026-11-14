@@ -1,0 +1,20 @@
+{
+  "source_sha256": "4dfa6d3d36c3f9a1853027e0ca84668cd6dd4dfae24c330e0ceae324cbfc41b4",
+  "panel_sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163",
+  "script_sha256": "c817469b5ab60f3fcf024195ab5638b34235b3c763fa7e8c4578c8befd67b65c",
+  "config_sha256": "0a22f6f3255aca1193d7097a5def9dbd007027fe359a1487d7960a6edb09df5e",
+  "dependencies": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\analyse_panels.py",
+      "sha256": "9fcc4ae2955a515900b05a6c95e1d295f38ef0db4d47b7faad17db650781df48"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\estimands.py",
+      "sha256": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\cohort_definition_audit.py",
+      "sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+database,disease,comparison,estimand,difference_pp,numerical_se_pp,numerical_lo_pp,numerical_hi_pp,interval_status
+eICU-CRD,sepsis,F minus E score-source repair on matched records,difference between Delta_w weighted summaries,0.1996882269283828,0.11603845167961371,-0.027742959185451423,0.427119413042217,descriptive paired version comparison
+eICU-CRD,sepsis,G minus F diagnosis-scope change on matched records,difference between Delta_w weighted summaries,-0.3252996951035302,0.12594068447369552,-0.5721389008602963,-0.07846048934676418,descriptive paired version comparison
+eICU-CRD,pneumonia,F minus E score-source repair on matched records,difference between Delta_w weighted summaries,-0.14915341377070013,0.09142090202954525,-0.3283350891827736,0.030028261641373302,descriptive paired version comparison
+eICU-CRD,pneumonia,G minus F diagnosis-scope change on matched records,difference between Delta_w weighted summaries,-0.2650917462722009,0.17715260254091783,-0.6123044670199387,0.08212097447553687,descriptive paired version comparison

@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-12T11:26:10.053973+00:00",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "inputs": [
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\work\\02_code\\m104_landmark.py",
+      "sha256": "425244b2ce5d0ff1867fe4fc7fa4557bd35ba04b928c4eed7f74b228af525b94",
+      "bytes": 6506
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\work\\02_code\\audit_tool\\cohort_definition_audit.py",
+      "sha256": "c148e0746937b8c792b36e4f29c9176df64d6d40fd66705cf174868bbb229e3e",
+      "bytes": 39660
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\incoming\\eicu_score_panel.csv.gz",
+      "sha256": "b184501fe355209424b9f640206ce8e0f9f66ee53177ff6693ec44a01ec7df77",
+      "bytes": 1835746
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\incoming\\eicu_diagnosis.csv.gz",
+      "sha256": "1bc15709cfe9b376ef1da8b1ea47f61993e3d7dcc942f7c1eccbf162e5f2e0c8",
+      "bytes": 35218518
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\incoming\\eicu_patient.csv.gz",
+      "sha256": "2acf25f75144c5fc8a2a5b68c6741edac2dc7ca51021127f73e12f7428dc392b",
+      "bytes": 10359850
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\source_snapshot\\FROZEN_NUMBERS.md",
+      "sha256": "a347361e57849c411e9139e626251d96cd45a98b7b7d0c963fa20c95abf2f40a",
+      "bytes": 1633
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\reconcile_v1.py",
+      "sha256": "7e6a50cd96e865122dfdead2f5b22396a88e5f30754894668e6b5163e38121e3",
+      "bytes": 5509
+    }
+  ],
+  "status": "historical reproduction only"
+}

@@ -1,0 +1,213 @@
+{
+  "record_type": "delta_w_patient_cluster_bootstrap_precision_config",
+  "run_id": "run02_final_sources",
+  "status": "frozen_before_diagnostic_bootstrap_outcomes",
+  "created_utc": "2026-11-12T20:04:48Z",
+  "requested_draws": 5000,
+  "master_seed": 27112030,
+  "rng": "numpy Generator / PCG64; per-row SeedSequence spawn key is stable SHA-256-derived row identifier",
+  "row_seed_derivation": "SeedSequence(entropy=27112030, spawn_key=(first_32_bits_SHA256(source|disease|variant),))",
+  "draw_batch_memory_limit": "at most 2,000,000 integer cluster draws per generation batch, capped at 64 replicates",
+  "estimand": "Delta_w: never-primary minus primary mortality risk difference in percentage points, pooled observed record shares across fixed observed common-support score levels",
+  "primary_C_eligibility": {
+    "source_of_status": "existing frozen C summary/audit outputs for the four primary databases and Amsterdam; for PEER, audit_v2 with the shared frozen C rules",
+    "bootstrap_eligibility": "every observed score-by-group support cell retained; at least 10 events in each definition in each usable draw; at least 20 usable draws for primary C status",
+    "deterministic_rules": {
+      "min_records_per_score_level": 20,
+      "min_records_per_score_definition_cell": 10,
+      "min_distinct_patients_total_and_per_cell": 20,
+      "nondegenerate_outcome_per_score_definition_cell": true
+    },
+    "primary_c_existing_bootstrap": {
+      "draws": 60,
+      "seed": 20261112,
+      "min_events_per_definition": 10,
+      "min_usable_draws": 20
+    }
+  },
+  "precision_bootstrap": {
+    "cluster_unit": "patient; all complete-case rows of each selected patient are resampled together",
+    "input_universe": "all complete-case patients, including patients with no rows on observed common support; those patients have zero supported-cell counts but remain in the resampling population",
+    "draw_count": 5000,
+    "draw_validity": "fixed observed common support retained and at least 10 events in each definition; all other draws are refused and counted",
+    "weights": "re-estimated pooled record shares within each draw; never held fixed",
+    "point_estimate": "unrounded direct Delta_w; no rounding enters resampling or quantiles",
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "quantile_method": "numpy linear percentile, matching the shared C reducer",
+    "monte_carlo_ranges": "separate exact binomial order-statistic 95% ranges for each bootstrap-distribution percentile endpoint, conditional on IID usable draws; not clinical confidence intervals"
+  },
+  "run_scope": "all available C-estimable primary disease rows, plus PEER pneumonia and both repaired Amsterdam score variants; skipped rows and reasons retained",
+  "run_kind": "final_all_sources_after_mimic_iii_repair",
+  "mimic_iii_final_gate": {
+    "expected_corrected_panel_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+    "observed_panel_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+    "source_repair_marker_absent_at_original_path": true,
+    "resolved_marker_sha256": "59f21825c15107513f7b819f89600b48798cb7c820cb9211edcdbeda4e7cd957",
+    "independent_review_sha256": "04cdf7b9f529bfc2357a9ee4400edfce65b1e8f3abb56de28f9815dfd985858c",
+    "provenance_bound_to_current_panel": true
+  },
+  "frozen_inputs": {
+    "panel:eicu": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+      "exists": true,
+      "sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163",
+      "byte_size": 5119471
+    },
+    "panel:mimic_iv": {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+      "exists": true,
+      "sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c",
+      "byte_size": 8968152
+    },
+    "panel:mimic_iii": {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic3\\mimic_iii_v2_score_panel.csv.gz",
+      "exists": true,
+      "sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+      "byte_size": 4718456
+    },
+    "panel:zigong": {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\zigong\\zigong_admission_panel.csv.gz",
+      "exists": true,
+      "sha256": "a979429a888758de3f33471fc8f846c56a0a2cd21206e234bde6aed88afb1f97",
+      "byte_size": 256278
+    },
+    "panel:peer": {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\published_application\\adapted_peer_population.csv.gz",
+      "exists": true,
+      "sha256": "cae71285647522d9beeec12c6ea358b13a6ca854257c7e9e10ddcb61fc1a2c37",
+      "byte_size": 400380
+    },
+    "panel:amsterdam": {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\amsterdam\\private\\qsofa_sepsis_icu_dictionary_unit_repair_outcome.csv.gz",
+      "exists": true,
+      "sha256": "6172f46ac88b26f9773fc990782c459251fdba3846a3b98ceffe230c75c2e61c",
+      "byte_size": 12481
+    },
+    "artifact:eicu:summary.csv": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\eicu\\summary.csv",
+      "exists": true,
+      "sha256": "1bf7a700869462941310eaae4be61fe90d5e4399f7a558e1fe0a10dae9369f89"
+    },
+    "artifact:eicu:audit_details.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\eicu\\audit_details.json",
+      "exists": true,
+      "sha256": "a112db3bc055104f57db3c6ead2343db3a06d2cc91d4d260fe904ca4fac3390f"
+    },
+    "artifact:eicu:analysis_provenance.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\eicu\\analysis_provenance.json",
+      "exists": true,
+      "sha256": "0ed639c307b196f8756435844d32988850c45c7b2e787ee9284daa43482c66d1"
+    },
+    "artifact:mimic_iv:summary.csv": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iv\\summary.csv",
+      "exists": true,
+      "sha256": "22375fea538484a5b29c2ddf13cea6ba14d46aa9f69cbea03c67fe8cf781ff96"
+    },
+    "artifact:mimic_iv:audit_details.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iv\\audit_details.json",
+      "exists": true,
+      "sha256": "95629632e4e80177ea82da37c6e14c9fe1afc43a0a0aeeaaa11ff6c913e5cb27"
+    },
+    "artifact:mimic_iv:analysis_provenance.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iv\\analysis_provenance.json",
+      "exists": true,
+      "sha256": "0d55b23f95eedcf5e93371454799837ade08aba6457d1a7ef8619167c11cf870"
+    },
+    "artifact:zigong:summary.csv": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\zigong\\summary.csv",
+      "exists": true,
+      "sha256": "213bd92e00a865d54d1a99801e70f4c5043477684c44c97e2692ac7309df1506"
+    },
+    "artifact:zigong:audit_details.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\zigong\\audit_details.json",
+      "exists": true,
+      "sha256": "161fd12d6a1c4bae0a3c41d4393daf765e941e9c08751e30e4ca29cce923fa37"
+    },
+    "artifact:zigong:analysis_provenance.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\zigong\\analysis_provenance.json",
+      "exists": true,
+      "sha256": "0b244243162a35c9dd1c03c4769c8bd534c74dce0edf70029546f33256211e22"
+    },
+    "gate:mimic_iii_pending_source_repair": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\PENDING_SOURCE_REPAIR.json",
+      "exists": false,
+      "sha256": null
+    },
+    "artifact:peer_application_config": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\conditional_validation\\clinical\\run_02\\clinical_application_config.json",
+      "exists": true,
+      "sha256": "0d8bb7b2262f76e1f1be07332f02cb1413badcc4c79a44394263ee1109dc6379"
+    },
+    "artifact:peer_alias_validation": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\conditional_validation\\clinical\\run_02\\peer_outcome_alias_validation.json",
+      "exists": true,
+      "sha256": "f6cbb22470afa6e75709dea2a766415f5c1e1b316a6a8d5f9c876c774e90c178"
+    },
+    "artifact:amsterdam:dictionary_unit_repair_source_manifest.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\amsterdam\\dictionary_unit_repair\\dictionary_unit_repair_source_manifest.json",
+      "exists": true,
+      "sha256": "a4d8691a035242b1466d5f0db607c2fdf77f8c7a458244a1aebe6787c6f9695f"
+    },
+    "artifact:amsterdam:audit_gcs_le_13.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\amsterdam\\dictionary_unit_repair\\audit_gcs_le_13.json",
+      "exists": true,
+      "sha256": "12f25a1dcea7f77065a2ef7650d4991e8a4f0620354b51bc2879f109862005aa"
+    },
+    "artifact:amsterdam:audit_gcs_lt_15_sensitivity.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\amsterdam\\dictionary_unit_repair\\audit_gcs_lt_15_sensitivity.json",
+      "exists": true,
+      "sha256": "18f38bbcd5a7d4830e6da0b75fe4d8a09a89ff93e57db56e5a55fb4afe855500"
+    },
+    "artifact:amsterdam:amsterdam_unit_repair_interval_comparison.csv": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\amsterdam\\dictionary_unit_repair\\amsterdam_unit_repair_interval_comparison.csv",
+      "exists": true,
+      "sha256": "c8f4d1e954dcd47cfcdae338eddb909fc1ed0cdd4d834d0f0b910e5d64dcb406"
+    },
+    "artifact:mimic_iii:resolved_pending_marker": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\repair_logs\\RESOLVED_PENDING_SOURCE_REPAIR.json",
+      "exists": true,
+      "sha256": "59f21825c15107513f7b819f89600b48798cb7c820cb9211edcdbeda4e7cd957"
+    },
+    "artifact:mimic_iii:independent_review": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\final_bp_independent_review.md",
+      "exists": true,
+      "sha256": "04cdf7b9f529bfc2357a9ee4400edfce65b1e8f3abb56de28f9815dfd985858c"
+    },
+    "artifact:mimic_iii:summary.csv": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\summary.csv",
+      "exists": true,
+      "sha256": "240e28bceeea23cf6ee396ef7db047754b3f42396bb2a1edeb803598a34aa887"
+    },
+    "artifact:mimic_iii:audit_details.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\audit_details.json",
+      "exists": true,
+      "sha256": "c0b39d44ee995509054a5b54f9a722b5f5e26d0a9aa1fdef74dd7075bed3f445"
+    },
+    "artifact:mimic_iii:analysis_provenance.json": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\analysis_provenance.json",
+      "exists": true,
+      "sha256": "0fb9a1e30a15052ba561da48b830d010d561ce85de70719eddfefeb3bb83ed9c"
+    }
+  },
+  "code_sha256": {
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\bootstrap_precision\\run_bootstrap_precision.py": "ed8e786619a1680be3ccc134b01f742a55ca52ba6284a12192d822b964a8dbb4",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\bootstrap_precision\\test_bootstrap_precision.py": "a01cb2b8d42dc663d67734713ea449cd93275af39f60f14c9ee3ed04731313f9",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\cohort_definition_audit.py": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\estimands.py": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\analyse_panels.py": "9fcc4ae2955a515900b05a6c95e1d295f38ef0db4d47b7faad17db650781df48",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\amsterdam\\run_amsterdam_dictionary_unit_repair.py": "f19f720f64de089deedae957c18b4b4cfae301d3178ee0d98d75e0be898962f0",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\conditional_validation\\run_clinical_with_peer_adapter.py": "9bac6052bfeee57c3050e0b397a32ccb45e558ea009cbe3dd2cb924a6d1222c0",
+    "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\published_application.py": "51de3e3655ee92ad19eae9d56bfc9e93a29707391d572233b3a4361b803b681e"
+  },
+  "environment": {
+    "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "seed_and_draw_count_fixed_before_outcomes": true,
+  "patient_level_records_written": false,
+  "primary_c_modified": false
+}

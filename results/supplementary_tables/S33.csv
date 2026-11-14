@@ -1,0 +1,17 @@
+﻿disease,cohort,cohort_label,hospital_group,grp,n_main_admission_records,n_score_complete,score_complete_pct,n_outcome_complete,outcome_complete_pct,n_score_and_outcome_complete,n_analysis_frame_records,n_main_patients,n_analysis_frame_patients
+sepsis,row1_full_main,Full main ICU-indexed complete-score hospital cohort,primary hospital billing position,0,8756,6679,76.27912288716308,8756,100.0,6679,6679,7764,5964
+sepsis,row1_full_main,Full main ICU-indexed complete-score hospital cohort,never-primary hospital billing position,1,5366,4125,76.87290346626911,5366,100.0,4125,4125,5024,3872
+sepsis,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",primary hospital billing position,0,4199,3353,79.85234579661824,4199,100.0,3353,3353,3746,3030
+sepsis,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",never-primary hospital billing position,1,1367,1048,76.66422823701537,1367,100.0,1048,1048,1313,1007
+sepsis,row3_ed_coded,Linked ED episode with MAIN-matching ED code,primary hospital billing position,0,1200,944,78.66666666666667,1200,100.0,944,944,1146,903
+sepsis,row3_ed_coded,Linked ED episode with MAIN-matching ED code,never-primary hospital billing position,1,203,172,84.72906403940887,203,100.0,172,172,196,167
+sepsis,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,primary hospital billing position,0,1200,944,78.66666666666667,1200,100.0,944,944,1146,903
+sepsis,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,never-primary hospital billing position,1,203,172,84.72906403940887,203,100.0,172,172,196,167
+pneumonia,row1_full_main,Full main ICU-indexed complete-score hospital cohort,primary hospital billing position,0,1936,1640,84.7107438016529,1936,100.0,1640,1640,1755,1498
+pneumonia,row1_full_main,Full main ICU-indexed complete-score hospital cohort,never-primary hospital billing position,1,15087,10862,71.99575793729701,15087,100.0,10862,10862,13441,9847
+pneumonia,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",primary hospital billing position,0,708,600,84.7457627118644,708,100.0,600,600,668,570
+pneumonia,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",never-primary hospital billing position,1,5176,3648,70.47913446676971,5176,100.0,3648,3648,4700,3362
+pneumonia,row3_ed_coded,Linked ED episode with MAIN-matching ED code,primary hospital billing position,0,415,361,86.98795180722891,415,100.0,361,361,387,338
+pneumonia,row3_ed_coded,Linked ED episode with MAIN-matching ED code,never-primary hospital billing position,1,1305,1026,78.62068965517241,1305,100.0,1026,1026,1208,962
+pneumonia,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,primary hospital billing position,0,415,361,86.98795180722891,415,100.0,361,361,387,338
+pneumonia,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,never-primary hospital billing position,1,1305,1026,78.62068965517241,1305,100.0,1026,1026,1208,962

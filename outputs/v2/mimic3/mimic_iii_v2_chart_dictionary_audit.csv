@@ -1,0 +1,29 @@
+itemid,label,linksto,category,unitname
+618,Respiratory Rate,chartevents,,
+6,ABP [Systolic],chartevents,,
+51,Arterial BP [Systolic],chartevents,,
+198,GCS Total,chartevents,,
+211,Heart Rate,chartevents,,
+442,Manual BP [Systolic],chartevents,,
+455,NBP [Systolic],chartevents,,
+676,Temperature C,chartevents,,
+677,Temperature C (calc),chartevents,,
+678,Temperature F,chartevents,,
+8364,ABP [Diastolic],chartevents,,
+8368,Arterial BP [Diastolic],chartevents,,
+8440,Manual BP [Diastolic],chartevents,,
+8441,NBP [Diastolic],chartevents,,
+8555,Arterial BP #2 [Diastolic],chartevents,,
+6701,Arterial BP #2 [Systolic],chartevents,,
+224690,Respiratory Rate (Total),chartevents,Respiratory,insp/min
+220739,GCS - Eye Opening,chartevents,Neurological,
+220045,Heart Rate,chartevents,Routine Vital Signs,bpm
+220050,Arterial Blood Pressure systolic,chartevents,Routine Vital Signs,mmHg
+220051,Arterial Blood Pressure diastolic,chartevents,Routine Vital Signs,mmHg
+220179,Non Invasive Blood Pressure systolic,chartevents,Routine Vital Signs,mmHg
+220180,Non Invasive Blood Pressure diastolic,chartevents,Routine Vital Signs,mmHg
+220210,Respiratory Rate,chartevents,Respiratory,insp/min
+223900,GCS - Verbal Response,chartevents,Neurological,
+223901,GCS - Motor Response,chartevents,Neurological,
+223761,Temperature Fahrenheit,chartevents,Routine Vital Signs,?F
+223762,Temperature Celsius,chartevents,Routine Vital Signs,?C

@@ -1,0 +1,11 @@
+database,disease,group,n_source,n_patients,n_score_complete,n_outcome_known,n_analyzed
+MIMIC-III,sepsis,primary,3398,3075,2958,3398,2958
+MIMIC-III,sepsis,never-primary,2914,2725,2630,2914,2630
+MIMIC-III,pneumonia,primary,1756,1559,1603,1756,1603
+MIMIC-III,pneumonia,never-primary,8544,7690,7545,8544,7545
+MIMIC-III,pancreatitis,primary,366,344,320,366,320
+MIMIC-III,pancreatitis,never-primary,587,574,495,587,495
+MIMIC-III,heart failure,primary,1543,1316,1467,1543,1467
+MIMIC-III,heart failure,never-primary,11904,9312,10952,11904,10952
+MIMIC-III,COPD,primary,309,244,294,309,294
+MIMIC-III,COPD,never-primary,5988,4706,5463,5988,5463

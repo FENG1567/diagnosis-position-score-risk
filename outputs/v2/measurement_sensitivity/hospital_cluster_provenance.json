@@ -1,0 +1,19 @@
+{
+  "panel_sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163",
+  "dependencies": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\hospital_cluster_sensitivity.py",
+      "sha256": "a9d488f760b08c5276a5b5ea4aeaa88967ec49b7542e911162d1691cf24438f5"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\analyse_panels.py",
+      "sha256": "9fcc4ae2955a515900b05a6c95e1d295f38ef0db4d47b7faad17db650781df48"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\estimands.py",
+      "sha256": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26"
+    }
+  ],
+  "amendment": "initiated after inspection of revised primary results",
+  "interval": "t critical value with minimum(patient count, hospital count) minus one degrees of freedom"
+}

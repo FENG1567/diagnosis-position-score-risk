@@ -1,0 +1,3 @@
+﻿level,n,n_never,n_primary,patients_never,patients_primary,events_never,events_primary,risk_never,risk_primary,diff_pp,risk_never_ci_pp,risk_primary_ci_pp,delta_ci_pp,risk_never_ci_status,risk_primary_ci_status,delta_ci_status,weight
+2.0,157,28,129,28,125,10.0,30.0,35.71,23.26,12.46,"[20.38, 54.66]","[16.76, 31.33]","[-6.72, 31.64]",computed,computed,computed,0.6205533596837944
+3.0,96,19,77,19,74,13.0,30.0,68.42,38.96,29.46,,"[28.51, 50.53]",,too few distinct patients,computed,too few distinct patients in a definition,0.3794466403162055

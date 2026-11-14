@@ -1,0 +1,67 @@
+design,policy,weight_mode,replicates,point_estimate_pct,interval_emission_pct,interval_emission_mcse_pct,target_support_match_pct,off_target_interval_pct,conditional_coverage_pct,conditional_coverage_n,conditional_coverage_mcse_pct,conditional_observed_weight_coverage_pct,conditional_observed_weight_coverage_n,conditional_observed_weight_coverage_mcse_pct,conditional_truth_complete_n,unconditional_missed_intervals,unconditional_missed_pct,unconditional_missed_mcse_pct,median_width_on_target,mean_width_on_target,median_width_all_emitted,mean_point_bias_on_target,refusal_counts
+null_balanced_iid,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.4,1000,0.727,94.4,1000,0.727,1000,56,5.6,0.727,0.10377,0.10362,0.10377,-0.000989,{}
+null_balanced_iid,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.4,1000,0.727,94.4,1000,0.727,1000,56,5.6,0.727,0.10377,0.10362,0.10377,-0.000989,{}
+null_balanced_iid,C,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.4,1000,0.727,94.4,1000,0.727,1000,56,5.6,0.727,0.10377,0.10362,0.10377,-0.000989,{}
+null_balanced_iid,D,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.4,1000,0.727,94.4,1000,0.727,1000,56,5.6,0.727,0.10377,0.10362,0.10377,-0.000989,{}
+null_balanced_iid,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,94.4,1000,0.727,94.4,1000,0.727,1000,56,5.6,0.727,0.10362,0.10348,0.10362,-0.000989,{}
+null_balanced_iid,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,94.1,1000,0.745,,0,,0,59,5.9,0.745,0.10384,0.10365,0.10384,-0.001,{}
+null_heterogeneous_iid,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,93.9,1000,0.757,94.3,1000,0.733,1000,61,6.1,0.757,0.09543,0.09537,0.09543,-0.000792,{}
+null_heterogeneous_iid,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,93.9,1000,0.757,94.3,1000,0.733,1000,61,6.1,0.757,0.09543,0.09537,0.09543,-0.000792,{}
+null_heterogeneous_iid,C,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,93.9,1000,0.757,94.3,1000,0.733,1000,61,6.1,0.757,0.09543,0.09537,0.09543,-0.000792,{}
+null_heterogeneous_iid,D,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,93.9,1000,0.757,94.3,1000,0.733,1000,61,6.1,0.757,0.09543,0.09537,0.09543,-0.000792,{}
+null_heterogeneous_iid,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,93.5,1000,0.78,94.0,1000,0.751,1000,65,6.5,0.78,0.09466,0.09457,0.09466,-0.000792,{}
+null_heterogeneous_iid,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,93.8,1000,0.763,,0,,0,62,6.2,0.763,0.0947,0.09467,0.0947,-0.000696,{}
+heterogeneous_random_weights,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.5,1000,0.721,94.4,1000,0.727,1000,55,5.5,0.721,0.13671,0.13713,0.13671,0.000261,{}
+heterogeneous_random_weights,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.5,1000,0.721,94.4,1000,0.727,1000,55,5.5,0.721,0.13671,0.13713,0.13671,0.000261,{}
+heterogeneous_random_weights,C,estimated_pooled_record,1000,100.0,99.7,0.173,100.0,0.0,94.48,997,0.723,94.38,997,0.729,1000,55,5.5,0.721,0.13667,0.13705,0.13667,0.000261,"{""too_few_distinct_patients_per_score_definition_cell"": 3}"
+heterogeneous_random_weights,D,estimated_pooled_record,1000,100.0,99.7,0.173,100.0,0.0,94.48,997,0.723,94.38,997,0.729,1000,55,5.5,0.721,0.13667,0.13705,0.13667,0.000261,"{""too_few_distinct_patients_per_score_definition_cell"": 3}"
+heterogeneous_random_weights,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,93.7,1000,0.768,93.9,1000,0.757,1000,63,6.3,0.768,0.13463,0.13508,0.13463,0.000261,{}
+heterogeneous_random_weights,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,93.8,1000,0.763,,0,,0,62,6.2,0.763,0.13481,0.13524,0.13481,0.000552,{}
+repeated_admissions_cross_group,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.1,1000,0.745,94.2,1000,0.739,1000,59,5.9,0.745,0.06593,0.06593,0.06593,0.000263,{}
+repeated_admissions_cross_group,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.1,1000,0.745,94.2,1000,0.739,1000,59,5.9,0.745,0.06593,0.06593,0.06593,0.000263,{}
+repeated_admissions_cross_group,C,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.1,1000,0.745,94.2,1000,0.739,1000,59,5.9,0.745,0.06593,0.06593,0.06593,0.000263,{}
+repeated_admissions_cross_group,D,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.1,1000,0.745,94.2,1000,0.739,1000,59,5.9,0.745,0.06593,0.06593,0.06593,0.000263,{}
+repeated_admissions_cross_group,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,94.1,1000,0.745,94.1,1000,0.745,1000,59,5.9,0.745,0.06588,0.06587,0.06588,0.000263,{}
+repeated_admissions_cross_group,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,94.0,1000,0.751,,0,,0,60,6.0,0.751,0.06589,0.06591,0.06589,0.000306,{}
+unequal_cluster_sizes,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,95.8,1000,0.634,1000,48,4.8,0.676,0.09783,0.09787,0.09783,0.000595,{}
+unequal_cluster_sizes,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,95.8,1000,0.634,1000,48,4.8,0.676,0.09783,0.09787,0.09783,0.000595,{}
+unequal_cluster_sizes,C,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,95.8,1000,0.634,1000,48,4.8,0.676,0.09783,0.09787,0.09783,0.000595,{}
+unequal_cluster_sizes,D,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,95.8,1000,0.634,1000,48,4.8,0.676,0.09783,0.09787,0.09783,0.000595,{}
+unequal_cluster_sizes,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,95.6,1000,0.649,1000,48,4.8,0.676,0.0974,0.09742,0.0974,0.000595,{}
+unequal_cluster_sizes,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,95.5,1000,0.656,,0,,0,45,4.5,0.656,0.09727,0.09749,0.09727,0.000557,{}
+near_boundary_risks,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.7,1000,0.641,95.6,1000,0.649,1000,43,4.3,0.641,0.05798,0.05796,0.05798,-0.00024,{}
+near_boundary_risks,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.7,1000,0.641,95.6,1000,0.649,1000,43,4.3,0.641,0.05798,0.05796,0.05798,-0.00024,{}
+near_boundary_risks,C,estimated_pooled_record,1000,100.0,61.7,1.537,100.0,0.0,95.95,617,0.794,95.79,617,0.809,1000,25,2.5,0.494,0.05808,0.05807,0.05808,-0.00024,"{""degenerate_outcome_cell"": 383}"
+near_boundary_risks,D,estimated_pooled_record,1000,100.0,61.7,1.537,100.0,0.0,95.95,617,0.794,95.79,617,0.809,1000,25,2.5,0.494,0.05808,0.05807,0.05808,-0.00024,"{""degenerate_outcome_cell"": 383}"
+near_boundary_risks,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,95.7,1000,0.641,95.5,1000,0.656,1000,43,4.3,0.641,0.05785,0.05781,0.05785,-0.00024,{}
+near_boundary_risks,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,95.3,1000,0.669,,0,,0,47,4.7,0.669,0.05785,0.05784,0.05785,-0.000189,{}
+partial_structural_support,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.3,1000,0.733,94.3,1000,0.733,1000,57,5.7,0.733,0.16635,0.16625,0.16635,-0.000967,{}
+partial_structural_support,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.3,1000,0.733,94.3,1000,0.733,1000,57,5.7,0.733,0.16635,0.16625,0.16635,-0.000967,{}
+partial_structural_support,C,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.3,1000,0.733,94.3,1000,0.733,1000,57,5.7,0.733,0.16635,0.16625,0.16635,-0.000967,{}
+partial_structural_support,D,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,94.3,1000,0.733,94.3,1000,0.733,1000,57,5.7,0.733,0.16635,0.16625,0.16635,-0.000967,{}
+partial_structural_support,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,94.3,1000,0.733,94.3,1000,0.733,1000,57,5.7,0.733,0.16616,0.16609,0.16616,-0.000967,{}
+partial_structural_support,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,94.5,1000,0.721,,0,,0,55,5.5,0.721,0.16646,0.16624,0.16646,-0.000951,{}
+rare_common_support_holdout,A,estimated_pooled_record,1000,100.0,100.0,0.0,69.1,30.9,95.37,691,0.799,95.37,691,0.799,691,341,34.1,1.499,0.1042,0.10415,0.10413,-0.000224,{}
+rare_common_support_holdout,B,estimated_pooled_record,1000,100.0,0.0,0.0,69.1,0.0,,0,,,0,,691,0,0.0,0.0,,,,-0.000224,"{""below_10_records_per_score_definition_cell"": 1000}"
+rare_common_support_holdout,C,estimated_pooled_record,1000,100.0,0.0,0.0,69.1,0.0,,0,,,0,,691,0,0.0,0.0,,,,-0.000224,"{""degenerate_outcome_cell"": 617, ""target_support_lost"": 309, ""too_few_distinct_patients_per_score_definition_cell"": 691, ""too_few_records_per_score_definition_cell"": 691, ""too_few_records_per_score_level"": 691}"
+rare_common_support_holdout,D,estimated_pooled_record,1000,100.0,30.9,1.461,69.1,30.9,,0,,,0,,691,309,30.9,1.461,,,0.10396,-0.000224,"{""degenerate_outcome_cell"": 617, ""too_few_distinct_patients_per_score_definition_cell"": 691}"
+rare_common_support_holdout,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,69.1,30.9,95.37,691,0.799,95.37,691,0.799,691,341,34.1,1.499,0.10402,0.10398,0.10397,-0.000224,{}
+rare_common_support_holdout,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,69.1,69.1,1.461,69.1,0.0,95.37,691,0.799,,0,,0,32,3.2,0.557,0.1042,0.10401,0.1042,-0.000162,"{""target_support_lost"": 309}"
+few_large_clusters,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,93.3,1000,0.791,93.6,1000,0.774,1000,67,6.7,0.791,0.25705,0.26108,0.25705,0.002375,{}
+few_large_clusters,B,estimated_pooled_record,1000,100.0,97.5,0.494,100.0,0.0,93.33,975,0.799,93.64,975,0.781,1000,65,6.5,0.78,0.2569,0.26078,0.2569,0.002375,"{""below_10_records_per_score_definition_cell"": 25}"
+few_large_clusters,C,estimated_pooled_record,1000,100.0,0.0,0.0,100.0,0.0,,0,,,0,,1000,0,0.0,0.0,,,,0.002375,"{""degenerate_outcome_cell"": 236, ""too_few_distinct_patients_per_score_definition_cell"": 1000, ""too_few_distinct_patients_total"": 1000, ""too_few_records_per_score_definition_cell"": 25}"
+few_large_clusters,D,estimated_pooled_record,1000,100.0,0.0,0.0,100.0,0.0,,0,,,0,,1000,0,0.0,0.0,,,,0.002375,"{""degenerate_outcome_cell"": 236, ""too_few_distinct_patients_per_score_definition_cell"": 1000}"
+few_large_clusters,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,93.3,1000,0.791,93.5,1000,0.78,1000,67,6.7,0.791,0.25591,0.25844,0.25591,0.002375,{}
+few_large_clusters,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,92.7,1000,0.823,,0,,0,73,7.3,0.823,0.25932,0.2609,0.25932,0.002262,{}
+no_common_support,A,estimated_pooled_record,1000,0.0,0.0,0.0,0.0,0.0,,0,,,0,,0,0,,,,,,,"{""no_common_support"": 1000}"
+no_common_support,B,estimated_pooled_record,1000,0.0,0.0,0.0,0.0,0.0,,0,,,0,,0,0,,,,,,,"{""no_common_support"": 1000}"
+no_common_support,C,estimated_pooled_record,1000,0.0,0.0,0.0,0.0,0.0,,0,,,0,,0,0,,,,,,,"{""no_common_support"": 1000}"
+no_common_support,D,estimated_pooled_record,1000,0.0,0.0,0.0,0.0,0.0,,0,,,0,,0,0,,,,,,,"{""no_common_support"": 1000}"
+no_common_support,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,0.0,0.0,0.0,0.0,0.0,,0,,,0,,0,0,,,,,,,"{""no_common_support"": 1000}"
+no_common_support,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,0.0,0.0,0.0,0.0,0.0,,0,,,0,,0,0,,,,,,,"{""no_estimand"": 1000}"
+high_icc_unbalanced_holdout,A,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,94.8,1000,0.702,1000,48,4.8,0.676,0.0905,0.09066,0.0905,-0.000415,{}
+high_icc_unbalanced_holdout,B,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,94.8,1000,0.702,1000,48,4.8,0.676,0.0905,0.09066,0.0905,-0.000415,{}
+high_icc_unbalanced_holdout,C,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,94.8,1000,0.702,1000,48,4.8,0.676,0.0905,0.09066,0.0905,-0.000415,{}
+high_icc_unbalanced_holdout,D,estimated_pooled_record,1000,100.0,100.0,0.0,100.0,0.0,95.2,1000,0.676,94.8,1000,0.702,1000,48,4.8,0.676,0.0905,0.09066,0.0905,-0.000415,{}
+high_icc_unbalanced_holdout,A_legacy_fixed_weight_IF,legacy_fixed_weight_variance,1000,100.0,100.0,0.0,100.0,0.0,95.1,1000,0.683,94.7,1000,0.708,1000,49,4.9,0.683,0.09033,0.0905,0.09033,-0.000415,{}
+high_icc_unbalanced_holdout,A_fixed_true_weights,fixed_population_weight_sensitivity,1000,100.0,100.0,0.0,100.0,0.0,94.9,1000,0.696,,0,,0,51,5.1,0.696,0.09047,0.09056,0.09047,-0.000446,{}

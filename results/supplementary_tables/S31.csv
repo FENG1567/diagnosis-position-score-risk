@@ -1,0 +1,3 @@
+﻿Condition,Comparison,Records,Patients,Difference in Δ_w (pp),Descriptive paired interval (pp),Interval status
+sepsis,by-24-hours minus full-course grouping on identical supported records,"14,753","13,598",0.44,"[-0.11, 0.99]",descriptive paired influence interval
+pneumonia,by-24-hours minus full-course grouping on identical supported records,"9,542","8,951",0.21,"[-0.34, 0.75]",descriptive paired influence interval

@@ -1,0 +1,58 @@
+Table,Subject,Rows,Columns,CSV
+1,Source flow and patient-level sensitivities,118,14,S01.csv
+2,eICU diagnosis-group counts,75,13,S02.csv
+3,eICU reconstructed score availability,25,7,S03.csv
+4,"Main-cohort demographics and analytic overlap; counts, not δ_s or weighted summary Δ_w",8,8,S04.csv
+5,"Source-specific admission pathways; counts, not δ_s or weighted summary Δ_w",86,8,S05.csv
+6,"Leading priority or billing diagnoses; counts, not δ_s or weighted summary Δ_w",48,7,S06.csv
+7,Zigong heart-failure application; diagnosis-sequence semantics unverified,1,9,S07.csv
+8,Zigong documented discharge-status combinations,20,2,S08.csv
+9,Zigong discharge status and follow-up death timing,6,3,S09.csv
+10,Zigong laboratory measurement units,4,3,S10.csv
+11,Zigong field-group score and outcome availability; diagnosis-sequence semantics unverified,10,8,S11.csv
+12,Counts by score and diagnosis group,84,6,S12.csv
+13,Measurement eligibility and selection counts,9,7,S13.csv
+14,MIMIC-IV reconstructed score coverage,160,16,S14.csv
+15,MIMIC-III reconstructed score coverage,160,16,S15.csv
+16,Full score-level observed mortality risks and δ_s in the four primary analysis groups,20,12,S16.csv
+17,"Full database-condition cohort eligibility, complete-score support, and Δ_w summaries",19,9,S17.csv
+18,Separate score-level missingness identification bounds,92,14,S18.csv
+19,Perturbation ranges when score-level intervals are withheld,20,11,S19.csv
+20,Weighted-summary interval refusals by reporting policy,19,25,S20.csv
+21,Bonferroni score-level δ_s intervals,20,16,S21.csv
+22,Bonferroni interval-emission summary,5,8,S22.csv
+23,"Role-specific cohort selection counts, not δ_s or weighted summary Δ_w",36,10,S23.csv
+24,"Panel-level split rules and exclusions, not δ_s or weighted summary Δ_w",17,4,S24.csv
+25,"Paired held-out Brier loss differences, not δ_s or weighted summary Δ_w",56,8,S25.csv
+26,"Held-out observed risks, prediction means and loss, not δ_s or weighted summary Δ_w",48,10,S26.csv
+27,Full paired code-breadth and refinement comparisons,12,9,S27.csv
+28,Matched-record score-construction contrasts,6,10,S28.csv
+29,Score-construction weighted summaries Δ_w,9,16,S29.csv
+30,Patient and hospital clustering sensitivity for weighted summary Δ_w,10,19,S30.csv
+31,Paired eICU documentation-timing contrasts,2,7,S31.csv
+32,eICU 24-hour hospital-survivor sensitivity,4,8,S32.csv
+33,ED-linked cohort component completeness,16,14,S33.csv
+34,ED-linked cohort weighted summaries Δ_w,8,36,S34.csv
+35,Linked ED episode counts,12,10,S35.csv
+36,ED linkage eligibility,8,5,S36.csv
+37,ED-linked score-level risks and δ_s,40,26,S37.csv
+38,ED linkage coverage,2,32,S38.csv
+39,Patient-cluster bootstrap precision analyses,23,63,S39.csv
+40,Conditional-design θ_D intervals in clinical applications,22,26,S40.csv
+41,Conditional-design interval simulation results,26,39,S41.csv
+42,Numerical design inventory for δ_s and Δ_w weighted-summary validation,11,10,S42.csv
+43,Full simulation simulation policy results,66,22,S43.csv
+44,Paired simulation strategy comparisons,66,18,S44.csv
+45,Full sparse-boundary strategy results,8,13,S45.csv
+46,Full selected audit-strategy and sparse-boundary interval validation results,21,10,S46.csv
+47,Score-level simultaneous coverage diagnostics,11,13,S47.csv
+48,Score-level interval validation by design and method,22,20,S48.csv
+49,Score-level interval precision sensitivity,135,22,S49.csv
+50,Score-level interval refusal frequencies,146,9,S50.csv
+51,Score-level coverage sensitivity to rounding,16,12,S51.csv
+52,Score-level δ_s validation results,135,44,S52.csv
+53,Adapted PEER-cohort weighted summary Δ_w,1,19,S53.csv
+54,Amsterdam weighted summary Δ_w by GCS definition and interval method,4,6,S54.csv
+55,Amsterdam score-level δ_s for GCS ≤13,2,18,S55.csv
+56,Amsterdam score-level δ_s for GCS <15,2,18,S56.csv
+57,Amsterdam observed mortality by reconstructed qSOFA,5,6,S57.csv

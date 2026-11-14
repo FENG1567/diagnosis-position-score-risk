@@ -1,0 +1,45 @@
+{
+  "record_type": "pre_run_freeze",
+  "created_utc": "2026-11-12T13:52:12.714058+00:00",
+  "next_run": "independent_two_replicate_pipeline_pilot_then_confirmatory_replay_after_postprocessing_fix",
+  "config_status": "frozen_before_confirmatory_outcomes",
+  "benchmark_id": "per_level_inference_v2_2026-11-12",
+  "seed": 27112027,
+  "replicates_per_design": 1000,
+  "design_count": 11,
+  "pipeline_pilot": {
+    "seed": 27112028,
+    "replicates_per_design": 2,
+    "not_included_in_confirmatory_metrics": true,
+    "recovery_from_checkpoints_tested": true
+  },
+  "config_sha256": "7e7abd7406148a2cc53b7d1e8cab9119291cf6bf21263c905481acbf21908dff",
+  "shared_inference_tool_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\cohort_definition_audit.py",
+  "shared_inference_tool_sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994",
+  "dgp_generator_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\benchmark.py",
+  "dgp_generator_sha256": "43dc393dbd804a29c9948a9245b4125537061408f57d72a1268b603bd852eb14",
+  "runner_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\level_validation\\run_per_level_validation.py",
+  "runner_sha256": "d0ab55e070292bd650dc6b6a7f80632567dd02f67523ee5413c8028b34809421",
+  "test_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\level_validation\\test_per_level_validation.py",
+  "test_sha256": "83bcd627ea3f5b187a3dc9e35768e6f3348849fd79de26b1aab431adc9c90c7d",
+  "runtime": {
+    "python_executable": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "python_version": "3.12.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "previous_attempt": {
+    "status": "failed_postprocessing",
+    "completed_simulated_datasets": 11000,
+    "per_level_output_rows_computed_in_memory": 135000,
+    "outputs_committed": false,
+    "metrics_used_for_threshold_tuning": false,
+    "provenance_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\level_validation\\first_attempt_provenance.json"
+  },
+  "code_freeze_updated_utc": "2026-11-12T13:54:48.309757+00:00"
+}

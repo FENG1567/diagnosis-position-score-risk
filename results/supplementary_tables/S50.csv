@@ -1,0 +1,147 @@
+﻿design,level,estimand,arm,truth_defined,support_type,ci_status,replicate_count,eligible_replicate_count
+null_balanced_iid,0.0,group_risk,principal,True,common_support,computed,1000,1000
+null_balanced_iid,0.0,group_risk,never,True,common_support,computed,1000,1000
+null_balanced_iid,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_balanced_iid,1.0,group_risk,principal,True,common_support,computed,1000,1000
+null_balanced_iid,1.0,group_risk,never,True,common_support,computed,1000,1000
+null_balanced_iid,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_balanced_iid,2.0,group_risk,principal,True,common_support,computed,1000,1000
+null_balanced_iid,2.0,group_risk,never,True,common_support,computed,1000,1000
+null_balanced_iid,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_balanced_iid,3.0,group_risk,principal,True,common_support,computed,1000,1000
+null_balanced_iid,3.0,group_risk,never,True,common_support,computed,1000,1000
+null_balanced_iid,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,0.0,group_risk,principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,0.0,group_risk,never,True,common_support,computed,1000,1000
+null_heterogeneous_iid,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,1.0,group_risk,principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,1.0,group_risk,never,True,common_support,computed,1000,1000
+null_heterogeneous_iid,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,2.0,group_risk,principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,2.0,group_risk,never,True,common_support,computed,1000,1000
+null_heterogeneous_iid,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,3.0,group_risk,principal,True,common_support,computed,1000,1000
+null_heterogeneous_iid,3.0,group_risk,never,True,common_support,computed,1000,1000
+null_heterogeneous_iid,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,0.0,group_risk,principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,0.0,group_risk,never,True,common_support,computed,1000,1000
+heterogeneous_random_weights,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,1.0,group_risk,principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,1.0,group_risk,never,True,common_support,computed,1000,1000
+heterogeneous_random_weights,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,2.0,group_risk,principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,2.0,group_risk,never,True,common_support,computed,1000,1000
+heterogeneous_random_weights,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+heterogeneous_random_weights,3.0,group_risk,principal,True,common_support,computed,998,1000
+heterogeneous_random_weights,3.0,group_risk,principal,True,common_support,too few distinct patients,2,1000
+heterogeneous_random_weights,3.0,group_risk,never,True,common_support,computed,1000,1000
+heterogeneous_random_weights,3.0,delta_s,never_minus_principal,True,common_support,computed,998,1000
+heterogeneous_random_weights,3.0,delta_s,never_minus_principal,True,common_support,too few distinct patients in a definition,2,1000
+repeated_admissions_cross_group,0.0,group_risk,principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,0.0,group_risk,never,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,1.0,group_risk,principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,1.0,group_risk,never,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,2.0,group_risk,principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,2.0,group_risk,never,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,3.0,group_risk,principal,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,3.0,group_risk,never,True,common_support,computed,1000,1000
+repeated_admissions_cross_group,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,0.0,group_risk,principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,0.0,group_risk,never,True,common_support,computed,1000,1000
+unequal_cluster_sizes,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,1.0,group_risk,principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,1.0,group_risk,never,True,common_support,computed,1000,1000
+unequal_cluster_sizes,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,2.0,group_risk,principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,2.0,group_risk,never,True,common_support,computed,1000,1000
+unequal_cluster_sizes,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,3.0,group_risk,principal,True,common_support,computed,1000,1000
+unequal_cluster_sizes,3.0,group_risk,never,True,common_support,computed,1000,1000
+unequal_cluster_sizes,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+near_boundary_risks,0.0,group_risk,principal,True,common_support,computed,672,1000
+near_boundary_risks,0.0,group_risk,principal,True,common_support,degenerate outcome: point estimate only,328,1000
+near_boundary_risks,0.0,group_risk,never,True,common_support,computed,885,1000
+near_boundary_risks,0.0,group_risk,never,True,common_support,degenerate outcome: point estimate only,115,1000
+near_boundary_risks,0.0,delta_s,never_minus_principal,True,common_support,computed,598,1000
+near_boundary_risks,0.0,delta_s,never_minus_principal,True,common_support,degenerate outcome: point estimate only,402,1000
+near_boundary_risks,1.0,group_risk,principal,True,common_support,computed,993,1000
+near_boundary_risks,1.0,group_risk,principal,True,common_support,degenerate outcome: point estimate only,7,1000
+near_boundary_risks,1.0,group_risk,never,True,common_support,computed,994,1000
+near_boundary_risks,1.0,group_risk,never,True,common_support,degenerate outcome: point estimate only,6,1000
+near_boundary_risks,1.0,delta_s,never_minus_principal,True,common_support,computed,987,1000
+near_boundary_risks,1.0,delta_s,never_minus_principal,True,common_support,degenerate outcome: point estimate only,13,1000
+near_boundary_risks,2.0,group_risk,principal,True,common_support,computed,1000,1000
+near_boundary_risks,2.0,group_risk,never,True,common_support,computed,1000,1000
+near_boundary_risks,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+near_boundary_risks,3.0,group_risk,principal,True,common_support,computed,1000,1000
+near_boundary_risks,3.0,group_risk,never,True,common_support,computed,1000,1000
+near_boundary_risks,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+partial_structural_support,0.0,group_risk,principal,True,one_definition_support,computed,1000,1000
+partial_structural_support,0.0,group_risk,never,False,one_definition_support,no records,1000,0
+partial_structural_support,0.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+partial_structural_support,1.0,group_risk,principal,True,one_definition_support,computed,1000,1000
+partial_structural_support,1.0,group_risk,never,False,one_definition_support,no records,1000,0
+partial_structural_support,1.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+partial_structural_support,2.0,group_risk,principal,True,common_support,computed,1000,1000
+partial_structural_support,2.0,group_risk,never,True,common_support,computed,1000,1000
+partial_structural_support,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+partial_structural_support,3.0,group_risk,principal,True,common_support,computed,1000,1000
+partial_structural_support,3.0,group_risk,never,True,common_support,computed,1000,1000
+partial_structural_support,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+partial_structural_support,4.0,group_risk,principal,False,one_definition_support,no records,1000,0
+partial_structural_support,4.0,group_risk,never,True,one_definition_support,computed,1000,1000
+partial_structural_support,4.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+partial_structural_support,5.0,group_risk,principal,False,one_definition_support,no records,1000,0
+partial_structural_support,5.0,group_risk,never,True,one_definition_support,computed,1000,1000
+partial_structural_support,5.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+rare_common_support_holdout,0.0,group_risk,principal,True,common_support,computed,1000,1000
+rare_common_support_holdout,0.0,group_risk,never,True,common_support,computed,1000,1000
+rare_common_support_holdout,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+rare_common_support_holdout,1.0,group_risk,principal,True,common_support,computed,1000,1000
+rare_common_support_holdout,1.0,group_risk,never,True,common_support,computed,1000,1000
+rare_common_support_holdout,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+rare_common_support_holdout,2.0,group_risk,principal,True,common_support,no records,194,1000
+rare_common_support_holdout,2.0,group_risk,principal,True,common_support,too few distinct patients,806,1000
+rare_common_support_holdout,2.0,group_risk,never,True,common_support,no records,204,1000
+rare_common_support_holdout,2.0,group_risk,never,True,common_support,too few distinct patients,796,1000
+rare_common_support_holdout,2.0,delta_s,never_minus_principal,True,common_support,no shared support,357,1000
+rare_common_support_holdout,2.0,delta_s,never_minus_principal,True,common_support,too few distinct patients in a definition,643,1000
+few_large_clusters,0.0,group_risk,principal,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,0.0,group_risk,never,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,0.0,delta_s,never_minus_principal,True,common_support,too few distinct patients in a definition,1000,1000
+few_large_clusters,1.0,group_risk,principal,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,1.0,group_risk,never,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,1.0,delta_s,never_minus_principal,True,common_support,too few distinct patients in a definition,1000,1000
+few_large_clusters,2.0,group_risk,principal,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,2.0,group_risk,never,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,2.0,delta_s,never_minus_principal,True,common_support,too few distinct patients in a definition,1000,1000
+few_large_clusters,3.0,group_risk,principal,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,3.0,group_risk,never,True,common_support,too few distinct patients,1000,1000
+few_large_clusters,3.0,delta_s,never_minus_principal,True,common_support,too few distinct patients in a definition,1000,1000
+no_common_support,0.0,group_risk,principal,True,one_definition_support,computed,1000,1000
+no_common_support,0.0,group_risk,never,False,one_definition_support,no records,1000,0
+no_common_support,0.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+no_common_support,1.0,group_risk,principal,True,one_definition_support,computed,1000,1000
+no_common_support,1.0,group_risk,never,False,one_definition_support,no records,1000,0
+no_common_support,1.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+no_common_support,2.0,group_risk,principal,False,one_definition_support,no records,1000,0
+no_common_support,2.0,group_risk,never,True,one_definition_support,computed,1000,1000
+no_common_support,2.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+no_common_support,3.0,group_risk,principal,False,one_definition_support,no records,1000,0
+no_common_support,3.0,group_risk,never,True,one_definition_support,computed,1000,1000
+no_common_support,3.0,delta_s,never_minus_principal,False,one_definition_support,no shared support,1000,0
+high_icc_unbalanced_holdout,0.0,group_risk,principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,0.0,group_risk,never,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,0.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,1.0,group_risk,principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,1.0,group_risk,never,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,1.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,2.0,group_risk,principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,2.0,group_risk,never,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,2.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,3.0,group_risk,principal,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,3.0,group_risk,never,True,common_support,computed,1000,1000
+high_icc_unbalanced_holdout,3.0,delta_s,never_minus_principal,True,common_support,computed,1000,1000

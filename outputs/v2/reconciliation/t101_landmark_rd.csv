@@ -1,0 +1,7 @@
+disease,grouping,n,levels,rd_pp,lo,hi,excludes_zero
+sepsis,"(1) full sample, full-stay",27105,4,1.76,0.75,2.77,True
+sepsis,"(2) same subsample, full-stay",24643,4,1.4,0.34,2.45,True
+sepsis,"(3) same subsample, landmark",24643,4,1.72,0.69,2.76,True
+pneumonia,"(1) full sample, full-stay",21163,6,3.28,2.07,4.5,True
+pneumonia,"(2) same subsample, full-stay",18128,6,2.62,1.35,3.88,True
+pneumonia,"(3) same subsample, landmark",18128,6,2.53,1.24,3.83,True

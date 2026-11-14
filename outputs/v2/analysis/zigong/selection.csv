@@ -1,0 +1,11 @@
+database,disease,group,n_source,n_patients,n_score_complete,n_outcome_known,n_analyzed
+Zigong,sepsis,primary,167,167,48,167,48
+Zigong,sepsis,never-primary,374,374,90,373,89
+Zigong,pneumonia,primary,235,235,43,234,42
+Zigong,pneumonia,never-primary,1463,1463,388,1463,388
+Zigong,pancreatitis,primary,63,63,14,63,14
+Zigong,pancreatitis,never-primary,47,47,14,47,14
+Zigong,heart failure,primary,53,53,10,53,10
+Zigong,heart failure,never-primary,553,553,138,552,137
+Zigong,COPD,primary,68,68,18,68,18
+Zigong,COPD,never-primary,523,523,146,522,145

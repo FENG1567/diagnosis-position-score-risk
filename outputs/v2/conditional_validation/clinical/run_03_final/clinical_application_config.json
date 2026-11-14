@@ -1,0 +1,94 @@
+{
+  "application_id": "run_03_final",
+  "created_utc": "2026-11-12T20:00:18.957135+00:00",
+  "script_sha256": "f2e33ced9add6703dabc95e1a0fb5e71990a19a4a97c60032bea610edf14f98c",
+  "helper_sha256": "2f0922911d5e9337669f2d899fa7714643bbf698f3a225aca171f4636c89eb2c",
+  "validation_manifest_sha256": "15cb065b93bd04436708e3be0a74c04e7577c7046411eceac43fb9f33de08c39",
+  "sources": [
+    {
+      "database": "eICU-CRD",
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+      "panel_type": "standard_disease_panel",
+      "application_ready": true,
+      "diseases": [
+        "sepsis",
+        "pneumonia",
+        "pancreatitis",
+        "heart failure",
+        "COPD"
+      ],
+      "source_sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163"
+    },
+    {
+      "database": "MIMIC-IV",
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+      "panel_type": "standard_disease_panel",
+      "application_ready": true,
+      "diseases": [
+        "sepsis",
+        "pneumonia",
+        "pancreatitis",
+        "heart failure",
+        "COPD"
+      ],
+      "source_sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c"
+    },
+    {
+      "database": "MIMIC-III",
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic3\\mimic_iii_v2_score_panel.csv.gz",
+      "panel_type": "standard_disease_panel",
+      "application_ready": true,
+      "diseases": [
+        "sepsis",
+        "pneumonia",
+        "pancreatitis",
+        "heart failure",
+        "COPD"
+      ],
+      "source_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538"
+    },
+    {
+      "database": "Zigong",
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\zigong\\zigong_admission_panel.csv.gz",
+      "panel_type": "standard_disease_panel",
+      "application_ready": true,
+      "diseases": [
+        "sepsis",
+        "pneumonia",
+        "pancreatitis",
+        "heart failure",
+        "COPD"
+      ],
+      "source_sha256": "a979429a888758de3f33471fc8f846c56a0a2cd21206e234bde6aed88afb1f97"
+    },
+    {
+      "database": "AmsterdamUMCdb",
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\amsterdam\\private\\qsofa_sepsis_icu_dictionary_unit_repair_outcome.csv.gz",
+      "panel_type": "amsterdam_qsofa_outcome_panel",
+      "application_ready": true,
+      "diseases": [
+        "sepsis"
+      ],
+      "score_column": "qsofa_main",
+      "outcome_column": "icu_death",
+      "patient_column": "patientid",
+      "admission_column": "admissionid",
+      "source_sha256": "6172f46ac88b26f9773fc990782c459251fdba3846a3b98ceffe230c75c2e61c"
+    },
+    {
+      "database": "PEER-adapted-eICU",
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\published_application\\adapted_peer_population.csv.gz",
+      "panel_type": "standard_disease_panel",
+      "application_ready": true,
+      "diseases": [
+        "pneumonia"
+      ],
+      "interpretation": "Adapted published PEER population; original PEER model results are not reproduced.",
+      "source_sha256": "cae71285647522d9beeec12c6ea358b13a6ca854257c7e9e10ddcb61fc1a2c37"
+    }
+  ],
+  "alpha": 0.05,
+  "target": "theta_D: E(sum a_i Y_i | observed complete-case design)",
+  "independence": "patient clusters conditionally independent; assumed, not verified",
+  "primary_C_modified": false
+}

@@ -1,0 +1,12 @@
+itemid,label,fluid,category
+51366,Bands,Joint Fluid,Hematology
+51386,Bands,Other Body Fluid,Hematology
+51441,Bands,Pleural,Hematology
+50818,pCO2,Blood,Blood Gas
+50830,"pCO2, Body Fluid",Other Body Fluid,Blood Gas
+51006,Urea Nitrogen,Blood,Chemistry
+51111,Bands,Ascites,Hematology
+51144,Bands,Blood,Hematology
+51300,WBC Count,Blood,Hematology
+51301,White Blood Cells,Blood,Hematology
+51344,Bands,Cerebrospinal Fluid (CSF),Hematology

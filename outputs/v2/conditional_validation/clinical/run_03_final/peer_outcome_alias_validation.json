@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "n_rows": 5883,
+  "both_missing": 63,
+  "both_observed": 5820,
+  "mismatches": 0,
+  "operation": "Drop redundant y in memory only",
+  "source_sha256": "cae71285647522d9beeec12c6ea358b13a6ca854257c7e9e10ddcb61fc1a2c37"
+}

@@ -1,0 +1,37 @@
+{
+  "record_type": "per_level_issued_vs_fullprecision_ci_sensitivity",
+  "status": "complete",
+  "created_utc": "2026-11-12T16:15:56.022720+00:00",
+  "elapsed_seconds": 1328.219,
+  "config_sha256": "7e7abd7406148a2cc53b7d1e8cab9119291cf6bf21263c905481acbf21908dff",
+  "runner_sha256": "d0ab55e070292bd650dc6b6a7f80632567dd02f67523ee5413c8028b34809421",
+  "shared_inference_tool_sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994",
+  "dgp_generator_sha256": "43dc393dbd804a29c9948a9245b4125537061408f57d72a1268b603bd852eb14",
+  "primary_replicate_results_sha256": "1baa8801c3a15949b0817b2d215b1dbc2acbbec4b283ca74aedebcabf5cc78e9",
+  "sensitivity_script_sha256": "b5d66c41894fb1a2fe9865edffc6342d39065e3939e6b77ea4afcfbad4f5150e",
+  "seed": 27112027,
+  "replicates_per_design": 1000,
+  "design_count": 11,
+  "regenerated_dataset_count": 11000,
+  "calculation": "Reconstructs full-precision group-risk logit-Wald endpoints and delta_s Wald endpoints from the same deterministic simulated records, using the frozen tool's cluster variance and sigmoid helpers and identical CI gates. Rounds reconstructed endpoints to 2 decimals and asserts exact agreement with every emitted checkpoint endpoint. The primary coverage remains coverage of the issued rounded endpoints; full-precision coverage is reported only as a sensitivity.",
+  "mcse": "Dataset-clustered MCSE computed over the independent outer replicates; all score/arm cells within a dataset stay together.",
+  "endpoint_rounding_mismatches": 0,
+  "coverage_discordances": 16,
+  "outputs": [
+    {
+      "path": "per_level_design_method_summary.csv",
+      "sha256": "01151052e1416a67a0412a399f782558080f7f6344c2ce5a13ed4e4d7ca0df96",
+      "rows": 22
+    },
+    {
+      "path": "per_level_fullprecision_sensitivity_by_level.csv",
+      "sha256": "3a62fe762e5b62a2eb196ce64f1b6a6cba5fa4d024967f1209d86fc326d067f0",
+      "rows": 135
+    },
+    {
+      "path": "per_level_rounding_coverage_discordances.csv",
+      "sha256": "477056847b3c5388984737ec09f70b0e335d579b2730855c0dfe846bca3017d6",
+      "rows": 16
+    }
+  ]
+}

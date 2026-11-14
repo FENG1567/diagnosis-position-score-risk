@@ -1,0 +1,22 @@
+{
+  "panel_path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\work\\paperB_v2\\mimic3\\mimic_iii_v2_score_panel.csv.gz",
+  "panel_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+  "script_sha256": "9fcc4ae2955a515900b05a6c95e1d295f38ef0db4d47b7faad17db650781df48",
+  "dependencies": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\cohort_definition_audit.py",
+      "sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\estimands.py",
+      "sha256": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\robustness.py",
+      "sha256": "a11710df12dfa1dec3f6d0cf433c4e60ae26e1476a80d641683ead01fdd3b92f"
+    }
+  ],
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "numpy": "2.5.2",
+  "pandas": "2.3.3"
+}

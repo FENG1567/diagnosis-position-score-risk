@@ -1,0 +1,45 @@
+{
+  "record_type": "conditional_validation_pre_run_freeze",
+  "created_utc": "2026-11-12T17:09:06.826210+00:00",
+  "config_status": "frozen_before_validation_outcomes",
+  "benchmark_id": "conditional_design_hoeffding_supplement_v1_2026-11-13",
+  "seed": 27112029,
+  "replicates_per_design": 1000,
+  "design_count": 26,
+  "original_dgp_count": 11,
+  "fixed_design_count": 15,
+  "config_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\conditional_validation\\conditional_validation_config.json",
+  "config_sha256": "5670cf6d34be6dff14b8f5ef0e5f27664ea945decfd831bdbfe624dc57c3343d",
+  "code_hashes": {
+    "config_builder_path": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\conditional_validation\\freeze_conditional_validation.py",
+      "sha256": "086eccbf59df0ccb297923a92f598bad041528b0307ff014ebfa9b5970dd1cf7"
+    },
+    "runner_path": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\conditional_validation\\run_conditional_validation.py",
+      "sha256": "514e383166f36a134552d8155321a825030ba7215d608fd19d94dce31a17b474"
+    },
+    "conditional_interval_helper_path": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\conditional_interval.py",
+      "sha256": "2f0922911d5e9337669f2d899fa7714643bbf698f3a225aca171f4636c89eb2c"
+    },
+    "dgp_generator_path": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\benchmark.py",
+      "sha256": "43dc393dbd804a29c9948a9245b4125537061408f57d72a1268b603bd852eb14"
+    },
+    "source_benchmark_config_path": {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\benchmark_config.json",
+      "sha256": "71855154a4afd3a5c7ee7aa9b5475cd4827bb75e8d462453cf5d1ca76afb45ca"
+    }
+  },
+  "runtime": {
+    "python": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1,
+      "MKL_NUM_THREADS": 1
+    }
+  },
+  "outcome_generation_started": false,
+  "statement": "The full 26-design configuration and all analysis choices were frozen before generating any validation outcomes."
+}

@@ -1,0 +1,52 @@
+{
+  "status": "frozen_pre_fit",
+  "created_utc": "2026-11-13T07:28:45.257945Z",
+  "protocol_seed": "JCE-v3-20261113",
+  "independent_review": "PASS_EXPLORATORY_EXECUTION",
+  "root_authorization": "work/v3/prefit_resolution.md",
+  "sha256": {
+    "protocol": "ad6e961f4888e0f2a3912df8f886d5817588bd5bc1100683e8f8e024845ee1ea",
+    "eligibility_code": "fa8ff87e4fafec1493e89028f5a7b3a8226197ced68c2101b24ed00993964385",
+    "fit_code": "a1fde7112d3976d78e9124b3c320f474489f07f2945408b2aa587d3063f435db",
+    "root_prefit_resolution": "f701e5313f370a56acc5af54e13c9272d5350162ef4bcfa2a305b47dd264c473",
+    "independent_review": "c105d2da38352aaea6086e34dd02120b8938c2440f75f2f101ecfe2f793aa383"
+  },
+  "input_panels": {
+    "eICU": {
+      "path": "work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+      "sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163"
+    },
+    "MIMIC_IV": {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+      "sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c"
+    }
+  },
+  "aggregate_eligibility_artifacts_sha256": {
+    "eligibility_counts": "85be68dc5c9ac6ff44ab4c97c21ba6f8874dda9a8b9406f04e39c0b9e91c6948",
+    "score_support_counts": "277d2991de8a69dcf196a59633176c6670c304807b48c35e7483a932b0bcf8f9",
+    "split_feasibility": "28cdd0c990b91b0040f4dae50d9c073d70f88b589f808de5349e28b2982e5c34"
+  },
+  "environment": {
+    "python": "3.12.5",
+    "statsmodels": "0.14.5",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "numerical_threads": 1
+  },
+  "execution": {
+    "model": "Binomial logistic MLE: intercept + numeric integer score",
+    "recalibration": "Independent broad-cohort intercept-only GLM with frozen linear predictor offset",
+    "bootstrap_repetitions": 2000,
+    "bootstrap_resampling": "Patient-cluster multinomial multiplicities; eICU hospital-cluster sensitivity when >=20 test hospitals",
+    "outputs": "Aggregate CSV/JSON only; identifiers remain in memory and are never written"
+  },
+  "normalization": {
+    "occurred_utc": "2026-11-13T07:33:54.4117819Z",
+    "reason": "Normalize hexadecimal SHA-256 case only: PowerShell emitted uppercase while hashlib.hexdigest emits lowercase; verified hashes are identical after case normalization.",
+    "prior_manifest_created_utc": "2026-11-13T07:28:45.257945Z",
+    "archived_manifest": "archive/freeze_manifest_casecheck_failed_20261113_072955.json",
+    "archived_execution_record": "archive/execution_record_casecheck_failed_20261113_072955.json",
+    "prior_process_pid": 45412,
+    "prior_process_state": "exited before model fitting at freeze hash guard"
+  }
+}

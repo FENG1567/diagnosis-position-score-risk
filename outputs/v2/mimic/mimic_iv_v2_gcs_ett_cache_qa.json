@@ -1,0 +1,55 @@
+{
+  "generated_utc": "2026-11-12T16:39:19.791163+00:00",
+  "source": "verified filtered chartevents cache only; no source event-table reads",
+  "cache_validation_passed": true,
+  "cache_name": "mimic_iv_chartevents_filtered.csv.gz",
+  "cache_bytes": 29191262,
+  "cache_sha256": "b88fad4f8932a7fa30521c9461903f5de88801d18a40739948992206dcad96f4",
+  "panel_name": "mimic_iv_v2_score_panel.csv.gz",
+  "panel_bytes": 8968152,
+  "panel_sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c",
+  "gcs_event_mapping": {
+    "gcs_component_rows": 826702,
+    "explicit_unassessable_rows": 86893,
+    "explicit_unassessable_primary_missing_rows": 86893,
+    "unassessable_numeric_fallback_suppressed_rows": 86893,
+    "no_response_ett_rows": 86893,
+    "no_response_ett_primary_missing_rows": 86893,
+    "no_response_ett_ett_as1_mapped_to_one_rows": 86893
+  },
+  "gcs_event_mapping_by_itemid": {
+    "220739": {
+      "component_rows": 276356,
+      "unassessable_rows": 0,
+      "no_response_ett_rows": 0,
+      "no_response_ett_ett_as1_mapped_to_one_rows": 0
+    },
+    "223900": {
+      "component_rows": 275641,
+      "unassessable_rows": 86893,
+      "no_response_ett_rows": 86893,
+      "no_response_ett_ett_as1_mapped_to_one_rows": 86893
+    },
+    "223901": {
+      "component_rows": 274705,
+      "unassessable_rows": 0,
+      "no_response_ett_rows": 0,
+      "no_response_ett_ett_as1_mapped_to_one_rows": 0
+    }
+  },
+  "score_panel": {
+    "panel_rows": 68558,
+    "rows_primary_gcs_missing_but_ett_as1_observed": 12571,
+    "score_complete_counts": {
+      "qsofa": 55245,
+      "qsofa_gcs15": 55245,
+      "curb65": 54458,
+      "bisap4": 48708,
+      "qsofa_ett_as1": 67647,
+      "qsofa_gcs15_ett_as1": 67647,
+      "curb65_ett_as1": 66681,
+      "bisap4_ett_as1": 60296
+    }
+  },
+  "policy": "All explicit unassessable/intubated GCS components are missing in primary mapping; No Response-ETT maps to 1 only in the labeled ETT-as-1 sensitivity where specified by component item mapping."
+}

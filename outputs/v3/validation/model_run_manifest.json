@@ -1,0 +1,103 @@
+{
+  "run_utc": "2026-11-13T07:38:29.302651+00:00",
+  "protocol_seed": "JCE-v3-20261113",
+  "freeze_manifest": "outputs\\v3\\validation\\freeze_manifest.json",
+  "freeze_manifest_sha256": "8a0f08d940bf2169dbc669ca6fdc661865f6f59a54feb9458bd7a3c414f4b5e5",
+  "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "library_versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "statsmodels": "0.14.5"
+  },
+  "bootstrap_repetitions": 2000,
+  "bootstrap_minimum_usable": 1900,
+  "patient_bootstrap_metrics": "record-weighted Brier and stable log loss; pointwise percentile intervals; conditional on fixed maps",
+  "test_calibration_diagnostics": "point estimates only; never alter predictions",
+  "model_fitting_performed": true,
+  "identifier_policy": "patient/admission identifiers used only in memory for assignment and cluster resampling; no identifiers are written",
+  "panel_assertions_and_splits": {
+    "eICU": {
+      "panel_assertions": {
+        "duplicate_admission_disease_rows": 0,
+        "invalid_nonmissing_binary_outcome_values": 0,
+        "invalid_nonmissing_group_values": 0,
+        "invalid_nonmissing_score_values": 0
+      },
+      "split": {
+        "split_method": "SHA-256 hospital buckets (60% train / 20% recalibration / 20% test); globally exclude patients with cross-role, multihospital, or missing-hospital records",
+        "seed": "JCE-v3-20261113",
+        "hospitals_total": 205,
+        "hospitals_by_role": {
+          "test": 40,
+          "recalibration": 44,
+          "train": 121
+        },
+        "cross_role_patients_excluded": 737,
+        "patients_with_missing_hospital_excluded": 0,
+        "multi_hospital_patients_excluded_globally": 1199,
+        "multi_hospital_patient_records_excluded_globally": 4426,
+        "patient_count": 45922
+      },
+      "disjointness_assertions": {
+        "patient_role_overlap": 0,
+        "hospital_role_overlap": 0,
+        "multihospital_patient_overlap": 0
+      }
+    },
+    "MIMIC-IV": {
+      "panel_assertions": {
+        "duplicate_admission_disease_rows": 0,
+        "invalid_nonmissing_binary_outcome_values": 0,
+        "invalid_nonmissing_group_values": 0,
+        "invalid_nonmissing_score_values": 0
+      },
+      "split": {
+        "split_method": "calendar-interval migration split from anchor_year_group plus admission-year shift; intervals wholly <=2013=train, 2014-2016=recalibration, 2017-2022=test; ambiguous/out-of-window records excluded",
+        "seed": "JCE-v3-20261113",
+        "temporal_metadata_identifiable": true,
+        "anchor_year_groups": [
+          "2008 - 2010",
+          "2011 - 2013",
+          "2014 - 2016",
+          "2017 - 2019",
+          "2020 - 2022"
+        ],
+        "calendar_windows": {
+          "train": "entire possible admission interval <= 2013",
+          "recalibration": "2014-2016",
+          "test": "2017-2022"
+        },
+        "unresolved_or_ambiguous_records": 13689,
+        "cross_role_patients_excluded": 756,
+        "patient_count": 33769
+      },
+      "disjointness_assertions": {
+        "patient_role_overlap": 0,
+        "hospital_role_overlap": 0,
+        "multihospital_patient_overlap": 0
+      }
+    }
+  },
+  "branches": [
+    {
+      "database": "eICU",
+      "disease": "sepsis",
+      "state": "completed"
+    },
+    {
+      "database": "eICU",
+      "disease": "pneumonia",
+      "state": "completed"
+    },
+    {
+      "database": "MIMIC-IV",
+      "disease": "sepsis",
+      "state": "completed"
+    },
+    {
+      "database": "MIMIC-IV",
+      "disease": "pneumonia",
+      "state": "completed"
+    }
+  ]
+}

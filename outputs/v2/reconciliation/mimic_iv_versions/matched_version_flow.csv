@@ -1,0 +1,3 @@
+database,disease,matched_before_score_selection,both_scores_outcomes_known,outcome_disagreements,matched_complete_agreeing_outcomes
+MIMIC-IV,sepsis,13097,10606,0,10606
+MIMIC-IV,pneumonia,15624,12273,0,12273

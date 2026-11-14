@@ -1,0 +1,3 @@
+disease,admissions,classifiable_at_landmark,classifiable_pct,unchanged,reclassified,reclassified_pct,full_principal,lm_principal
+sepsis,27105,24643,90.9,23869,774,3.1,16397,15623
+pneumonia,21163,18128,85.7,17841,287,1.6,5020,4733

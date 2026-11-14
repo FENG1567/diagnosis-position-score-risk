@@ -1,0 +1,5 @@
+﻿Condition,Analysis,Risk set,Records,Patients,Δ_w / paired difference (pp),Numerical interval (pp),Interval status
+sepsis,"24-hour hospital survivors, full-course diagnosis",still hospitalized 24 hours after index ICU admission,"13,980","12,894",-1.16,not computed,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)"
+sepsis,"24-hour hospital survivors, never-primary-by-24-hours",still hospitalized 24 hours after index ICU admission,"13,980","12,894",-0.18,not computed,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)"
+pneumonia,"24-hour hospital survivors, full-course diagnosis",still hospitalized 24 hours after index ICU admission,"9,248","8,682",2.28,not computed,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)"
+pneumonia,"24-hour hospital survivors, never-primary-by-24-hours",still hospitalized 24 hours after index ICU admission,"9,248","8,682",2.60,not computed,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)"

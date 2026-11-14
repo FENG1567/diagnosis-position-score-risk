@@ -1,0 +1,77 @@
+file,purpose
+work/v2/amsterdam/build_dictionary_unit_repair_manifest.py,"Bind Amsterdam dictionary-unit repair inputs, code, private cache and results."
+work/v2/amsterdam/build_source_manifest.py,Create a privacy-preserving source and code manifest after the Amsterdam audit.
+work/v2/amsterdam/lock_amsterdam_mapping.py,Freeze AmsterdamUMCdb qSOFA and NICE diagnosis mappings before outcomes.
+work/v2/amsterdam/retrieve_official_sql.py,Retrieve pinned AmsterdamUMCdb SQL used to identify score and diagnosis fields.
+work/v2/amsterdam/run_amsterdam_audit.py,"Build a private Amsterdam qSOFA panel, then join its ICU-discharge endpoint."
+work/v2/amsterdam/run_amsterdam_dictionary_unit_repair.py,Rebuild the Amsterdam qSOFA application with approved dictionary unit recovery.
+work/v2/amsterdam/test_unit_mapping_repair.py,
+work/v2/analyse_panels.py,Analyze repaired panels through the same audit entry point used by the CLI.
+work/v2/audit/benchmark.py,Confirmatory paired simulation of refusal rules A/B/C plus a matched-threshold ablation D.
+work/v2/audit/cohort_definition_audit.py,"cohort_definition_audit.py -- a small, runnable audit for cohort-definition sensitivity."
+work/v2/audit/tests/test_benchmark.py,
+work/v2/audit/tests/test_cli.py,
+work/v2/audit/tests/test_regressions.py,
+work/v2/bootstrap_precision/run_bootstrap_precision.py,"Locked 5,000-draw patient-cluster bootstrap precision diagnostic."
+work/v2/bootstrap_precision/test_bootstrap_precision.py,Deterministic equivalence checks for the bootstrap sufficient-statistic reducer.
+work/v2/build_tables_v2.py,Freeze v2 aggregate outputs and build the six JCE tables.
+work/v2/conditional_interval.py,Patient-cluster Hoeffding interval for a conditional-design mean contrast.
+work/v2/conditional_validation/apply_conditional_clinical.py,Apply the supplementary conditional interval to available standardized panels.
+work/v2/conditional_validation/freeze_conditional_validation.py,Create and hash the prespecified conditional-interval validation plan.
+work/v2/conditional_validation/run_clinical_with_peer_adapter.py,Run the frozen clinical application with a verified in-memory PEER adapter.
+work/v2/conditional_validation/run_conditional_validation.py,Run the frozen conditional-design interval validation and write per-design checkpoints.
+work/v2/conditional_validation/run_final_clinical.py,Uniform final conditional-design application; original runs remain immutable.
+work/v2/documents/export_tables_docx.py,
+work/v2/documents/inspect_final_pdf.py,
+work/v2/documents/render_wps_pdf.py,
+work/v2/ed_timing/run_ed_timing.py,Run the frozen MIMIC-IV ED episode-linkage/code-cohort sensitivity.
+work/v2/ed_timing/smoke_check.py,Synthetic smoke check for the frozen analysis and output table path.
+work/v2/eicu/audit_diagnosis_priority.py,Aggregate QA of eICU diagnosispriority values; never writes row-level data.
+work/v2/eicu/build_eicu_v2.py,"Build admission-level, first-ICU eICU score panels for Paper B."
+work/v2/eicu/pilot_eicu_v2.py,Bounded eICU table pilot. Prints/writes aggregate metadata only.
+work/v2/eicu/test_build_eicu_v2.py,Synthetic regression checks for the eICU v2 extraction rules.
+work/v2/eicu_measurement_sensitivity.py,Compare documented GCS sources and medication-unassessable flags.
+work/v2/estimands.py,Direct empirical contrasts and paired cluster influences for revised analyses.
+work/v2/figures/build_jce_figures.py,Build the two JCE figures from revised v2 outputs with source-row traceability.
+work/v2/figures/figure1_score_specific_risk.py,Entry point for the four-panel score-specific risk figure.
+work/v2/figures/figure2_audit_states.py,Entry point for the shared v2 audit reportability flow figure.
+work/v2/hospital_cluster_sensitivity.py,Descriptive eICU uncertainty sensitivity to crossed patient and hospital clusters.
+work/v2/level_validation/audit_per_level_rounding.py,Summarize issued per-level CIs and compare rounded with full-precision coverage.
+work/v2/level_validation/resume_missing_designs.py,Resume absent per-design checkpoints without changing the frozen runner.
+work/v2/level_validation/run_per_level_validation.py,Confirmatory per-level validation using the frozen shared inference function.
+work/v2/level_validation/test_per_level_validation.py,Focused contract checks against the frozen shared per-level CI function.
+work/v2/mimic/audit_gcs_ett_cache.py,Aggregate-only QA for MIMIC-IV GCS handling; does not open source events.
+work/v2/mimic/m58_mimic_rebuild.py,Rebuild an admission-level MIMIC-IV score panel from the v3.1.0 release ZIP.
+work/v2/mimic/test_m58_mimic_rebuild.py,Synthetic invariants for the MIMIC-IV extractor; contains no patient data.
+work/v2/mimic/verify_final_panel.py,Validate MIMIC-IV rebuilt panel/cache manifests without source-table scans.
+work/v2/mimic3/audit_gcs_ett_cache.py,Aggregate-only QA for MIMIC-III GCS handling; never opens source events.
+work/v2/mimic3/compare_bp_repair_before_after.py,Create aggregate-only MIMIC-III BP-repair comparison and provenance record.
+work/v2/mimic3/m58_mimic3_rebuild.py,Rebuild the MIMIC-III admission-level score panel from the release ZIP.
+work/v2/mimic3/test_m58_mimic3_rebuild.py,Synthetic MIMIC-III adapter checks; no patient data or large table scans.
+work/v2/mimic3/verify_final_panel.py,Validate MIMIC-III rebuilt panel/cache manifests without source-table scans.
+work/v2/primary_multiplicity_sensitivity.py,Adjusted normal intervals over the twenty planned primary score comparisons.
+work/v2/published_application.py,Apply the audit to an explicitly adapted published pneumonia cohort.
+work/v2/robustness.py,"Paired phenotype, component, hospital and documentation comparisons."
+work/v2/sources/amsterdam_metadata/cohorts.py,
+work/v2/sources/amsterdam_metadata/scores.py,
+work/v2/sources/download_amsterdam_metadata.py,Retrieve official Amsterdam legacy item mappings without clinical rows.
+work/v2/sources/inspect_metadata_only.py,Read source metadata and CSV headers only; never scan patient rows.
+work/v2/sources/qualify_nwicu.py,Qualify score fields from release dictionaries before clinical extraction.
+work/v2/sources/retrieve_public_code.py,Retrieve version-bound public study code for reproducibility assessment.
+work/v2/sparse_boundary_validation.py,Re-evaluate the two original sparse-cell structures with the revised IF.
+work/v2/summarize_target_coverage.py,Make the coverage denominator and target-mismatch penalty explicit.
+work/v2/test_analysis_integration.py,Regressions for actual source schemas and benchmark-policy alignment.
+work/v2/test_conditional_interval.py,
+work/v2/verify_final_sources.py,Recheck immutable v1 tables and current v2 panel/aggregate bindings.
+work/v2/zigong/probe.py,"Aggregate-only Zigong field, endpoint and component feasibility checks."
+work/v2/zigong/rebuild.py,Rebuild the deidentified Zigong admission panel using documented units.
+work/v3/tests/test_validation_core.py,"Synthetic checks for v3 splits, logistic fitting, and clustered losses."
+work/v3/validation/count_eligibility.py,Aggregate-only eligibility and role-count audit for the proposed v3 study.
+work/v3/validation/fit_and_validate.py,Fit the approved v3 score maps and run aggregate-only clustered validation.
+work/v4/build_figures.py,Revision figure contract: unchanged observed curves; clarify policy semantics.
+work/v4/build_supplements.py,Produce submission tables and added analyses from immutable aggregate sources.
+work/v4/composition.py,Aggregate composition of exact frozen main cohorts. No identifiers are exported.
+work/v5/clean_supplements.py,
+work/display_v7/compact_tables.py,Display-only table compaction with detailed archives and source-row audit.
+work/display_v7/build_figures.py,Quantitative publication figures from frozen aggregate rows; no model fitting.
+work/display_v7/sync_repository.py,Synchronize display assets and generate integrity/source inventories.

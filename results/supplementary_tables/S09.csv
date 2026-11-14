@@ -1,0 +1,7 @@
+﻿status_dead,timing,admissions
+False,death_after_discharge,761
+False,death_on_or_before_discharge,382
+False,death_time_unavailable,1486
+True,death_after_discharge,67
+True,death_on_or_before_discharge,64
+True,death_time_unavailable,30

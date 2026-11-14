@@ -1,0 +1,58 @@
+display,file,old_number,derivation,intermediate_generated_file
+Supplementary Table 1,results/supplementary_tables/S01.csv,1,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s1.csv
+Supplementary Table 2,results/supplementary_tables/S02.csv,2,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s2.csv
+Supplementary Table 3,results/supplementary_tables/S03.csv,3,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s3.csv
+Supplementary Table 4,results/supplementary_tables/S04.csv,4,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s4.csv
+Supplementary Table 5,results/supplementary_tables/S05.csv,5,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s5.csv
+Supplementary Table 6,results/supplementary_tables/S06.csv,6,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s6.csv
+Supplementary Table 7,results/supplementary_tables/S07.csv,7,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s7.csv
+Supplementary Table 8,results/supplementary_tables/S08.csv,8,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s8.csv
+Supplementary Table 9,results/supplementary_tables/S09.csv,9,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s9.csv
+Supplementary Table 10,results/supplementary_tables/S10.csv,18,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s18.csv
+Supplementary Table 11,results/supplementary_tables/S11.csv,19,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s19.csv
+Supplementary Table 12,results/supplementary_tables/S12.csv,20,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s20.csv
+Supplementary Table 13,results/supplementary_tables/S13.csv,21,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s21.csv
+Supplementary Table 14,results/supplementary_tables/S14.csv,22,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s22.csv
+Supplementary Table 15,results/supplementary_tables/S15.csv,23,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s23.csv
+Supplementary Table 16,results/supplementary_tables/S16.csv,25,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s25.csv
+Supplementary Table 17,results/supplementary_tables/S17.csv,26,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s26.csv
+Supplementary Table 18,results/supplementary_tables/S18.csv,27,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s27.csv
+Supplementary Table 19,results/supplementary_tables/S19.csv,28,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s28.csv
+Supplementary Table 20,results/supplementary_tables/S20.csv,29,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s29.csv
+Supplementary Table 21,results/supplementary_tables/S21.csv,30,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s30.csv
+Supplementary Table 22,results/supplementary_tables/S22.csv,31,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s31.csv
+Supplementary Table 23,results/supplementary_tables/S23.csv,32,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s32.csv
+Supplementary Table 24,results/supplementary_tables/S24.csv,33,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s33.csv
+Supplementary Table 25,results/supplementary_tables/S25.csv,34,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s34.csv
+Supplementary Table 26,results/supplementary_tables/S26.csv,35,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s35.csv
+Supplementary Table 27,results/supplementary_tables/S27.csv,36,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s36.csv
+Supplementary Table 28,results/supplementary_tables/S28.csv,37,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s37.csv
+Supplementary Table 29,results/supplementary_tables/S29.csv,38,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s38.csv
+Supplementary Table 30,results/supplementary_tables/S30.csv,39,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s39.csv
+Supplementary Table 31,results/supplementary_tables/S31.csv,40,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s40.csv
+Supplementary Table 32,results/supplementary_tables/S32.csv,41,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s41.csv
+Supplementary Table 33,results/supplementary_tables/S33.csv,42,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s42.csv
+Supplementary Table 34,results/supplementary_tables/S34.csv,43,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s43.csv
+Supplementary Table 35,results/supplementary_tables/S35.csv,44,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s44.csv
+Supplementary Table 36,results/supplementary_tables/S36.csv,45,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s45.csv
+Supplementary Table 37,results/supplementary_tables/S37.csv,46,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s46.csv
+Supplementary Table 38,results/supplementary_tables/S38.csv,47,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s47.csv
+Supplementary Table 39,results/supplementary_tables/S39.csv,50,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s50.csv
+Supplementary Table 40,results/supplementary_tables/S40.csv,53,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s53.csv
+Supplementary Table 41,results/supplementary_tables/S41.csv,54,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s54.csv
+Supplementary Table 42,results/supplementary_tables/S42.csv,62,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s62.csv
+Supplementary Table 43,results/supplementary_tables/S43.csv,64,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s64.csv
+Supplementary Table 44,results/supplementary_tables/S44.csv,65,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s65.csv
+Supplementary Table 45,results/supplementary_tables/S45.csv,66,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v2/delivery/s66.csv
+Supplementary Table 46,results/supplementary_tables/S46.csv,67,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s67.csv
+Supplementary Table 47,results/supplementary_tables/S47.csv,68,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s68.csv
+Supplementary Table 48,results/supplementary_tables/S48.csv,69,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s69.csv
+Supplementary Table 49,results/supplementary_tables/S49.csv,70,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s70.csv
+Supplementary Table 50,results/supplementary_tables/S50.csv,71,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s71.csv
+Supplementary Table 51,results/supplementary_tables/S51.csv,72,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s72.csv
+Supplementary Table 52,results/supplementary_tables/S52.csv,73,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s73.csv
+Supplementary Table 53,results/supplementary_tables/S53.csv,74,work/v2/build_tables_v2.py -> work/v4/build_supplements.py -> work/v5/clean_supplements.py,outputs/v4/delivery/supplementary_data/s74.csv
+Supplementary Table 54,results/supplementary_tables/S54.csv,Full source T1,Original main-table CSV preserved byte-for-byte before display compaction; row mapping is in display_table_row_mapping.csv.,results/supplementary_tables/S54.csv
+Supplementary Table 55,results/supplementary_tables/S55.csv,Full source T2,Original main-table CSV preserved byte-for-byte before display compaction; row mapping is in display_table_row_mapping.csv.,results/supplementary_tables/S55.csv
+Supplementary Table 56,results/supplementary_tables/S56.csv,Full source T3,Original main-table CSV preserved byte-for-byte before display compaction; row mapping is in display_table_row_mapping.csv.,results/supplementary_tables/S56.csv
+Supplementary Table 57,results/supplementary_tables/S57.csv,Full source T5,Original main-table CSV preserved byte-for-byte before display compaction; row mapping is in display_table_row_mapping.csv.,results/supplementary_tables/S57.csv

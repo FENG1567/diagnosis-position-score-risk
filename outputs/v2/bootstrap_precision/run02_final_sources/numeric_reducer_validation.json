@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "n_patients_in_universe": 8,
+  "n_patients_without_supported_records": 2,
+  "observed_common_support": [
+    0.0,
+    1.0
+  ],
+  "checked_deterministic_resamples": {
+    "identity": {
+      "status": "ok",
+      "estimate_pp": -7.05128205128205
+    },
+    "duplicate_cross_group_cluster": {
+      "status": "ok",
+      "estimate_pp": 3.222222222222227
+    },
+    "duplicate_unequal_cluster": {
+      "status": "ok",
+      "estimate_pp": -22.222222222222225
+    },
+    "partial_support_with_offsupport_cluster": {
+      "status": "ok",
+      "estimate_pp": -28.846153846153843
+    }
+  },
+  "explicit_duplicate_row_equivalence": "all checked point estimates matched within 1e-14 risk-difference units",
+  "fixed_support_refusal": "validated separately (lost_levels)",
+  "few_event_refusal": "validated separately (few_events)"
+}

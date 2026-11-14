@@ -1,0 +1,34 @@
+[
+  {
+    "relative_path": "amsterdamumcdb/dictionary/dictionary.csv",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/amsterdamumcdb/dictionary/dictionary.csv",
+    "status": "retrieved",
+    "bytes": 1797210,
+    "sha256": "3dfb898825434282de6104f057dd858671cbc4ccfde1e2d1e76965b1c21bfe30"
+  },
+  {
+    "relative_path": "amsterdamumcdb/scores.py",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/amsterdamumcdb/scores.py",
+    "status": "retrieved",
+    "bytes": 24983,
+    "sha256": "1697d0230e7ce25f1847db43176f410af5c53e59eb7e14dc1c90b7c1a7e860c7"
+  },
+  {
+    "relative_path": "amsterdamumcdb/cohorts.py",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/amsterdamumcdb/cohorts.py",
+    "status": "retrieved",
+    "bytes": 26799,
+    "sha256": "88cd86212357d94e151bed6e28c89e7436e9d6ed5812ced59939e376b3043426"
+  },
+  {
+    "relative_path": "concepts/severityscores/sofa.ipynb",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/concepts/severityscores/sofa.ipynb",
+    "status": "retrieved",
+    "bytes": 634595,
+    "sha256": "932124247868f47e970392322e597e141ce69a5e96aef19cfe079e31e910867e"
+  }
+]

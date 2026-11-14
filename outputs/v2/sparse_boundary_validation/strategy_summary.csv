@@ -1,0 +1,9 @@
+design,strategy,replicates,point_output_rate,interval_output_rate,n_intervals,conditional_coverage,coverage_mcse,unconditional_missed_intervals,median_width,bias,bias_mcse,refusal_evaluation
+fine_cells,A,1000,1.0,1.0,1000,0.952,0.006759881655768837,48,0.041971547050085066,-0.00015436733692476273,0.0003424164358940989,shared numerical estimate and explicit count rule
+fine_cells,B,1000,1.0,0.0,0,,,0,,-0.00015436733692476273,0.0003424164358940989,shared numerical estimate and explicit count rule
+fine_cells,C,1000,1.0,0.0,0,,,0,,-0.00015436733692476273,0.0003424164358940989,actual C example plus deterministic count gate on every replicate
+fine_cells,D,1000,1.0,0.0,0,,,0,,-0.00015436733692476273,0.0003424164358940989,shared numerical estimate and explicit count rule
+tiny_arm,A,1000,1.0,1.0,1000,0.636,0.015215255502291114,364,0.03668816181107842,-0.00025124017490491034,0.0006459457598154097,shared numerical estimate and explicit count rule
+tiny_arm,B,1000,1.0,0.0,0,,,0,,-0.00025124017490491034,0.0006459457598154097,shared numerical estimate and explicit count rule
+tiny_arm,C,1000,1.0,0.0,0,,,0,,-0.00025124017490491034,0.0006459457598154097,actual C example plus deterministic count gate on every replicate
+tiny_arm,D,1000,1.0,0.0,0,,,0,,-0.00025124017490491034,0.0006459457598154097,shared numerical estimate and explicit count rule

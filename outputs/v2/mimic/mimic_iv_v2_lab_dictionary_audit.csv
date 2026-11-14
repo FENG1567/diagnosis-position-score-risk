@@ -1,0 +1,18 @@
+itemid,label,fluid,category,label_norm
+50818,pCO2,Blood,Blood Gas,pco2
+50830,"pCO2, Body Fluid",Other Body Fluid,Blood Gas,"pco2, body fluid"
+51006,Urea Nitrogen,Blood,Chemistry,urea nitrogen
+51111,Bands,Ascites,Hematology,bands
+51144,Bands,Blood,Hematology,bands
+51300,WBC Count,Blood,Hematology,wbc count
+51301,White Blood Cells,Blood,Hematology,white blood cells
+51366,Bands,Joint Fluid,Hematology,bands
+51386,Bands,Other Body Fluid,Hematology,bands
+51441,Bands,Pleural,Hematology,bands
+52040,pCO2,Fluid,Blood Gas,pco2
+52049,Bands#,Ascites,Hematology,bands#
+52223,Bands,Cerebrospinal Fluid,Hematology,bands
+52224,Bands#,Cerebrospinal Fluid,Hematology,bands#
+52292,Bands#,Joint Fluid,Hematology,bands#
+52337,Bands#,Other Body Fluid,Hematology,bands#
+52376,Bands#,Pleural,Hematology,bands#

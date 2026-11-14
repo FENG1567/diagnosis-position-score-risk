@@ -1,0 +1,1376 @@
+{
+  "phase": "dictionary_unit_repair_preoutcome_validation",
+  "outcome_field_loaded": false,
+  "repair_timing": {
+    "strict_outcome_results_had_been_examined_before_repair": true,
+    "unit_mapping_source_was_locked_preoutcome_dictionary": true,
+    "no_outcome_values_used_to_select_unit_mapping_or_thresholds": true,
+    "interpretation": "Post-hoc measurement-policy correction; report strictly-unit-filtered results as the prespecified measurement sensitivity."
+  },
+  "mapping_lock_sha256_unchanged": "b38ffd0f17a94d58857ce8dfa6e1cb04e8f3756430fbad0b0552a91c89e63669",
+  "dictionary_sha256": "3dfb898825434282de6104f057dd858671cbc4ccfde1e2d1e76965b1c21bfe30",
+  "strict_snapshot_verification": {
+    "files_verified": 13,
+    "mapping_lock_sha256": "b38ffd0f17a94d58857ce8dfa6e1cb04e8f3756430fbad0b0552a91c89e63669",
+    "strict_artifacts_unchanged": true
+  },
+  "strict_panel_reconstruction": {
+    "pass": true,
+    "fields_compared": [
+      "admissionid",
+      "grp",
+      "rr_max",
+      "rr_observed",
+      "sbp_min",
+      "sbp_observed",
+      "min_gcs",
+      "qsofa_complete",
+      "qsofa_main",
+      "qsofa_gcs_lt15"
+    ],
+    "row_count": 271,
+    "mismatch_count_by_field": {
+      "grp": 0,
+      "rr_max": 0,
+      "rr_observed": 0,
+      "sbp_min": 0,
+      "sbp_observed": 0,
+      "min_gcs": 0,
+      "qsofa_complete": 0,
+      "qsofa_main": 0,
+      "qsofa_gcs_lt15": 0
+    },
+    "missingness_mismatch_count_by_field": {
+      "grp": 0,
+      "rr_max": 0,
+      "rr_observed": 0,
+      "sbp_min": 0,
+      "sbp_observed": 0,
+      "min_gcs": 0,
+      "qsofa_complete": 0,
+      "qsofa_main": 0,
+      "qsofa_gcs_lt15": 0
+    },
+    "admission_ids_normalized_to_int64": true,
+    "baseline_private_panel_sha256": "e368b119f3dd85409178f2d51a9f84cec018543fbf806eb3fddbc676b74b9f01"
+  },
+  "unit_policy": {
+    "fallback_rule": "Only a blank event unit may be filled, and only by a unique APPROVED/EQUAL dictionary mapping compatible with the locked component unit.",
+    "explicit_conflict_rule": "A nonblank incompatible event unit is rejected and never overridden by dictionary metadata.",
+    "dictionary_unit_map": {
+      "6641": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "6678": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "7726": {
+        "unit": "/min",
+        "status": "approved_equal_unique_unit"
+      },
+      "8841": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "8873": {
+        "unit": "/min",
+        "status": "approved_equal_unique_unit"
+      },
+      "8874": {
+        "unit": "/min",
+        "status": "approved_equal_unique_unit"
+      },
+      "8876": {
+        "unit": "/min",
+        "status": "approved_equal_unique_unit"
+      },
+      "9654": {
+        "unit": "/min",
+        "status": "approved_equal_unique_unit"
+      },
+      "12266": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "12348": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "12372": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "12577": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "13092": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "14056": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "14455": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "16241": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      },
+      "16613": {
+        "unit": null,
+        "status": "no_dictionary_row"
+      }
+    },
+    "dictionary_mapped_measurement_concept": {
+      "8874": "Ademfrequentie Monitor; LOINC 9279-1 respiratory rate; UCUM /min."
+    }
+  },
+  "admissions_validation": {
+    "admissions_rows": 23106,
+    "admissionid_unique": true,
+    "patientid_missing": 0,
+    "location_values_n": 4,
+    "location_counts": {
+      "IC": 16454,
+      "IC&MC": 1848,
+      "MC": 4720,
+      "MC&IC": 84
+    },
+    "icu_admissions": 18386,
+    "icu_patients": 16518,
+    "admittedat_missing_icu": 0,
+    "dischargedat_missing_icu": 0
+  },
+  "listitems_validation": {
+    "diagnosis_validation": {
+      "primary_group_n": 218,
+      "secondary_only_group_n": 53,
+      "primary_sepsis_matches": 218,
+      "secondary_sepsis_matches": 67,
+      "both_positions_match": 14,
+      "primary_valueid_missing_in_target": 0,
+      "diagnosis_code_composition": [
+        {
+          "field": "primary",
+          "valueid": 38,
+          "label": "Non-operative cardiovascular - Sepsis, pulmonary",
+          "n": 47
+        },
+        {
+          "field": "primary",
+          "valueid": 35,
+          "label": "Non-operative cardiovascular - Sepsis, GI",
+          "n": 41
+        },
+        {
+          "field": "primary",
+          "valueid": 37,
+          "label": "Non-operative cardiovascular - Sepsis, other",
+          "n": 31
+        },
+        {
+          "field": "primary",
+          "valueid": 39,
+          "label": "Non-operative cardiovascular - Sepsis, renal/UTI (including bladder)",
+          "n": 29
+        },
+        {
+          "field": "primary",
+          "valueid": 40,
+          "label": "Non-operative cardiovascular - Sepsis, unknown",
+          "n": 27
+        },
+        {
+          "field": "primary",
+          "valueid": 34,
+          "label": "Non-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+          "n": 15
+        },
+        {
+          "field": "primary",
+          "valueid": 270,
+          "label": "Post-operative cardiovascular - Sepsis, GI",
+          "n": 11
+        },
+        {
+          "field": "primary",
+          "valueid": 269,
+          "label": "Post-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+          "n": 9
+        },
+        {
+          "field": "primary",
+          "valueid": 272,
+          "label": "Post-operative cardiovascular - Sepsis, other",
+          "n": 8
+        },
+        {
+          "field": "primary",
+          "valueid": 296,
+          "label": "non-sepsis",
+          "n": 6
+        },
+        {
+          "field": "primary",
+          "valueid": 6,
+          "label": "non-sepsis",
+          "n": 4
+        },
+        {
+          "field": "primary",
+          "valueid": 14,
+          "label": "non-sepsis",
+          "n": 4
+        },
+        {
+          "field": "primary",
+          "valueid": 303,
+          "label": "non-sepsis",
+          "n": 4
+        },
+        {
+          "field": "primary",
+          "valueid": 85,
+          "label": "non-sepsis",
+          "n": 3
+        },
+        {
+          "field": "primary",
+          "valueid": 41,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "primary",
+          "valueid": 68,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "primary",
+          "valueid": 163,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "primary",
+          "valueid": 90,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 317,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 261,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 155,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 76,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 169,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 87,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 162,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 164,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 280,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 391,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 63,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 128,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 48,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 291,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 49,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 302,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 305,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 66,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 154,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 67,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 92,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 57,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 298,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 77,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "primary",
+          "valueid": 60,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 487,
+          "label": "Non-operative cardiovascular - Sepsis, GI",
+          "n": 27
+        },
+        {
+          "field": "secondary",
+          "valueid": 490,
+          "label": "Non-operative cardiovascular - Sepsis, pulmonary",
+          "n": 11
+        },
+        {
+          "field": "secondary",
+          "valueid": 492,
+          "label": "Non-operative cardiovascular - Sepsis, unknown",
+          "n": 8
+        },
+        {
+          "field": "secondary",
+          "valueid": 489,
+          "label": "Non-operative cardiovascular - Sepsis, other",
+          "n": 6
+        },
+        {
+          "field": "secondary",
+          "valueid": 615,
+          "label": "non-sepsis",
+          "n": 6
+        },
+        {
+          "field": "secondary",
+          "valueid": 491,
+          "label": "Non-operative cardiovascular - Sepsis, renal/UTI (including bladder)",
+          "n": 5
+        },
+        {
+          "field": "secondary",
+          "valueid": 486,
+          "label": "Non-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+          "n": 4
+        },
+        {
+          "field": "secondary",
+          "valueid": 528,
+          "label": "non-sepsis",
+          "n": 4
+        },
+        {
+          "field": "secondary",
+          "valueid": 721,
+          "label": "Post-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+          "n": 3
+        },
+        {
+          "field": "secondary",
+          "valueid": 722,
+          "label": "Post-operative cardiovascular - Sepsis, GI",
+          "n": 3
+        },
+        {
+          "field": "secondary",
+          "valueid": 606,
+          "label": "non-sepsis",
+          "n": 3
+        },
+        {
+          "field": "secondary",
+          "valueid": 466,
+          "label": "non-sepsis",
+          "n": 3
+        },
+        {
+          "field": "secondary",
+          "valueid": 537,
+          "label": "non-sepsis",
+          "n": 3
+        },
+        {
+          "field": "secondary",
+          "valueid": 531,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "secondary",
+          "valueid": 804,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "secondary",
+          "valueid": 544,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "secondary",
+          "valueid": 483,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "secondary",
+          "valueid": 572,
+          "label": "non-sepsis",
+          "n": 2
+        },
+        {
+          "field": "secondary",
+          "valueid": 515,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 453,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 604,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 520,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 516,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 562,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 756,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 614,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 518,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 616,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 621,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 570,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 755,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 542,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 541,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 535,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 608,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 536,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 467,
+          "label": "non-sepsis",
+          "n": 1
+        },
+        {
+          "field": "secondary",
+          "valueid": 682,
+          "label": "non-sepsis",
+          "n": 1
+        }
+      ]
+    },
+    "gcs_validation": {
+      "gcs_rows_in_window": 4658,
+      "complete_gcs_times": 857,
+      "invalid_component_rows": 0,
+      "complete_gcs_admissions": 254,
+      "gcs_score_min_observed": 3.0,
+      "gcs_score_max_observed": 15.0
+    },
+    "listitems_cache_rows": 763505,
+    "listitems_cache_sha256": "f54315cc37e09d5f5fad702dbf813a4a617c9b78b37e44610ba301853de23a47"
+  },
+  "diagnosis_validation": {
+    "primary_group_n": 218,
+    "secondary_only_group_n": 53,
+    "primary_sepsis_matches": 218,
+    "secondary_sepsis_matches": 67,
+    "both_positions_match": 14,
+    "primary_valueid_missing_in_target": 0,
+    "diagnosis_code_composition": [
+      {
+        "field": "primary",
+        "valueid": 38,
+        "label": "Non-operative cardiovascular - Sepsis, pulmonary",
+        "n": 47
+      },
+      {
+        "field": "primary",
+        "valueid": 35,
+        "label": "Non-operative cardiovascular - Sepsis, GI",
+        "n": 41
+      },
+      {
+        "field": "primary",
+        "valueid": 37,
+        "label": "Non-operative cardiovascular - Sepsis, other",
+        "n": 31
+      },
+      {
+        "field": "primary",
+        "valueid": 39,
+        "label": "Non-operative cardiovascular - Sepsis, renal/UTI (including bladder)",
+        "n": 29
+      },
+      {
+        "field": "primary",
+        "valueid": 40,
+        "label": "Non-operative cardiovascular - Sepsis, unknown",
+        "n": 27
+      },
+      {
+        "field": "primary",
+        "valueid": 34,
+        "label": "Non-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+        "n": 15
+      },
+      {
+        "field": "primary",
+        "valueid": 270,
+        "label": "Post-operative cardiovascular - Sepsis, GI",
+        "n": 11
+      },
+      {
+        "field": "primary",
+        "valueid": 269,
+        "label": "Post-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+        "n": 9
+      },
+      {
+        "field": "primary",
+        "valueid": 272,
+        "label": "Post-operative cardiovascular - Sepsis, other",
+        "n": 8
+      },
+      {
+        "field": "primary",
+        "valueid": 296,
+        "label": "non-sepsis",
+        "n": 6
+      },
+      {
+        "field": "primary",
+        "valueid": 6,
+        "label": "non-sepsis",
+        "n": 4
+      },
+      {
+        "field": "primary",
+        "valueid": 14,
+        "label": "non-sepsis",
+        "n": 4
+      },
+      {
+        "field": "primary",
+        "valueid": 303,
+        "label": "non-sepsis",
+        "n": 4
+      },
+      {
+        "field": "primary",
+        "valueid": 85,
+        "label": "non-sepsis",
+        "n": 3
+      },
+      {
+        "field": "primary",
+        "valueid": 41,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "primary",
+        "valueid": 68,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "primary",
+        "valueid": 163,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "primary",
+        "valueid": 90,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 317,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 261,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 155,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 76,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 169,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 87,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 162,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 164,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 280,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 391,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 63,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 128,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 48,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 291,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 49,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 302,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 305,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 66,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 154,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 67,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 92,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 57,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 298,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 77,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "primary",
+        "valueid": 60,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 487,
+        "label": "Non-operative cardiovascular - Sepsis, GI",
+        "n": 27
+      },
+      {
+        "field": "secondary",
+        "valueid": 490,
+        "label": "Non-operative cardiovascular - Sepsis, pulmonary",
+        "n": 11
+      },
+      {
+        "field": "secondary",
+        "valueid": 492,
+        "label": "Non-operative cardiovascular - Sepsis, unknown",
+        "n": 8
+      },
+      {
+        "field": "secondary",
+        "valueid": 489,
+        "label": "Non-operative cardiovascular - Sepsis, other",
+        "n": 6
+      },
+      {
+        "field": "secondary",
+        "valueid": 615,
+        "label": "non-sepsis",
+        "n": 6
+      },
+      {
+        "field": "secondary",
+        "valueid": 491,
+        "label": "Non-operative cardiovascular - Sepsis, renal/UTI (including bladder)",
+        "n": 5
+      },
+      {
+        "field": "secondary",
+        "valueid": 486,
+        "label": "Non-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+        "n": 4
+      },
+      {
+        "field": "secondary",
+        "valueid": 528,
+        "label": "non-sepsis",
+        "n": 4
+      },
+      {
+        "field": "secondary",
+        "valueid": 721,
+        "label": "Post-operative cardiovascular - Sepsis, cutaneous/soft tissue",
+        "n": 3
+      },
+      {
+        "field": "secondary",
+        "valueid": 722,
+        "label": "Post-operative cardiovascular - Sepsis, GI",
+        "n": 3
+      },
+      {
+        "field": "secondary",
+        "valueid": 606,
+        "label": "non-sepsis",
+        "n": 3
+      },
+      {
+        "field": "secondary",
+        "valueid": 466,
+        "label": "non-sepsis",
+        "n": 3
+      },
+      {
+        "field": "secondary",
+        "valueid": 537,
+        "label": "non-sepsis",
+        "n": 3
+      },
+      {
+        "field": "secondary",
+        "valueid": 531,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "secondary",
+        "valueid": 804,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "secondary",
+        "valueid": 544,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "secondary",
+        "valueid": 483,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "secondary",
+        "valueid": 572,
+        "label": "non-sepsis",
+        "n": 2
+      },
+      {
+        "field": "secondary",
+        "valueid": 515,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 453,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 604,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 520,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 516,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 562,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 756,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 614,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 518,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 616,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 621,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 570,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 755,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 542,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 541,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 535,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 608,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 536,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 467,
+        "label": "non-sepsis",
+        "n": 1
+      },
+      {
+        "field": "secondary",
+        "valueid": 682,
+        "label": "non-sepsis",
+        "n": 1
+      }
+    ]
+  },
+  "gcs_validation": {
+    "gcs_rows_in_window": 4658,
+    "complete_gcs_times": 857,
+    "invalid_component_rows": 0,
+    "complete_gcs_admissions": 254,
+    "gcs_score_min_observed": 3.0,
+    "gcs_score_max_observed": 15.0
+  },
+  "numeric_validation": {
+    "numeric_member": "numericitems.csv",
+    "numeric_member_uncompressed_bytes": 80177836504,
+    "numeric_member_crc32": "475539f6",
+    "numeric_rows_scanned": 977625612,
+    "matched_target_item_rows_before_window": 6039151,
+    "selected_event_cache_rows_before_window_and_unit_filter": 6039151,
+    "selected_event_cache_path_private": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\amsterdam\\private\\numeric_qsofa_target_raw_before_unit_window.csv.gz",
+    "rows_by_itemid_before_window": {
+      "6641": 2640619,
+      "6678": 7497,
+      "8841": 9,
+      "8874": 1750841,
+      "12266": 1640185
+    },
+    "rows_by_itemid_in_window_before_unit_check": {
+      "6641": 274053,
+      "6678": 1652,
+      "8841": 5,
+      "8874": 177943,
+      "12266": 171453
+    },
+    "non_numeric_by_itemid": {
+      "6641": 0,
+      "6678": 0,
+      "8841": 0,
+      "8874": 0,
+      "12266": 0
+    },
+    "nonpositive_by_itemid": {
+      "6641": 0,
+      "6678": 0,
+      "8841": 3,
+      "8874": 74163,
+      "12266": 30
+    },
+    "unit_counts_by_itemid_before_window": {
+      "6641": {
+        "mmHg": 2640619
+      },
+      "6678": {
+        "mmHg": 7497
+      },
+      "8874": {
+        "<missing>": 1750841
+      },
+      "12266": {
+        "/min": 1640185
+      },
+      "8841": {
+        "mmHg": 9
+      }
+    },
+    "observed_extrema_by_itemid_before_window": {
+      "6641": {
+        "min": 10.0,
+        "max": 340.0
+      },
+      "6678": {
+        "min": 11.0,
+        "max": 217.0
+      },
+      "8874": {
+        "min": 0.0,
+        "max": 117.0
+      },
+      "12266": {
+        "min": 0.0,
+        "max": 82.0
+      },
+      "8841": {
+        "min": -20.0,
+        "max": 138.0
+      }
+    },
+    "unit_policy_resolution_counts_in_window": {
+      "6641": {
+        "event_unit_compatible": 274053
+      },
+      "6678": {
+        "event_unit_compatible": 1652
+      },
+      "8874": {
+        "approved_dictionary_unit_recovery": 177943
+      },
+      "12266": {
+        "event_unit_compatible": 171453
+      },
+      "8841": {
+        "event_unit_compatible": 5
+      }
+    },
+    "dictionary_imputed_accepted_rows_in_window_by_itemid": {
+      "8874": 177943
+    },
+    "explicit_conflict_rows_in_window_by_itemid": {},
+    "strict_rr_observed_admissions": 195,
+    "strict_sbp_observed_admissions": 271,
+    "repaired_rr_observed_admissions": 271,
+    "repaired_sbp_observed_admissions": 271,
+    "strict_row_units_policy_preserved": true,
+    "dictionary_fallback_only_for_missing_event_unit": true,
+    "explicit_conflicts_rejected": true,
+    "zip_member_crc_checked": true,
+    "raw_cache_sha256": "9bc54b9c3e2022a240d0335628a93cdb9394b5133e02c944f002cd3dfcc31788"
+  },
+  "strict_score_distribution_by_group": {
+    "primary": {
+      "admissions": 218,
+      "patients": 210,
+      "qsofa_complete": 139,
+      "qsofa_main_distribution": {
+        "2": 72,
+        "3": 67
+      },
+      "qsofa_gcs_lt15_distribution": {
+        "2": 64,
+        "3": 75
+      }
+    },
+    "secondary_only": {
+      "admissions": 53,
+      "patients": 53,
+      "qsofa_complete": 42,
+      "qsofa_main_distribution": {
+        "1": 1,
+        "2": 22,
+        "3": 19
+      },
+      "qsofa_gcs_lt15_distribution": {
+        "2": 21,
+        "3": 21
+      }
+    }
+  },
+  "repaired_score_distribution_by_group": {
+    "primary": {
+      "admissions": 218,
+      "patients": 210,
+      "qsofa_complete": 206,
+      "qsofa_main_distribution": {
+        "2": 129,
+        "3": 77
+      },
+      "qsofa_gcs_lt15_distribution": {
+        "2": 107,
+        "3": 99
+      }
+    },
+    "secondary_only": {
+      "admissions": 53,
+      "patients": 53,
+      "qsofa_complete": 48,
+      "qsofa_main_distribution": {
+        "1": 1,
+        "2": 28,
+        "3": 19
+      },
+      "qsofa_gcs_lt15_distribution": {
+        "2": 24,
+        "3": 24
+      }
+    }
+  },
+  "score_completeness_and_allocation_change": {
+    "primary": {
+      "admissions": 218,
+      "strict_qsofa_complete": 139,
+      "repaired_qsofa_complete": 206,
+      "additional_complete": 67,
+      "strict_qsofa_main_distribution": {
+        "2": 72,
+        "3": 67
+      },
+      "repaired_qsofa_main_distribution": {
+        "2": 129,
+        "3": 77
+      },
+      "strict_qsofa_gcs_lt15_distribution": {
+        "2": 64,
+        "3": 75
+      },
+      "repaired_qsofa_gcs_lt15_distribution": {
+        "2": 107,
+        "3": 99
+      }
+    },
+    "secondary_only": {
+      "admissions": 53,
+      "strict_qsofa_complete": 42,
+      "repaired_qsofa_complete": 48,
+      "additional_complete": 6,
+      "strict_qsofa_main_distribution": {
+        "1": 1,
+        "2": 22,
+        "3": 19
+      },
+      "repaired_qsofa_main_distribution": {
+        "1": 1,
+        "2": 28,
+        "3": 19
+      },
+      "strict_qsofa_gcs_lt15_distribution": {
+        "2": 21,
+        "3": 21
+      },
+      "repaired_qsofa_gcs_lt15_distribution": {
+        "2": 24,
+        "3": 24
+      }
+    }
+  },
+  "private_repaired_panel_path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\amsterdam\\private\\qsofa_sepsis_icu_dictionary_unit_repair_preoutcome.csv.gz",
+  "private_raw_selected_event_cache_path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\amsterdam\\private\\numeric_qsofa_target_raw_before_unit_window.csv.gz"
+}

@@ -1,0 +1,19 @@
+{
+  "release": "RC02-reproducibility",
+  "main_csvs_matched": 6,
+  "supplementary_csvs_matched": 53,
+  "figure1_scientific_source_match": true,
+  "figure2_policy_source_match": true,
+  "public_tests": {
+    "tests": 80,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "deselected_private_tests": 1,
+  "clinical_patient_level_reanalysis_performed": false,
+  "full_simulation_rerun_performed": false,
+  "synthetic_cli_example": "passed",
+  "third_party_files": 4,
+  "python": "3.12.3"
+}

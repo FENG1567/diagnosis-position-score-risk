@@ -1,0 +1,572 @@
+{
+  "manifest_version": 2,
+  "analysis_version": "amsterdam_dictionary_unit_repair_v1",
+  "generated_at_utc": "2026-11-12T19:12:02Z",
+  "repair_timing_and_independence": {
+    "strict_outcome_results_had_been_examined_before_repair": true,
+    "unit_mapping_source_was_locked_preoutcome_dictionary": true,
+    "no_outcome_values_used_to_select_unit_mapping_or_thresholds": true,
+    "interpretation": "Post-hoc measurement-policy correction; report strictly-unit-filtered results as the prespecified measurement sensitivity."
+  },
+  "unchanged_mapping_lock": {
+    "path": "outputs/v2/amsterdam/mapping_lock.json",
+    "sha256": "b38ffd0f17a94d58857ce8dfa6e1cb04e8f3756430fbad0b0552a91c89e63669",
+    "frozen_preoutcome": true
+  },
+  "official_unit_dictionary": {
+    "path": "work/v2/sources/amsterdam_metadata/dictionary.csv",
+    "sha256": "3dfb898825434282de6104f057dd858671cbc4ccfde1e2d1e76965b1c21bfe30",
+    "expected_sha256_from_lock": "3dfb898825434282de6104f057dd858671cbc4ccfde1e2d1e76965b1c21bfe30",
+    "row_8874": {
+      "unit": "/min",
+      "status": "approved_equal_unique_unit"
+    },
+    "numeric_measurement_concept": "Ademfrequentie Monitor; LOINC 9279-1 respiratory rate; UCUM /min.",
+    "blank_event_unit_only": true,
+    "explicit_conflicts_overridden": false
+  },
+  "source_data": {
+    "dataset": "AmsterdamUMCdb 1.0.2",
+    "source_repository_commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "original_locked_source_hashes_reused": [
+      {
+        "label": "admissions source table",
+        "storage": "private F: drive",
+        "file_name": "admissions.csv",
+        "bytes": 2855342,
+        "sha256": "6ecd5b759a88e3db83e5f06ccc1211549ed345e83c29be38b6623ae6517aae25"
+      },
+      {
+        "label": "listitems source table",
+        "storage": "private F: drive",
+        "file_name": "listitems.csv",
+        "bytes": 2840658401,
+        "sha256": "c5cf294a2f3756f6528f46a6a55dc4c8b35efff39e64f3a05e0eb3e8d1e0dbd1"
+      },
+      {
+        "label": "numericitems source archive",
+        "storage": "private F: drive",
+        "file_name": "numericitems.zip",
+        "bytes": 8161018961,
+        "sha256": "f2056bac7eb4033e2cc6a5b365f79119cd2ac137b5a54c345065bf27105bd9a5"
+      }
+    ],
+    "numeric_member": {
+      "name": "numericitems.csv",
+      "uncompressed_bytes": 80177836504,
+      "rows_scanned_to_eof": 977625612,
+      "matched_rows_cached_before_unit_and_window_filter": 6039151,
+      "crc32_expected_and_verified": "475539f6",
+      "crc_verification_method": "zipfile.ZipExtFile full-member EOF read"
+    },
+    "strict_baseline_snapshot_manifest_sha256": "f310ceee917c48c492b0cc8f5f084ba549e57297351896b6dd0d580bf8a15831",
+    "strict_snapshot_entries_verified_pre_scan": {
+      "files_verified": 13,
+      "mapping_lock_sha256": "b38ffd0f17a94d58857ce8dfa6e1cb04e8f3756430fbad0b0552a91c89e63669",
+      "strict_artifacts_unchanged": true
+    }
+  },
+  "method": {
+    "dictionary_unit_resolution": {
+      "fallback_rule": "Only a blank event unit may be filled, and only by a unique APPROVED/EQUAL dictionary mapping compatible with the locked component unit.",
+      "explicit_conflict_rule": "A nonblank incompatible event unit is rejected and never overridden by dictionary metadata.",
+      "dictionary_unit_map": {
+        "6641": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "6678": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "7726": {
+          "unit": "/min",
+          "status": "approved_equal_unique_unit"
+        },
+        "8841": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "8873": {
+          "unit": "/min",
+          "status": "approved_equal_unique_unit"
+        },
+        "8874": {
+          "unit": "/min",
+          "status": "approved_equal_unique_unit"
+        },
+        "8876": {
+          "unit": "/min",
+          "status": "approved_equal_unique_unit"
+        },
+        "9654": {
+          "unit": "/min",
+          "status": "approved_equal_unique_unit"
+        },
+        "12266": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "12348": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "12372": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "12577": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "13092": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "14056": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "14455": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "16241": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        },
+        "16613": {
+          "unit": null,
+          "status": "no_dictionary_row"
+        }
+      },
+      "dictionary_mapped_measurement_concept": {
+        "8874": "Ademfrequentie Monitor; LOINC 9279-1 respiratory rate; UCUM /min."
+      }
+    },
+    "first_24h_and_stay_filter": "0 to 86,400,000 ms inclusive from ICU admission episode; reject measurements after discharge",
+    "strict_reconstruction": {
+      "pass": true,
+      "fields_compared": [
+        "admissionid",
+        "grp",
+        "rr_max",
+        "rr_observed",
+        "sbp_min",
+        "sbp_observed",
+        "min_gcs",
+        "qsofa_complete",
+        "qsofa_main",
+        "qsofa_gcs_lt15"
+      ],
+      "row_count": 271,
+      "mismatch_count_by_field": {
+        "grp": 0,
+        "rr_max": 0,
+        "rr_observed": 0,
+        "sbp_min": 0,
+        "sbp_observed": 0,
+        "min_gcs": 0,
+        "qsofa_complete": 0,
+        "qsofa_main": 0,
+        "qsofa_gcs_lt15": 0
+      },
+      "missingness_mismatch_count_by_field": {
+        "grp": 0,
+        "rr_max": 0,
+        "rr_observed": 0,
+        "sbp_min": 0,
+        "sbp_observed": 0,
+        "min_gcs": 0,
+        "qsofa_complete": 0,
+        "qsofa_main": 0,
+        "qsofa_gcs_lt15": 0
+      },
+      "admission_ids_normalized_to_int64": true,
+      "baseline_private_panel_sha256": "e368b119f3dd85409178f2d51a9f84cec018543fbf806eb3fddbc676b74b9f01"
+    },
+    "score_completion_and_allocation_change": {
+      "primary": {
+        "admissions": 218,
+        "strict_qsofa_complete": 139,
+        "repaired_qsofa_complete": 206,
+        "additional_complete": 67,
+        "strict_qsofa_main_distribution": {
+          "2": 72,
+          "3": 67
+        },
+        "repaired_qsofa_main_distribution": {
+          "2": 129,
+          "3": 77
+        },
+        "strict_qsofa_gcs_lt15_distribution": {
+          "2": 64,
+          "3": 75
+        },
+        "repaired_qsofa_gcs_lt15_distribution": {
+          "2": 107,
+          "3": 99
+        }
+      },
+      "secondary_only": {
+        "admissions": 53,
+        "strict_qsofa_complete": 42,
+        "repaired_qsofa_complete": 48,
+        "additional_complete": 6,
+        "strict_qsofa_main_distribution": {
+          "1": 1,
+          "2": 22,
+          "3": 19
+        },
+        "repaired_qsofa_main_distribution": {
+          "1": 1,
+          "2": 28,
+          "3": 19
+        },
+        "strict_qsofa_gcs_lt15_distribution": {
+          "2": 21,
+          "3": 21
+        },
+        "repaired_qsofa_gcs_lt15_distribution": {
+          "2": 24,
+          "3": 24
+        }
+      }
+    },
+    "canonical_interval_for_root_tables": "Normal patient-cluster influence-function interval",
+    "bootstrap_interval_label": "Patient-cluster percentile bootstrap sensitivity interval",
+    "clinical_unit": "ICU admission episode; patientid clusters inference"
+  },
+  "audit": {
+    "config": {
+      "reps": 60,
+      "seed": 20261112,
+      "min_clusters": 20,
+      "min_events": 10,
+      "min_level_n": 20,
+      "min_arm_n": 10,
+      "min_usable_bootstrap": 20,
+      "model_check": false
+    },
+    "outcome_run_marker": {
+      "status": "complete",
+      "run_id": "20261112T191140976725Z-1032",
+      "completed_at_utc": "2026-11-12T19:11:44Z",
+      "phase": "outcome",
+      "reps": 60,
+      "seed": 20261112,
+      "summary_sha256": "a16b499ca3d004e5168ba6fb9fad376f65ee63db3dd8167d6a8212cecaa7e844",
+      "repaired_outcome_panel_sha256": "6172f46ac88b26f9773fc990782c459251fdba3846a3b98ceffe230c75c2e61c",
+      "interval_comparison_csv_sha256": "c8f4d1e954dcd47cfcdae338eddb909fc1ed0cdd4d834d0f0b910e5d64dcb406",
+      "intervals_csv_sha256": "d0f871503a44c95a608a466d6bd2c83c9f0a7d5e565c029c8109af936c47109c",
+      "completeness_comparison_csv_sha256": "5e4c422fcb1bef233e4ab983bd00c5c8963dcb0f3320dce9b5236a15856f560b",
+      "mortality_by_score_csv_sha256": "0196ed31f3700587d628f9d8b4315254a7930a2afe6591568d4f580e24308922",
+      "strict_baseline_reproduction_passed": true,
+      "direct_estimand_crosschecks_passed": true
+    },
+    "strict_results_reproduced": {
+      "gcs_le_13": {
+        "estimate_pp_equal": true,
+        "normal_if_ci_equal": true,
+        "bootstrap_ci_equal": true,
+        "interval_status_equal": true,
+        "verdict_equal": true,
+        "pass": true
+      },
+      "gcs_lt_15_sensitivity": {
+        "estimate_pp_equal": true,
+        "normal_if_ci_equal": true,
+        "bootstrap_ci_equal": true,
+        "interval_status_equal": true,
+        "verdict_equal": true,
+        "pass": true
+      }
+    },
+    "unit_repair_outcome_flow": {
+      "primary": {
+        "admissions": 218,
+        "patients": 210,
+        "outcome_observed": 218,
+        "outcome_missing": 0,
+        "icu_mcu_discharge_deaths": 65,
+        "icu_mcu_discharge_deaths_pct": 29.82
+      },
+      "secondary_only": {
+        "admissions": 53,
+        "patients": 53,
+        "outcome_observed": 53,
+        "outcome_missing": 0,
+        "icu_mcu_discharge_deaths": 25,
+        "icu_mcu_discharge_deaths_pct": 47.17
+      }
+    },
+    "audit_verdicts": {
+      "strict_reference": {
+        "gcs_le_13": "interval withheld: too_few_distinct_patients_per_score_definition_cell",
+        "gcs_lt_15_sensitivity": "estimable"
+      },
+      "dictionary_unit_repair": {
+        "gcs_le_13": "interval withheld: too_few_distinct_patients_per_score_definition_cell",
+        "gcs_lt_15_sensitivity": "estimable"
+      }
+    },
+    "direct_estimand_crosschecks": {
+      "strict_reference": {
+        "gcs_le_13": {
+          "estimator": "work/v2/estimands.py::direct_contrast",
+          "estimate_pp": 15.018818718740167,
+          "numerical_cluster_se_pp": 8.576385299265494,
+          "audit_reported_estimate_pp": 15.02,
+          "audit_reported_se_pp": 8.58,
+          "estimate_matches_audit_at_reported_precision": true,
+          "se_matches_audit_at_reported_precision": true,
+          "difference_from_audit_estimate_pp": -0.0011812812598321898,
+          "n_records_on_common_support": 180,
+          "n_supported_patients": 177,
+          "n_inference_clusters": 178,
+          "common_support_share": 0.994475138121547,
+          "crosscheck_passed": true
+        },
+        "gcs_lt_15_sensitivity": {
+          "estimator": "work/v2/estimands.py::direct_contrast",
+          "estimate_pp": 14.072250723493818,
+          "numerical_cluster_se_pp": 8.663020054000254,
+          "audit_reported_estimate_pp": 14.07,
+          "audit_reported_se_pp": 8.66,
+          "estimate_matches_audit_at_reported_precision": true,
+          "se_matches_audit_at_reported_precision": true,
+          "difference_from_audit_estimate_pp": 0.00225072349381783,
+          "n_records_on_common_support": 181,
+          "n_supported_patients": 178,
+          "n_inference_clusters": 178,
+          "common_support_share": 1.0,
+          "crosscheck_passed": true
+        }
+      },
+      "dictionary_unit_repair": {
+        "gcs_le_13": {
+          "estimator": "work/v2/estimands.py::direct_contrast",
+          "estimate_pp": 18.90964971864435,
+          "numerical_cluster_se_pp": 7.664944279284288,
+          "audit_reported_estimate_pp": 18.91,
+          "audit_reported_se_pp": 7.66,
+          "estimate_matches_audit_at_reported_precision": true,
+          "se_matches_audit_at_reported_precision": true,
+          "difference_from_audit_estimate_pp": -0.00035028135565084995,
+          "n_records_on_common_support": 253,
+          "n_supported_patients": 243,
+          "n_inference_clusters": 244,
+          "common_support_share": 0.9960629921259843,
+          "crosscheck_passed": true
+        },
+        "gcs_lt_15_sensitivity": {
+          "estimator": "work/v2/estimands.py::direct_contrast",
+          "estimate_pp": 18.432647729781444,
+          "numerical_cluster_se_pp": 7.774210597004649,
+          "audit_reported_estimate_pp": 18.43,
+          "audit_reported_se_pp": 7.77,
+          "estimate_matches_audit_at_reported_precision": true,
+          "se_matches_audit_at_reported_precision": true,
+          "difference_from_audit_estimate_pp": 0.002647729781443786,
+          "n_records_on_common_support": 254,
+          "n_supported_patients": 244,
+          "n_inference_clusters": 244,
+          "common_support_share": 1.0,
+          "crosscheck_passed": true
+        }
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2"
+  },
+  "privacy": {
+    "record_level_data_retained_only_on_private_F_drive": true,
+    "workspace_outputs_contain_no_record_level_rows_or_patient_identifiers": true,
+    "private_data_location": "F:/分析专用/meta_measurement_20261103/work/paperB_v2/amsterdam"
+  },
+  "private_derived_artifacts": [
+    {
+      "label": "selected numeric events before time/unit filtering",
+      "file_name": "numeric_qsofa_target_raw_before_unit_window.csv.gz",
+      "storage": "private F: drive",
+      "bytes": 29120498,
+      "sha256": "9bc54b9c3e2022a240d0335628a93cdb9394b5133e02c944f002cd3dfcc31788"
+    },
+    {
+      "label": "repaired outcome-blind ICU panel",
+      "file_name": "qsofa_sepsis_icu_dictionary_unit_repair_preoutcome.csv.gz",
+      "storage": "private F: drive",
+      "bytes": 11883,
+      "sha256": "aeaf3789ef381b2e79eb94ddccf1a1a87698dfc66d2755d63009b0b1a06eed91"
+    },
+    {
+      "label": "repaired outcome-linked ICU panel",
+      "file_name": "qsofa_sepsis_icu_dictionary_unit_repair_outcome.csv.gz",
+      "storage": "private F: drive",
+      "bytes": 12481,
+      "sha256": "6172f46ac88b26f9773fc990782c459251fdba3846a3b98ceffe230c75c2e61c"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "label": "dictionary-unit repair scan and analysis",
+      "file_name": "run_amsterdam_dictionary_unit_repair.py",
+      "storage": "workspace",
+      "bytes": 63783,
+      "sha256": "f19f720f64de089deedae957c18b4b4cfae301d3178ee0d98d75e0be898962f0"
+    },
+    {
+      "label": "dictionary-unit repair tests",
+      "file_name": "test_unit_mapping_repair.py",
+      "storage": "workspace",
+      "bytes": 4584,
+      "sha256": "7c59b9efff7b2a081dae2007180e39455e1b5c25055bcca4b1690d62cc131a23"
+    },
+    {
+      "label": "dictionary-unit repair manifest builder",
+      "file_name": "build_dictionary_unit_repair_manifest.py",
+      "storage": "workspace",
+      "bytes": 10933,
+      "sha256": "1ed6204eea7d877e5bee62ab843b3232a763384e95bbe393e46823822e2c6a2e"
+    },
+    {
+      "label": "strict-row-unit analysis implementation",
+      "file_name": "run_amsterdam_audit.py",
+      "storage": "workspace",
+      "bytes": 37416,
+      "sha256": "0eb53456101b2f101cfb9902fe25cbe87a6c21371ba58ce9ebcfaf45892ded74"
+    },
+    {
+      "label": "shared audit_v2 implementation",
+      "file_name": "cohort_definition_audit.py",
+      "storage": "workspace",
+      "bytes": 55092,
+      "sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994"
+    },
+    {
+      "label": "root direct estimand implementation",
+      "file_name": "estimands.py",
+      "storage": "workspace",
+      "bytes": 9787,
+      "sha256": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26"
+    }
+  ],
+  "public_aggregate_outputs": [
+    {
+      "label": "repaired aggregate output",
+      "file_name": "amsterdam_dictionary_unit_repair_outcome_summary.json",
+      "storage": "workspace",
+      "bytes": 34084,
+      "sha256": "a16b499ca3d004e5168ba6fb9fad376f65ee63db3dd8167d6a8212cecaa7e844"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "amsterdam_unit_repair_completeness_comparison.csv",
+      "storage": "workspace",
+      "bytes": 1001,
+      "sha256": "5e4c422fcb1bef233e4ab983bd00c5c8963dcb0f3320dce9b5236a15856f560b"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "amsterdam_unit_repair_interval_comparison.csv",
+      "storage": "workspace",
+      "bytes": 1321,
+      "sha256": "c8f4d1e954dcd47cfcdae338eddb909fc1ed0cdd4d834d0f0b910e5d64dcb406"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "amsterdam_unit_repair_intervals.csv",
+      "storage": "workspace",
+      "bytes": 1117,
+      "sha256": "d0f871503a44c95a608a466d6bd2c83c9f0a7d5e565c029c8109af936c47109c"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_gcs_le_13.json",
+      "storage": "workspace",
+      "bytes": 5545,
+      "sha256": "12f25a1dcea7f77065a2ef7650d4991e8a4f0620354b51bc2879f109862005aa"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_gcs_le_13.md",
+      "storage": "workspace",
+      "bytes": 3092,
+      "sha256": "5f208b6a56bf712cdc3f8359e62549c8b7644b2f6eaa20cd0c49097340fbaf54"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_gcs_le_13_per_level.csv",
+      "storage": "workspace",
+      "bytes": 545,
+      "sha256": "3823b6225c3ce6e8f36b2e7e1245515b9394b08bb7f11d0bfcfdd574887a3e3c"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_gcs_lt_15_sensitivity.json",
+      "storage": "workspace",
+      "bytes": 5396,
+      "sha256": "18f38bbcd5a7d4830e6da0b75fe4d8a09a89ff93e57db56e5a55fb4afe855500"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_gcs_lt_15_sensitivity.md",
+      "storage": "workspace",
+      "bytes": 3079,
+      "sha256": "e7e27335e8ef03331c96e88817409510689b3d3bd047bf795ee2e57d974d1a71"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_gcs_lt_15_sensitivity_per_level.csv",
+      "storage": "workspace",
+      "bytes": 521,
+      "sha256": "69d86a3c5fbe7f04f0096a2192fc8fdb34156c22ca071a4d64ac714206937fe4"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_strict_reference_gcs_le_13.json",
+      "storage": "workspace",
+      "bytes": 5537,
+      "sha256": "dbe4b0255f3550c434e971a6ed0cd0efb5177e92b85892ff5d098576ed212f28"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "audit_strict_reference_gcs_lt_15_sensitivity.json",
+      "storage": "workspace",
+      "bytes": 5395,
+      "sha256": "58c2cbcbac95361b44532cce391ca10b374c620b3f1cfebc8208170c14c5ffaa"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "mortality_by_qsofa_score_repaired.csv",
+      "storage": "workspace",
+      "bytes": 229,
+      "sha256": "0196ed31f3700587d628f9d8b4315254a7930a2afe6591568d4f580e24308922"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "outcome_run_marker.json",
+      "storage": "workspace",
+      "bytes": 881,
+      "sha256": "ae582b7ba2a0dd43d3ced847189371d28b318025203b5bd85d21d4c473a190c4"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "preoutcome_repair_validation.json",
+      "storage": "workspace",
+      "bytes": 33262,
+      "sha256": "7dec66460886102f9685e9e88a4a18973185591fdba82787139197f855229f15"
+    },
+    {
+      "label": "repaired aggregate output",
+      "file_name": "strict_reconstruction_failure.json",
+      "storage": "workspace",
+      "bytes": 129,
+      "sha256": "8cdc887fa9343467b09d15b066d81a8d06d5cce788c37c83531fb1e340fbb148"
+    }
+  ]
+}

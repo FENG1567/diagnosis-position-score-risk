@@ -1,0 +1,17 @@
+database,disease,stage,estimand,n_input_records,n_shared_records,n_admissions,n_patients,delta_w_pp,support_share
+eICU-CRD,sepsis,A v1 original ICU-stay records and original score,"Delta_w weighted summary, version-diagnostic point estimate",27105,27105,24625,22304,1.7636050476617482,1.0
+eICU-CRD,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,"Delta_w weighted summary, version-diagnostic point estimate",23677,23677,23677,21495,1.8434058547956065,1.0
+eICU-CRD,sepsis,C B with all required stored fields observed,"Delta_w weighted summary, version-diagnostic point estimate",22507,22507,22507,20485,1.3647306390398726,1.0
+eICU-CRD,sepsis,D C with canonical threshold and urea conversion on stored fields,"Delta_w weighted summary, version-diagnostic point estimate",22507,22507,22507,20485,1.1867520452431386,1.0
+eICU-CRD,sepsis,"E matched records, canonical stored-field score and original group","Delta_w weighted summary, version-diagnostic point estimate",15833,15833,15833,14560,0.17184479451694917,1.0
+eICU-CRD,sepsis,"F matched records, revised source score and original group","Delta_w weighted summary, version-diagnostic point estimate",15833,15833,15833,14560,0.371533021445332,1.0
+eICU-CRD,sepsis,"G matched records, revised source score and admission-level group","Delta_w weighted summary, version-diagnostic point estimate",15833,15833,15833,14560,0.0462333263418018,1.0
+eICU-CRD,sepsis,"H revised full admission target, complete score and known outcome","Delta_w weighted summary, version-diagnostic point estimate",16576,16576,16576,15217,0.1273480523914114,1.0
+eICU-CRD,pneumonia,A v1 original ICU-stay records and original score,"Delta_w weighted summary, version-diagnostic point estimate",21163,21163,19262,17621,3.282317428302112,1.0
+eICU-CRD,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,"Delta_w weighted summary, version-diagnostic point estimate",18331,18331,18331,16799,3.510644611306732,1.0
+eICU-CRD,pneumonia,C B with all required stored fields observed,"Delta_w weighted summary, version-diagnostic point estimate",14214,14214,14214,13201,3.8221117164060425,1.0
+eICU-CRD,pneumonia,D C with canonical threshold and urea conversion on stored fields,"Delta_w weighted summary, version-diagnostic point estimate",14214,14214,14214,13201,3.8221117164060425,1.0
+eICU-CRD,pneumonia,"E matched records, canonical stored-field score and original group","Delta_w weighted summary, version-diagnostic point estimate",9591,9591,9591,9012,3.78697443471546,1.0
+eICU-CRD,pneumonia,"F matched records, revised source score and original group","Delta_w weighted summary, version-diagnostic point estimate",9591,9591,9591,9012,3.63782102094476,1.0
+eICU-CRD,pneumonia,"G matched records, revised source score and admission-level group","Delta_w weighted summary, version-diagnostic point estimate",9591,9591,9591,9012,3.372729274672559,1.0
+eICU-CRD,pneumonia,"H revised full admission target, complete score and known outcome","Delta_w weighted summary, version-diagnostic point estimate",11481,11481,11481,10724,3.698218842732749,1.0

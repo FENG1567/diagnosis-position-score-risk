@@ -1,0 +1,49 @@
+﻿Database,Condition,Group,Diagnosis label,Records,Denominator,Percent
+eICU,sepsis,primary,cardiovascular / shock / hypotension / sepsis,3597,10467,34.4
+eICU,sepsis,primary,cardiovascular / shock / hypotension / sepsis / severe,2471,10467,23.6
+eICU,sepsis,primary,cardiovascular / shock / hypotension / septic shock,1943,10467,18.6
+eICU,sepsis,primary,infectious diseases / systemic/other infections / sepsis,886,10467,8.5
+eICU,sepsis,primary,infectious diseases / systemic/other infections / sepsis / severe,786,10467,7.5
+eICU,sepsis,primary,No qualifying priority or sequence-one diagnosis,0,10467,0.0
+eICU,sepsis,never-primary,pulmonary / respiratory failure / acute respiratory failure,458,6109,7.5
+eICU,sepsis,never-primary,pulmonary / pulmonary infections / pneumonia,150,6109,2.5
+eICU,sepsis,never-primary,cardiovascular / cardiac arrest / cardiac arrest,134,6109,2.2
+eICU,sepsis,never-primary,pulmonary / respiratory failure / acute respiratory distress,114,6109,1.9
+eICU,sepsis,never-primary,neurologic / altered mental status / pain / change in mental status,95,6109,1.6
+eICU,sepsis,never-primary,No qualifying priority or sequence-one diagnosis,2856,6109,46.8
+eICU,pneumonia,primary,pulmonary / pulmonary infections / pneumonia,1523,2645,57.6
+eICU,pneumonia,primary,pulmonary / pulmonary infections / pneumonia / community-acquired,278,2645,10.5
+eICU,pneumonia,primary,pulmonary / pulmonary infections / pneumonia / aspiration,233,2645,8.8
+eICU,pneumonia,primary,pulmonary / pulmonary infections / pneumonia / hospital acquired (not ventilator-associated),168,2645,6.4
+eICU,pneumonia,primary,pulmonary / respiratory failure / acute respiratory failure,141,2645,5.3
+eICU,pneumonia,primary,No qualifying priority or sequence-one diagnosis,0,2645,0.0
+eICU,pneumonia,never-primary,pulmonary / respiratory failure / acute respiratory failure,1181,8836,13.4
+eICU,pneumonia,never-primary,cardiovascular / shock / hypotension / sepsis,927,8836,10.5
+eICU,pneumonia,never-primary,cardiovascular / shock / hypotension / sepsis / severe,786,8836,8.9
+eICU,pneumonia,never-primary,cardiovascular / shock / hypotension / septic shock,557,8836,6.3
+eICU,pneumonia,never-primary,infectious diseases / systemic/other infections / sepsis,318,8836,3.6
+eICU,pneumonia,never-primary,No qualifying priority or sequence-one diagnosis,2015,8836,22.8
+MIMIC-IV,sepsis,primary,"Sepsis, unspecified organism",2065,6679,30.9
+MIMIC-IV,sepsis,primary,Unspecified septicemia,1754,6679,26.3
+MIMIC-IV,sepsis,primary,Sepsis due to Escherichia coli [E. coli],433,6679,6.5
+MIMIC-IV,sepsis,primary,Other specified sepsis,384,6679,5.7
+MIMIC-IV,sepsis,primary,Septicemia due to escherichia coli [E. coli],363,6679,5.4
+MIMIC-IV,sepsis,primary,No qualifying priority or sequence-one diagnosis,0,6679,0.0
+MIMIC-IV,sepsis,never-primary,"Bloodstream infection due to central venous catheter, initial encounter",87,4125,2.1
+MIMIC-IV,sepsis,never-primary,Other postoperative infection,83,4125,2.0
+MIMIC-IV,sepsis,never-primary,COVID-19,77,4125,1.9
+MIMIC-IV,sepsis,never-primary,"Infection and inflammatory reaction due to other cardiac and vascular devices, implants and grafts, initial encounter",66,4125,1.6
+MIMIC-IV,sepsis,never-primary,Other and unspecified infection due to central venous catheter,57,4125,1.4
+MIMIC-IV,sepsis,never-primary,No qualifying priority or sequence-one diagnosis,0,4125,0.0
+MIMIC-IV,pneumonia,primary,"Pneumonia, organism unspecified",504,1640,30.7
+MIMIC-IV,pneumonia,primary,Pneumonitis due to inhalation of food or vomitus,359,1640,21.9
+MIMIC-IV,pneumonia,primary,"Pneumonia, unspecified organism",214,1640,13.0
+MIMIC-IV,pneumonia,primary,Pneumonitis due to inhalation of food and vomit,210,1640,12.8
+MIMIC-IV,pneumonia,primary,"Bacterial pneumonia, unspecified",78,1640,4.8
+MIMIC-IV,pneumonia,primary,No qualifying priority or sequence-one diagnosis,0,1640,0.0
+MIMIC-IV,pneumonia,never-primary,"Sepsis, unspecified organism",998,10862,9.2
+MIMIC-IV,pneumonia,never-primary,Unspecified septicemia,830,10862,7.6
+MIMIC-IV,pneumonia,never-primary,COVID-19,361,10862,3.3
+MIMIC-IV,pneumonia,never-primary,Acute respiratory failure,206,10862,1.9
+MIMIC-IV,pneumonia,never-primary,Other specified sepsis,186,10862,1.7
+MIMIC-IV,pneumonia,never-primary,No qualifying priority or sequence-one diagnosis,0,10862,0.0

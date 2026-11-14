@@ -1,0 +1,16 @@
+{
+  "analysis_config_sha256": "382ec85ed8331205342530e855791e4182e5cbbc99949ff533839537118c84ef",
+  "freeze_manifest_sha256": "cfc7455398be422c23910b199252fb6a5e0476745f0bf913aff82ada5176ae0b",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "pandas": "2.3.3",
+  "numpy": "2.5.2",
+  "main_panel": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+  "ed_directory": "D:\\数据库集合\\mimic数据\\mimic-iv-ed-2.2\\ed",
+  "public_aggregate_outputs_only": true,
+  "private_row_derivatives": [
+    "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\ed_timing\\run_r02\\admission_ed_timing_flags_private.csv.gz",
+    "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\ed_timing\\run_r02\\linked_ed_episodes_private.csv.gz"
+  ],
+  "estimand": "Delta_w record-weighted summary with each cohort's observed common-support record weights",
+  "interpretation_limit": "ED diagnoses are retrospective billing codes with no entry/onset time; episode timing cannot establish prospective availability or disease onset."
+}

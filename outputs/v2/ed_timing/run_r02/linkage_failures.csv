@@ -1,0 +1,9 @@
+disease,failure,n_rows,n_distinct_stays,interpretation
+sepsis,HADM matched target main disease admission but subject_id mismatched,0,0.0,excluded from all ED-linked cohorts
+sepsis,Target main disease admissions without subject-verified ED HADM link,7691,,no ED cohort link observed; not classified as a data error
+sepsis,ED diagnosis rows without matching stay_id,0,,not used for ED code matching
+sepsis,ED diagnosis rows with stay_id but subject_id mismatch,0,,not used for ED code matching
+pneumonia,HADM matched target main disease admission but subject_id mismatched,0,0.0,excluded from all ED-linked cohorts
+pneumonia,Target main disease admissions without subject-verified ED HADM link,10099,,no ED cohort link observed; not classified as a data error
+pneumonia,ED diagnosis rows without matching stay_id,0,,not used for ED code matching
+pneumonia,ED diagnosis rows with stay_id but subject_id mismatch,0,,not used for ED code matching

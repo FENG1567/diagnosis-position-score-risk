@@ -1,0 +1,300 @@
+{
+  "schema_version": "eicu-paperb-v2.1",
+  "created_utc": "2026-11-12T13:35:18Z",
+  "python_executable": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "pandas": "2.3.3",
+  "numpy": "2.5.2",
+  "input_root": "D:\\数据库集合\\eicu数据库",
+  "input_files": {
+    "patient.csv.gz": {
+      "size_bytes": 10359850,
+      "mtime_epoch": 1786025791
+    },
+    "diagnosis.csv.gz": {
+      "size_bytes": 35218518,
+      "mtime_epoch": 1786025566
+    },
+    "admissionDx.csv.gz": {
+      "size_bytes": 7619661,
+      "mtime_epoch": 1786025464
+    },
+    "vitalPeriodic.csv.gz": {
+      "size_bytes": 1784209686,
+      "mtime_epoch": 1786026909
+    },
+    "vitalAperiodic.csv.gz": {
+      "size_bytes": 239616310,
+      "mtime_epoch": 1786026199
+    },
+    "nurseCharting.csv.gz": {
+      "size_bytes": 1729907761,
+      "mtime_epoch": 1786026499
+    },
+    "lab.csv.gz": {
+      "size_bytes": 516807180,
+      "mtime_epoch": 1786026063
+    }
+  },
+  "private_wide_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_admission_components.csv.gz",
+  "private_long_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+  "aggregate_dir": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\eicu",
+  "index_rule": "one admission per patienthealthsystemstayid; minimum unitvisitnumber; tie-break by minimum elapsed hospital time (-hospitaladmitoffset); stable patientunitstayid",
+  "observation_window": "[0, min(1440, observed index unit/hospital discharge offset)] minutes from index ICU admission",
+  "admission_outcome": "hospitaldischargestatus reconciled across all linked unit stays; conflicting or unknown statuses remain missing",
+  "cluster": "uniquepid",
+  "hospital": "hospitalid from index unit stay",
+  "diagnosis_scope": "locked primary position is full-course any Primary across all linked ICU diagnosis rows; index-ICU 0-24h sensitivity aligns each unit diagnosis via (diagnosisoffset - hospitaladmitoffset) + index_hospitaladmitoffset",
+  "first_unit_sensitivity": "same classifications restricted to index patientunitstayid",
+  "admissionDx": "APACHE ICU admission diagnosis match on index unit only; separate descriptor, not used for position or cohort eligibility",
+  "missing_components": "threshold component is missing without a valid observation; primary score is missing unless all required components are known; lower/upper scores retained",
+  "score_window_semantics": "worst valid first-day component values are combined; this is a window score, not a simultaneous single-time bedside score",
+  "qsofa_primary": "RR >=22, non-invasive SBP <=100, GCS <=13",
+  "qsofa_gcs15_sensitivity": "same components, GCS <15",
+  "curb65": "confusion adapted as GCS <15 proxy; urea >7 mmol/L; RR >=30; SBP <90 or DBP <=60; age >=65",
+  "curb65_actual_confusion": "explicit confusion/orientation labels are stored as a sensitivity if confidently classifiable; no inference from ambiguous free text",
+  "bisap4": "BUN >25 mg/dL; GCS <15; operationalized SIRS >=2; age >60; pleural effusion omitted",
+  "sirs_operationalized": "temperature <36 or >38 C, heart rate >90, respiration >20, WBC <4 or >12 x10^9/L; PaCO2/band-count criteria are not included",
+  "pancreatitis_main": "acute ICD-9 5770/ICD-10 K85 plus acute-pancreatitis text; ICD-9 577 legacy definition is sensitivity only",
+  "phenotype_notes": {
+    "heart_failure": "primary is narrow HF-specific codes/text; broad and old all-subcodes 402/404 remain sensitivity flags",
+    "copd": "primary is narrow explicit COPD/emphysema codes/text; broad and legacy 490/491/492/494/496 remain sensitivity flags",
+    "pneumonia": "primary is broad original pneumonia list, including aspiration; narrow excludes aspiration",
+    "sepsis": "primary is the previous explicit sepsis/septic code/text definition; bacteremia and T80.2 are broad sensitivity only",
+    "pancreatitis": "primary is acute 5770/K85 and acute-pancreatitis text; ICD-9 577 is legacy sensitivity only"
+  },
+  "files": {
+    "index": {
+      "hospital_admissions": 166355,
+      "index_stays_with_discharge_boundary": 166354,
+      "index_icu_stays": 166355,
+      "repeated_uniquepid_admissions": 45869,
+      "known_hospital_outcomes": 164875,
+      "conflicting_hospital_status_admissions": 0,
+      "missing_hospital_status_admissions": 1480
+    },
+    "diagnosis": {
+      "diagnosis_rows_linked": 2710672,
+      "diagnosis_rows_primary": 450108,
+      "diagnosis_rows_by_index_icu_24h": 982490,
+      "heart_failure_narrow_n": 15562,
+      "heart_failure_narrow_by24_classifiable_n": 13791,
+      "heart_failure_broad_n": 15562,
+      "heart_failure_broad_by24_classifiable_n": 13791,
+      "heart_failure_legacy_v1_n": 15562,
+      "heart_failure_legacy_v1_by24_classifiable_n": 13791,
+      "pneumonia_narrow_n": 18837,
+      "pneumonia_narrow_by24_classifiable_n": 15832,
+      "pneumonia_broad_n": 19268,
+      "pneumonia_broad_by24_classifiable_n": 16204,
+      "pneumonia_legacy_v1_n": 19268,
+      "pneumonia_legacy_v1_by24_classifiable_n": 16204,
+      "copd_narrow_n": 12643,
+      "copd_narrow_by24_classifiable_n": 11575,
+      "copd_broad_n": 13014,
+      "copd_broad_by24_classifiable_n": 11887,
+      "copd_legacy_v1_n": 12809,
+      "copd_legacy_v1_by24_classifiable_n": 11699,
+      "sepsis_narrow_n": 24664,
+      "sepsis_narrow_by24_classifiable_n": 21987,
+      "sepsis_broad_n": 24681,
+      "sepsis_broad_by24_classifiable_n": 22001,
+      "sepsis_legacy_v1_n": 24664,
+      "sepsis_legacy_v1_by24_classifiable_n": 21987,
+      "pancreatitis_narrow_n": 601,
+      "pancreatitis_narrow_by24_classifiable_n": 528,
+      "pancreatitis_broad_n": 601,
+      "pancreatitis_broad_by24_classifiable_n": 528,
+      "pancreatitis_legacy_v1_n": 1582,
+      "pancreatitis_legacy_v1_by24_classifiable_n": 1451
+    },
+    "vitals": {
+      "vitalPeriodic": {
+        "raw_rows": 146671642,
+        "index_stay_rows": 127123863,
+        "within_valid_window_rows": 39721177,
+        "elapsed_seconds": 661.66
+      },
+      "vitalAperiodic": {
+        "raw_rows": 25075074,
+        "index_stay_rows": 21960183,
+        "within_valid_window_rows": 8640552,
+        "elapsed_seconds": 103.34
+      }
+    },
+    "labs": {
+      "raw_rows": 39132531,
+      "index_stay_rows": 34154299,
+      "within_valid_window_rows": 7513540,
+      "urea_candidate_rows": 225992,
+      "urea_unit_convertible_rows": 225699,
+      "lab_names_top40": {
+        "BUN": 225961,
+        "WBC x 1000": 190918,
+        "paCO2": 120144,
+        "-bands": 12204,
+        "WBC's in urine": 4910,
+        "WBC's in cerebrospinal fluid": 597,
+        "WBC's in body fluid": 455,
+        "WBC's in pleural fluid": 83,
+        "WBC's in peritoneal fluid": 81,
+        "24 h urine urea nitrogen": 31,
+        "WBC's in pericardial fluid": 19,
+        "WBC's in synovial fluid": 17
+      },
+      "units_top40": {
+        "mg/dL": 225961,
+        "K/mcL": 190918,
+        "mm Hg": 120144,
+        "%": 12204,
+        "/HPF": 2609,
+        "/hpf": 1387,
+        "/(hpf)": 845,
+        "/cumm": 228,
+        "/cu mm": 192,
+        "/uL": 183,
+        "/mcL": 159,
+        "/cmm": 137,
+        "/mm3": 106,
+        "WBC/uL": 50,
+        "/CMM": 42,
+        " /hpf": 39,
+        "G/24HR": 31,
+        "cu mm": 31,
+        "cells/uL": 30,
+        "/CUMM": 26,
+        "Avg/hpf": 22,
+        "mm3": 21,
+        "CMM": 15,
+        "/UL": 10,
+        "/MM 3": 9,
+        "": 8,
+        "/cu. cm.": 4,
+        "WBC/HPF": 3,
+        "/mm": 2,
+        "/cu. mm": 2,
+        "per cmm": 1,
+        "MM3": 1
+      },
+      "elapsed_seconds": 260.8
+    },
+    "nurseCharting": {
+      "raw_rows": 151604232,
+      "index_stay_rows": 131758904,
+      "within_valid_window_rows": 37908186,
+      "candidate_mental_gcs_rows": 2948916,
+      "gcs_role_counts": {
+        "mental_status": 67401,
+        "total": 843604,
+        "verbal": 678206,
+        "eye": 680135,
+        "motor": 679570
+      },
+      "relevant_label_name_counts_top40": {
+        "Glasgow coma score | GCS Total": 798123,
+        "Glasgow coma score | Eyes": 680135,
+        "Glasgow coma score | Motor": 679570,
+        "Glasgow coma score | Verbal": 678206,
+        "Mental Status Assessment | Value": 67401,
+        "Score (Glasgow Coma Scale) | Value": 45481
+      },
+      "explicit_confusion_value_categories": {
+        "other_uninterpreted": 67401
+      },
+      "index_stays_with_valid_gcs": 118947,
+      "index_stays_with_confusion_sensitivity": 0,
+      "elapsed_seconds": 837.89
+    },
+    "score_coverage": {
+      "qsofa_gcs13_complete": 106008,
+      "qsofa_gcs15_complete": 106008,
+      "curb65_complete": 93642,
+      "bisap4_complete": 74025,
+      "hospital_outcome_known": 164875
+    }
+  },
+  "elapsed_seconds": 18.47,
+  "documentation": {
+    "patient": "https://eicu.mit.edu/eicutables/patient/",
+    "diagnosis": "https://eicu.mit.edu/eicutables/diagnosis/",
+    "admissionDx": "https://eicu.mit.edu/eicutables/admissiondx/",
+    "apacheApsVar": "https://eicu.mit.edu/eicutables/apacheapsvar/",
+    "vitalPeriodic": "https://eicu.mit.edu/eicutables/vitalperiodic/",
+    "vitalAperiodic": "https://eicu.mit.edu/eicutables/vitalaperiodic/",
+    "nurseCharting": "https://eicu.mit.edu/eicutables/nursecharting/",
+    "lab": "https://eicu.mit.edu/eicutables/lab/"
+  },
+  "output_policy": "patient-level deidentified analysis rows are in work/v2/eicu; outputs/v2/eicu contains aggregates and metadata only",
+  "diagnosis_priority_qa": {
+    "source_table": "D:\\数据库集合\\eicu数据库\\diagnosis.csv.gz",
+    "source_rows_scanned": 2710672,
+    "priority_counts_normalized": {
+      "major": 1119718,
+      "other": 1140846,
+      "primary": 450108
+    },
+    "recognized_priority_values": [
+      "major",
+      "other",
+      "primary"
+    ],
+    "missing_priority_rows": 0,
+    "unrecognized_priority_rows": 0,
+    "matched_disease_priority_issue_rows": {
+      "heart_failure": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "pneumonia": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "copd": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "sepsis": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "pancreatitis": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      }
+    },
+    "matched_disease_zero_basis": "Exact zero: the full diagnosis table contains no missing or unrecognized priority values; every matched disease/code-list subset therefore contains zero such rows.",
+    "by_index_24h_priority_issue_rows": {
+      "heart_failure": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "pneumonia": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "copd": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "sepsis": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      },
+      "pancreatitis": {
+        "narrow": 0,
+        "broad": 0,
+        "legacy_v1": 0
+      }
+    },
+    "grouping_rule_change_required": false
+  }
+}

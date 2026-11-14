@@ -1,0 +1,9 @@
+﻿database,disease,group,records,expected_records,match,diagnosis_linked_records,diagnosis_missing_records,pathway_counts_sum
+eICU,sepsis,primary,10467,10467,True,10467,0,10467
+eICU,sepsis,never-primary,6109,6109,True,3253,2856,6109
+eICU,pneumonia,primary,2645,2645,True,2645,0,2645
+eICU,pneumonia,never-primary,8836,8836,True,6821,2015,8836
+MIMIC-IV,sepsis,primary,6679,6679,True,6679,0,6679
+MIMIC-IV,sepsis,never-primary,4125,4125,True,4125,0,4125
+MIMIC-IV,pneumonia,primary,1640,1640,True,1640,0,1640
+MIMIC-IV,pneumonia,never-primary,10862,10862,True,10862,0,10862

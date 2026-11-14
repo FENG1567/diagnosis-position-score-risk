@@ -1,0 +1,31 @@
+{
+  "inputs": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+      "sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163"
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\incoming\\eicu_score_panel.csv.gz",
+      "sha256": "b184501fe355209424b9f640206ce8e0f9f66ee53177ff6693ec44a01ec7df77"
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\incoming\\eicu_patient.csv.gz",
+      "sha256": "2acf25f75144c5fc8a2a5b68c6741edac2dc7ca51021127f73e12f7428dc392b"
+    }
+  ],
+  "code": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\compare_versions.py",
+      "sha256": "9791473db3912d0d4cf90eae4302bc00b27fb9e4272cebc28315270e7acba39a"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\analyse_panels.py",
+      "sha256": "4841de8c31481c815b018ac5382fbe2cc3a2868d622241af822b773f6f79d768"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\estimands.py",
+      "sha256": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26"
+    }
+  ],
+  "stage_b": "joint index-stay restriction and revised disease eligibility, not a pure deduplication effect"
+}

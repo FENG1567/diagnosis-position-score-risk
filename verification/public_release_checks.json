@@ -1,0 +1,37 @@
+{
+  "version": "v1.0.0",
+  "run_date": "2026-11-15",
+  "runtime": "ubuntu-server, Python 3.12",
+  "commands": [
+    "python reproduce.py all",
+    "python reproduce.py synthetic"
+  ],
+  "main_table_cell_matches": 6,
+  "supplementary_table_cell_matches": 57,
+  "supplement_csvs_byte_equivalent_after_renumbering": 57,
+  "software_tests": "78 passed, 1 deselected; 2 subtests passed",
+  "deselected_reason": "Original Amsterdam patient-panel hash smoke requires restricted source records",
+  "figure_source_checks": {
+    "action": "figures",
+    "figure1_scientific_source_match": true,
+    "figure2_selected_s25_rows": 24,
+    "figures": [
+      "fig1_score_specific_risk",
+      "fig2_heldout_brier",
+      "figS1_audit_states"
+    ],
+    "formats": [
+      "pdf",
+      "tiff",
+      "png",
+      "svg"
+    ],
+    "figure1_rows": 20,
+    "note": "Source-issued intervals are preserved; SVG/PDF rasterization metadata and fonts can change bytes."
+  },
+  "layout_checks_pass": true,
+  "patient_level_clinical_analyses_rerun": false,
+  "complete_simulation_benchmark_rerun": false,
+  "synthetic_example_completed": true,
+  "proprietary_font_files_redistributed": false
+}

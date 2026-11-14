@@ -1,0 +1,355 @@
+{
+  "schema": "mimic-iii-bp-repair-verification-v1",
+  "status": "reaggregated_independently_reviewed_root_accepted",
+  "generated_utc": "2026-11-12T20:05:04.427608+00:00",
+  "repair": {
+    "version": "m58-mimic-iii-rebuild-1.3.0",
+    "filter_cache_schema": "mimic-iii-first-icu-filter-v3",
+    "added_identity_mappings": {
+      "220050": 220050,
+      "220051": 220051,
+      "220179": 220179,
+      "220180": 220180
+    },
+    "mimic_iii_rr_total_mapping": {
+      "224690": 220210,
+      "mimic_iv_direct_itemid": 220210
+    },
+    "source_ids_added": [
+      220050,
+      220051,
+      220179,
+      220180
+    ],
+    "source_ids_removed": [],
+    "old_index_filter_sha256": "89808879985484e91927db584538c6cefd81aaccfc9fb5f1d0e3121c826064f2",
+    "new_index_filter_sha256": "89808879985484e91927db584538c6cefd81aaccfc9fb5f1d0e3121c826064f2",
+    "old_chart_rows": 3051606,
+    "new_chart_rows": 3690642,
+    "added_chart_rows": 639036,
+    "added_source_id_counts": [
+      {
+        "source_itemid": 220050,
+        "canonical_itemid": 220050,
+        "old_canonical_channel_rows": 208034,
+        "new_canonical_channel_rows": 321743,
+        "selected_rows_from_added_source_id": 113709
+      },
+      {
+        "source_itemid": 220051,
+        "canonical_itemid": 220051,
+        "old_canonical_channel_rows": 207108,
+        "new_canonical_channel_rows": 320786,
+        "selected_rows_from_added_source_id": 113678
+      },
+      {
+        "source_itemid": 220179,
+        "canonical_itemid": 220179,
+        "old_canonical_channel_rows": 226482,
+        "new_canonical_channel_rows": 432362,
+        "selected_rows_from_added_source_id": 205880
+      },
+      {
+        "source_itemid": 220180,
+        "canonical_itemid": 220180,
+        "old_canonical_channel_rows": 225375,
+        "new_canonical_channel_rows": 431144,
+        "selected_rows_from_added_source_id": 205769
+      }
+    ],
+    "count_method": "Old and new caches validate against the same source fingerprint and index filter. CHART_IDS changed only by these four IDs, and every prior map entry is unchanged. Each added source ID maps one-to-one to its canonical channel, so the channel-row count delta equals the selected source-ID count.",
+    "source_zip": "D:\\数据库集合\\mimic3\\mimic-iii-clinical-database-1.4.zip",
+    "source_zip_size": 6620711553,
+    "source_archive_fingerprint": {
+      "zip_size": 6620711553,
+      "zip_mtime_ns": 1793781600460469500,
+      "member_count": 31,
+      "central_directory_fingerprint_sha256": "400d69d4d2e8fe135878bccd6e9e6f1828d19a490eeac80d5f051d3b9c9bdeca"
+    },
+    "chartevents_member": {
+      "zip_size": 6620711553,
+      "zip_mtime_ns": 1793781600460469500,
+      "member": "mimic-iii-clinical-database-1.4/CHARTEVENTS.csv.gz",
+      "member_crc32": "493bf56a",
+      "member_zip_size": 4287004212,
+      "member_payload_size": 4287004212
+    }
+  },
+  "panel": {
+    "old_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\reconciliation\\mimic_iii_before_mv_bp_repair\\build_state\\mimic3\\mimic_iii_v2_score_panel.csv.gz",
+    "old_sha256": "5638d6740ee80321b20d9987a925d6de3323b9765389c856ac54e3c3c98a3aaf",
+    "new_path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic3\\mimic_iii_v2_score_panel.csv.gz",
+    "new_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+    "rows": 38253,
+    "same_admission_disease_keys": true,
+    "unique_admissions": 25417,
+    "unique_patients": 19471,
+    "missing_outcomes": 0
+  },
+  "bisap_invariance": {
+    "same_panel_keys": true,
+    "fields": {
+      "bisap_bun": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 37854,
+        "nonmissing_after": 37854,
+        "missing_before": 399,
+        "missing_after": 399
+      },
+      "bisap_gcs_proxy": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 34721,
+        "nonmissing_after": 34721,
+        "missing_before": 3532,
+        "missing_after": 3532
+      },
+      "bisap_gcs_proxy_ett_as1": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 37378,
+        "nonmissing_after": 37378,
+        "missing_before": 875,
+        "missing_after": 875
+      },
+      "bisap_sirs2": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 35204,
+        "nonmissing_after": 35204,
+        "missing_before": 3049,
+        "missing_after": 3049
+      },
+      "bisap_age60": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 32467,
+        "nonmissing_after": 32467,
+        "missing_before": 5786,
+        "missing_after": 5786
+      },
+      "bisap4_lower": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_upper": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_observed_points": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_components_observed": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_components_required": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_unknown_components": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_complete": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 34999,
+        "nonmissing_after": 34999,
+        "missing_before": 3254,
+        "missing_after": 3254
+      },
+      "bisap4_ett_as1_lower": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1_upper": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1_observed_points": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1_components_observed": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1_components_required": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1_unknown_components": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      },
+      "bisap4_ett_as1_complete": {
+        "identical": true,
+        "rows": 38253,
+        "changed_values": 0,
+        "nonmissing_before": 38253,
+        "nonmissing_after": 38253,
+        "missing_before": 0,
+        "missing_after": 0
+      }
+    },
+    "primary_complete_before": 32467,
+    "primary_complete_after": 32467,
+    "ett_as1_complete_before": 34999,
+    "ett_as1_complete_after": 34999
+  },
+  "cache_validation": {
+    "valid": {
+      "chartevents": true,
+      "labevents": true
+    },
+    "chartevents_sha256": "bdff83b72cc52abb083e8794d122ddb5fe5ab6fa1e6d397cf91024947e309c89",
+    "labevents_sha256": "7c2644fdfdff56ef5c349bcf690d5bf4c917914c788c52359f7e0d4875ba6a3f"
+  },
+  "analysis": {
+    "summary_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\summary.csv",
+    "summary_sha256": "240e28bceeea23cf6ee396ef7db047754b3f42396bb2a1edeb803598a34aa887",
+    "sensitivity_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\sensitivity.csv",
+    "sensitivity_sha256": "38c2affa680068c54a9bcba255de138cc8791f6ca54f4f9b2b2820d9c5b86d8f",
+    "analysis_provenance_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\analysis_provenance.json",
+    "analysis_panel_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+    "comparison_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iii\\bp_repair_before_after.csv",
+    "comparison_sha256": "45f7ac3244045a1067c6f16954d735fa1e54e26f917d64f428cf6c19f4fda0eb",
+    "comparison_rows": 5,
+    "score_complete_counts": {
+      "qsofa": 34654,
+      "qsofa_gcs15": 34654,
+      "curb65": 34533,
+      "bisap4": 32467,
+      "qsofa_ett_as1": 37302,
+      "qsofa_gcs15_ett_as1": 37302,
+      "curb65_ett_as1": 37174,
+      "bisap4_ett_as1": 34999
+    }
+  },
+  "execution": {
+    "full_chart_source_pass": {
+      "pid": 55892,
+      "status": "completed",
+      "stdout_log": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\repair_logs\\mv_bp_repair_20261113.stdout.log",
+      "stderr_log": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\repair_logs\\mv_bp_repair_20261113.stderr.log",
+      "completion_line": "[done] rows=38,253; admissions=25,417; patients=19,471"
+    },
+    "production_cache_only_reducer": {
+      "pid": 62992,
+      "status": "completed; reused verified filtered caches",
+      "chart_rows_reused": 3690642,
+      "lab_rows_reused": 135549
+    },
+    "normal_entry_tests": {
+      "command": "python -X utf8 work/v2/mimic3/test_m58_mimic3_rebuild.py -q",
+      "exit_code": 0,
+      "passed": 7,
+      "log_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\repair_logs\\mv_bp_repair_20261113_tests.log",
+      "log_sha256": "38284e21093c9ac31f80f6d65fce8ff037f15a57ff4582f17eff2bbe20b748fb"
+    }
+  },
+  "code": {
+    "builder_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\m58_mimic3_rebuild.py",
+    "builder_sha256": "d44575773b0938ecd6137949dce68793c9586fee45099234090b86c76cee4a53",
+    "common_reducer_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic\\m58_mimic_rebuild.py",
+    "common_reducer_sha256": "538b44525e24d53d24b8ca5006f7b7a043da765c7918561b0832f0486957591c",
+    "normal_entry_test_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\test_m58_mimic3_rebuild.py",
+    "normal_entry_test_sha256": "15dc370f871a7ea824d3299c3f7cfce5731cba45781da48f800e5dd53508cad9",
+    "comparison_script_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\compare_bp_repair_before_after.py",
+    "comparison_script_sha256": "a6108aea8610e21cca5a49d8030c0adc1ac1472f60334104dd567b22e5cb7344"
+  },
+  "source_repair_gate": {
+    "pending_marker_in_analysis": false,
+    "resolved_marker_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\repair_logs\\RESOLVED_PENDING_SOURCE_REPAIR.json",
+    "resolved_marker_sha256": "59f21825c15107513f7b819f89600b48798cb7c820cb9211edcdbeda4e7cd957",
+    "independent_review_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\mimic3\\final_bp_independent_review.md",
+    "independent_review_sha256": "04cdf7b9f529bfc2357a9ee4400edfce65b1e8f3abb56de28f9815dfd985858c"
+  }
+}

@@ -1,0 +1,17 @@
+group,score_definition,admissions,strict_qsofa_complete,repaired_qsofa_complete,additional_complete,qsofa_score,strict_score_admissions,repaired_score_admissions,score_admissions_change
+primary,gcs_le_13,218,139,206,67,0,0,0,0
+primary,gcs_le_13,218,139,206,67,1,0,0,0
+primary,gcs_le_13,218,139,206,67,2,72,129,57
+primary,gcs_le_13,218,139,206,67,3,67,77,10
+primary,gcs_lt_15_sensitivity,218,139,206,67,0,0,0,0
+primary,gcs_lt_15_sensitivity,218,139,206,67,1,0,0,0
+primary,gcs_lt_15_sensitivity,218,139,206,67,2,64,107,43
+primary,gcs_lt_15_sensitivity,218,139,206,67,3,75,99,24
+secondary_only,gcs_le_13,53,42,48,6,0,0,0,0
+secondary_only,gcs_le_13,53,42,48,6,1,1,1,0
+secondary_only,gcs_le_13,53,42,48,6,2,22,28,6
+secondary_only,gcs_le_13,53,42,48,6,3,19,19,0
+secondary_only,gcs_lt_15_sensitivity,53,42,48,6,0,0,0,0
+secondary_only,gcs_lt_15_sensitivity,53,42,48,6,1,0,0,0
+secondary_only,gcs_lt_15_sensitivity,53,42,48,6,2,21,24,3
+secondary_only,gcs_lt_15_sensitivity,53,42,48,6,3,21,24,3

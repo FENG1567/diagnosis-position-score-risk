@@ -1,0 +1,7 @@
+﻿Condition / grouping,Records (patients),Landmark-classifiable / reclassified records,Δ_w summary (pp),95% patient-cluster CI,Interval status
+"sepsis — full sample, full-course diagnosis","16,576 (15,217)","14,753 / 560",0.13,"[-1.05, 1.30]",computed
+"sepsis — same classifiable subset, full-course diagnosis","14,753 (13,598)","14,753 / 560",-0.29,not computed,Withheld by policy
+"sepsis — same classifiable subset, never-primary-by-24-hours","14,753 (13,598)","14,753 / 560",0.15,not computed,Withheld by policy
+"pneumonia — full sample, full-course diagnosis","11,481 (10,724)","9,542 / 179",3.70,not computed,Withheld by policy
+"pneumonia — same classifiable subset, full-course diagnosis","9,542 (8,951)","9,542 / 179",2.92,not computed,Withheld by policy
+"pneumonia — same classifiable subset, never-primary-by-24-hours","9,542 (8,951)","9,542 / 179",3.12,not computed,Withheld by policy

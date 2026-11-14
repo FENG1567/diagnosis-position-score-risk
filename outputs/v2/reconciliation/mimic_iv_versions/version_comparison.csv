@@ -1,0 +1,17 @@
+database,disease,stage,estimand,n_input_records,n_shared_records,n_admissions,n_patients,delta_w_pp,support_share
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,"Delta_w weighted summary, version-diagnostic point estimate",17342,17342,14286,12294,8.376348612422158,1.0
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,"Delta_w weighted summary, version-diagnostic point estimate",14097,14097,14097,12136,8.86622730507876,1.0
+MIMIC-IV,sepsis,C B with all required stored fields observed,"Delta_w weighted summary, version-diagnostic point estimate",13097,13097,13097,11261,9.74986264145747,1.0
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,"Delta_w weighted summary, version-diagnostic point estimate",13097,13097,13097,11261,9.576330248770438,1.0
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group","Delta_w weighted summary, version-diagnostic point estimate",10606,10606,10606,9220,10.749127203996938,1.0
+MIMIC-IV,sepsis,"F matched records, revised source score and original group","Delta_w weighted summary, version-diagnostic point estimate",10606,10606,10606,9220,11.290246346727608,1.0
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group","Delta_w weighted summary, version-diagnostic point estimate",10606,10606,10606,9220,11.290246346727608,1.0
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome","Delta_w weighted summary, version-diagnostic point estimate",10804,10804,10804,9398,11.295813284083817,1.0
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,"Delta_w weighted summary, version-diagnostic point estimate",20718,20718,17023,14715,9.877825763814176,1.0
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,"Delta_w weighted summary, version-diagnostic point estimate",17023,17023,17023,14715,9.914968561638535,1.0
+MIMIC-IV,pneumonia,C B with all required stored fields observed,"Delta_w weighted summary, version-diagnostic point estimate",15624,15624,15624,13526,8.98242615878683,1.0
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,"Delta_w weighted summary, version-diagnostic point estimate",15624,15624,15624,13526,8.98242615878683,1.0
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group","Delta_w weighted summary, version-diagnostic point estimate",12273,12273,12273,10773,8.887386048060998,1.0
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group","Delta_w weighted summary, version-diagnostic point estimate",12273,12273,12273,10773,8.906758656537614,1.0
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group","Delta_w weighted summary, version-diagnostic point estimate",12273,12273,12273,10773,8.906758656537614,1.0
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome","Delta_w weighted summary, version-diagnostic point estimate",12502,12502,12502,10976,9.156230972275353,1.0

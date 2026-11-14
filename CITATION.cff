@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it using the metadata below."
+type: software
+title: "Diagnosis Position and Cohort-Dependent Interpretation of Score-Stratified Mortality: A Four-Database Audit Across Five Acute-Care Conditions, Including Acute Pancreatitis"
+date-released: "2026-11-15"
+version: "1.0.0"
+authors:
+  - family-names: Feng
+    given-names: Shuo
+  - family-names: Shi
+    given-names: Chao
+  - family-names: Liu
+    given-names: Tianming
+  - family-names: Ding
+    given-names: Haoran
+  - family-names: Hang
+    given-names: Fenghe
+  - family-names: Huang
+    given-names: Zhenghao
+  - family-names: Liu
+    given-names: Liwei
+    email: 18940835066@163.com
+abstract: >-
+  Code and author-created aggregate materials for reproducing the audit's
+  tables and figures. The public package does not contain patient-level data.
+keywords:
+  - diagnosis position
+  - mortality risk
+  - clinical epidemiology
+  - reproducibility
+repository-code: "https://github.com/FENG1567/diagnosis-position-score-risk"
+url: "https://github.com/FENG1567/diagnosis-position-score-risk/releases/tag/v1.0.0"
+license:
+  - MIT
+  - CC-BY-4.0
+# MIT applies to original code; CC BY 4.0 to author-created aggregate materials.
+# Third-party files retain upstream licenses. See LICENSE_SCOPE.md.

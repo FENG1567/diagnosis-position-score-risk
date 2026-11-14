@@ -1,0 +1,6 @@
+﻿group,qsofa_main,n_admissions,n_patients,icu_mcu_discharge_deaths,mortality_pct
+primary,2,129,125,30,23.26
+primary,3,77,74,30,38.96
+secondary_only,1,1,1,0,0.0
+secondary_only,2,28,28,10,35.71
+secondary_only,3,19,19,13,68.42

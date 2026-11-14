@@ -1,0 +1,10 @@
+﻿disease,analysis,eligible,complete,meds1,apache_gcs_valid,original_timed_gcs_valid
+sepsis,timed nursing GCS,24664,16576,299,23769,18352
+sepsis,timed GCS excluding meds1,24664,16502,299,23769,18352
+sepsis,APACHE valid GCS with timed fallback,24664,21568,299,23769,18352
+pneumonia,timed nursing GCS,19268,11481,299,18284,13876
+pneumonia,timed GCS excluding meds1,19268,11404,299,18284,13876
+pneumonia,APACHE valid GCS with timed fallback,19268,15142,299,18284,13876
+pancreatitis,timed nursing GCS,601,351,7,582,446
+pancreatitis,timed GCS excluding meds1,601,348,7,582,446
+pancreatitis,APACHE valid GCS with timed fallback,601,466,7,582,446

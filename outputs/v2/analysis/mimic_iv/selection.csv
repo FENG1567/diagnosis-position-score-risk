@@ -1,0 +1,11 @@
+database,disease,group,n_source,n_patients,n_score_complete,n_outcome_known,n_analyzed
+MIMIC-IV,sepsis,primary,8756,7764,6679,8756,6679
+MIMIC-IV,sepsis,never-primary,5366,5024,4125,5366,4125
+MIMIC-IV,pneumonia,primary,1936,1755,1640,1936,1640
+MIMIC-IV,pneumonia,never-primary,15087,13441,10862,15087,10862
+MIMIC-IV,pancreatitis,primary,476,440,389,476,389
+MIMIC-IV,pancreatitis,never-primary,922,881,678,922,678
+MIMIC-IV,heart failure,primary,2941,2427,2760,2941,2760
+MIMIC-IV,heart failure,never-primary,19721,15229,16514,19721,16514
+MIMIC-IV,COPD,primary,489,391,440,489,440
+MIMIC-IV,COPD,never-primary,11410,8909,9619,11410,9619

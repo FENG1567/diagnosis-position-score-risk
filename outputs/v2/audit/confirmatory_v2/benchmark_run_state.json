@@ -1,0 +1,59 @@
+{
+  "benchmark_id": "audit_refusal_rules_v2_2026-11-12",
+  "status": "complete",
+  "hashes": {
+    "config_sha256": "71855154a4afd3a5c7ee7aa9b5475cd4827bb75e8d462453cf5d1ca76afb45ca",
+    "benchmark_script_sha256": "43dc393dbd804a29c9948a9245b4125537061408f57d72a1268b603bd852eb14",
+    "audit_tool_sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994"
+  },
+  "start_timestamp_utc": "2026-11-12T13:02:29.572711+00:00",
+  "runtime": {
+    "executable": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+    "python_version_short": "3.12.5",
+    "packages": {
+      "numpy": "2.5.2",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "statsmodels": "0.14.5"
+    },
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "seed": 27112026,
+  "outer_replicates_per_design": 1000,
+  "bootstrap_replicates_per_eligible_C_dataset": 60,
+  "completed_designs": [
+    "null_balanced_iid",
+    "null_heterogeneous_iid",
+    "heterogeneous_random_weights",
+    "repeated_admissions_cross_group",
+    "unequal_cluster_sizes",
+    "near_boundary_risks",
+    "partial_structural_support",
+    "rare_common_support_holdout",
+    "few_large_clusters",
+    "no_common_support",
+    "high_icc_unbalanced_holdout"
+  ],
+  "segment_hashes": {
+    "null_balanced_iid": "62714abc169388b163ba5d5230589adf8c4ea0a8be3cbd75dd50ead12d8983fe",
+    "null_heterogeneous_iid": "962aaff9d662c836b2686ab1d7a3819834cfc5ad01b7970940b5ca82f8a6ccb2",
+    "heterogeneous_random_weights": "39e21a8173db3e834f1ec174db73fa2b9420001826e335d2521ce3c8d6017f8b",
+    "repeated_admissions_cross_group": "895fe34ac57bf7fe14546c9106605d923531201f242b3ef72c4c4f31bbcad13c",
+    "unequal_cluster_sizes": "d5d90fdcffd7932479fb38032469cd6518df24211080bdceca248aa85d7d40d7",
+    "near_boundary_risks": "73dc97dfa01198e147b05ec2a84908e6dd129a2d9e7f964fd9dbb346cdfa4127",
+    "partial_structural_support": "a0ea05ceda70529c0f660f8adffed8fa422b20c34f5c50d7838f34c5b8e5eb30",
+    "rare_common_support_holdout": "b71da4cb95ae73753fa5e995bd744e6f3ea256984c78f71ed912e12141e33b4d",
+    "few_large_clusters": "8a7cba7d659573f6225ce69e70bbc5cad9027a2811e1690fca957bc18db6ef31",
+    "no_common_support": "ec3a6b0ae3f0695dfd10f02e4ad5fedc2af0f045784ff8f769e200ad5d174b06",
+    "high_icc_unbalanced_holdout": "9f7f654169059fd1a225fbb70fad0fb546fb8af9b23860f311c38377e163bc18"
+  },
+  "current_design": null,
+  "last_completed_replicate": null,
+  "updated_timestamp_utc": "2026-11-12T13:40:26.987673+00:00",
+  "finish_timestamp_utc": "2026-11-12T13:40:30.984483+00:00"
+}

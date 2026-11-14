@@ -1,0 +1,12 @@
+{
+  "config_sha256": "cf818d9493edc7dec879ec721a273c65d0e8cde59c2b575b5428197ee4f755cf",
+  "script_sha256": "550cbfbdc03117d63eaa0b02d60ac5f3c9cb075a93bce063b1b22aaf5d469767",
+  "tool_sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994",
+  "numpy": "2.5.2",
+  "pandas": "2.3.3",
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

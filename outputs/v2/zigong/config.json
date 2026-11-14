@@ -1,0 +1,59 @@
+{
+  "diseases": {
+    "sepsis": [
+      "A40",
+      "A41",
+      "R652"
+    ],
+    "pneumonia": [
+      "J12",
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "J18",
+      "J69"
+    ],
+    "pancreatitis": [
+      "K85"
+    ],
+    "heart failure": [
+      "I50",
+      "I110",
+      "I130",
+      "I132"
+    ],
+    "COPD": [
+      "J44",
+      "J43"
+    ]
+  },
+  "narrow": {
+    "sepsis": [
+      "A41"
+    ],
+    "pneumonia": [
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17"
+    ]
+  },
+  "chart_window_hours": [
+    0,
+    24
+  ],
+  "lab_window_hours": [
+    -6,
+    24
+  ],
+  "gcs": "valid complete eye/verbal/motor on the same nursing row",
+  "qsofa_gcs_threshold": 13,
+  "endpoint": "any Dead diagnostic discharge status, missing all statuses excluded",
+  "confusion": "GCS<15 proxy",
+  "bisap": "four-item adaptation with four-criteria SIRS, no pleural effusion",
+  "unit": "one first-ICU-indexed hospital admission",
+  "diagnosis_sequence_semantics": "sequence only, principal meaning unverified"
+}

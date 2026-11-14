@@ -1,0 +1,87 @@
+﻿Database,Condition,Group,Source field,Category,Records,Denominator,Percent
+eICU,sepsis,primary,index ICU admission source,Emergency Department,6858,10467,65.5
+eICU,sepsis,primary,index ICU admission source,Floor,1643,10467,15.7
+eICU,sepsis,primary,index ICU admission source,Direct Admit,558,10467,5.3
+eICU,sepsis,primary,index ICU admission source,Operating Room,357,10467,3.4
+eICU,sepsis,primary,index ICU admission source,Acute Care/Floor,317,10467,3.0
+eICU,sepsis,primary,index ICU admission source,Other Hospital,304,10467,2.9
+eICU,sepsis,primary,index ICU admission source,Step-Down Unit (SDU),233,10467,2.2
+eICU,sepsis,primary,index ICU admission source,Recovery Room,84,10467,0.8
+eICU,sepsis,primary,index ICU admission source,Other ICU,70,10467,0.7
+eICU,sepsis,primary,index ICU admission source,PACU,31,10467,0.3
+eICU,sepsis,primary,index ICU admission source,Unknown,5,10467,0.0
+eICU,sepsis,primary,index ICU admission source,ICU,4,10467,0.0
+eICU,sepsis,primary,index ICU admission source,Observation,2,10467,0.0
+eICU,sepsis,primary,index ICU admission source,Chest Pain Center,1,10467,0.0
+eICU,sepsis,never-primary,index ICU admission source,Emergency Department,3751,6109,61.4
+eICU,sepsis,never-primary,index ICU admission source,Floor,1096,6109,17.9
+eICU,sepsis,never-primary,index ICU admission source,Operating Room,341,6109,5.6
+eICU,sepsis,never-primary,index ICU admission source,Direct Admit,295,6109,4.8
+eICU,sepsis,never-primary,index ICU admission source,Other Hospital,210,6109,3.4
+eICU,sepsis,never-primary,index ICU admission source,Step-Down Unit (SDU),155,6109,2.5
+eICU,sepsis,never-primary,index ICU admission source,Recovery Room,92,6109,1.5
+eICU,sepsis,never-primary,index ICU admission source,Acute Care/Floor,84,6109,1.4
+eICU,sepsis,never-primary,index ICU admission source,Other ICU,49,6109,0.8
+eICU,sepsis,never-primary,index ICU admission source,PACU,15,6109,0.2
+eICU,sepsis,never-primary,index ICU admission source,Unknown,10,6109,0.2
+eICU,sepsis,never-primary,index ICU admission source,ICU,7,6109,0.1
+eICU,sepsis,never-primary,index ICU admission source,Chest Pain Center,3,6109,0.0
+eICU,sepsis,never-primary,index ICU admission source,ICU to SDU,1,6109,0.0
+eICU,pneumonia,primary,index ICU admission source,Emergency Department,1639,2645,62.0
+eICU,pneumonia,primary,index ICU admission source,Floor,374,2645,14.1
+eICU,pneumonia,primary,index ICU admission source,Acute Care/Floor,218,2645,8.2
+eICU,pneumonia,primary,index ICU admission source,Direct Admit,204,2645,7.7
+eICU,pneumonia,primary,index ICU admission source,Step-Down Unit (SDU),76,2645,2.9
+eICU,pneumonia,primary,index ICU admission source,Other Hospital,59,2645,2.2
+eICU,pneumonia,primary,index ICU admission source,Operating Room,43,2645,1.6
+eICU,pneumonia,primary,index ICU admission source,Other ICU,17,2645,0.6
+eICU,pneumonia,primary,index ICU admission source,Recovery Room,7,2645,0.3
+eICU,pneumonia,primary,index ICU admission source,ICU,4,2645,0.2
+eICU,pneumonia,primary,index ICU admission source,Unknown,2,2645,0.1
+eICU,pneumonia,primary,index ICU admission source,PACU,1,2645,0.0
+eICU,pneumonia,primary,index ICU admission source,Chest Pain Center,1,2645,0.0
+eICU,pneumonia,never-primary,index ICU admission source,Emergency Department,5486,8836,62.1
+eICU,pneumonia,never-primary,index ICU admission source,Floor,1584,8836,17.9
+eICU,pneumonia,never-primary,index ICU admission source,Direct Admit,543,8836,6.1
+eICU,pneumonia,never-primary,index ICU admission source,Other Hospital,334,8836,3.8
+eICU,pneumonia,never-primary,index ICU admission source,Operating Room,259,8836,2.9
+eICU,pneumonia,never-primary,index ICU admission source,Acute Care/Floor,245,8836,2.8
+eICU,pneumonia,never-primary,index ICU admission source,Step-Down Unit (SDU),213,8836,2.4
+eICU,pneumonia,never-primary,index ICU admission source,Recovery Room,77,8836,0.9
+eICU,pneumonia,never-primary,index ICU admission source,Other ICU,56,8836,0.6
+eICU,pneumonia,never-primary,index ICU admission source,PACU,14,8836,0.2
+eICU,pneumonia,never-primary,index ICU admission source,Chest Pain Center,10,8836,0.1
+eICU,pneumonia,never-primary,index ICU admission source,Unknown,7,8836,0.1
+eICU,pneumonia,never-primary,index ICU admission source,ICU,6,8836,0.1
+eICU,pneumonia,never-primary,index ICU admission source,ICU to SDU,2,8836,0.0
+MIMIC-IV,sepsis,primary,hospital admission type,EW EMER.,4574,6679,68.5
+MIMIC-IV,sepsis,primary,hospital admission type,URGENT,1039,6679,15.6
+MIMIC-IV,sepsis,primary,hospital admission type,OBSERVATION ADMIT,961,6679,14.4
+MIMIC-IV,sepsis,primary,hospital admission type,DIRECT EMER.,99,6679,1.5
+MIMIC-IV,sepsis,primary,hospital admission type,ELECTIVE,2,6679,0.0
+MIMIC-IV,sepsis,primary,hospital admission type,DIRECT OBSERVATION,2,6679,0.0
+MIMIC-IV,sepsis,primary,hospital admission type,AMBULATORY OBSERVATION,1,6679,0.0
+MIMIC-IV,sepsis,primary,hospital admission type,EU OBSERVATION,1,6679,0.0
+MIMIC-IV,sepsis,never-primary,hospital admission type,EW EMER.,2089,4125,50.6
+MIMIC-IV,sepsis,never-primary,hospital admission type,OBSERVATION ADMIT,851,4125,20.6
+MIMIC-IV,sepsis,never-primary,hospital admission type,URGENT,788,4125,19.1
+MIMIC-IV,sepsis,never-primary,hospital admission type,DIRECT EMER.,183,4125,4.4
+MIMIC-IV,sepsis,never-primary,hospital admission type,SURGICAL SAME DAY ADMISSION,156,4125,3.8
+MIMIC-IV,sepsis,never-primary,hospital admission type,ELECTIVE,57,4125,1.4
+MIMIC-IV,sepsis,never-primary,hospital admission type,EU OBSERVATION,1,4125,0.0
+MIMIC-IV,pneumonia,primary,hospital admission type,EW EMER.,1234,1640,75.2
+MIMIC-IV,pneumonia,primary,hospital admission type,OBSERVATION ADMIT,180,1640,11.0
+MIMIC-IV,pneumonia,primary,hospital admission type,URGENT,178,1640,10.9
+MIMIC-IV,pneumonia,primary,hospital admission type,DIRECT EMER.,42,1640,2.6
+MIMIC-IV,pneumonia,primary,hospital admission type,ELECTIVE,3,1640,0.2
+MIMIC-IV,pneumonia,primary,hospital admission type,EU OBSERVATION,2,1640,0.1
+MIMIC-IV,pneumonia,primary,hospital admission type,SURGICAL SAME DAY ADMISSION,1,1640,0.1
+MIMIC-IV,pneumonia,never-primary,hospital admission type,EW EMER.,6350,10862,58.5
+MIMIC-IV,pneumonia,never-primary,hospital admission type,URGENT,1852,10862,17.1
+MIMIC-IV,pneumonia,never-primary,hospital admission type,OBSERVATION ADMIT,1843,10862,17.0
+MIMIC-IV,pneumonia,never-primary,hospital admission type,SURGICAL SAME DAY ADMISSION,381,10862,3.5
+MIMIC-IV,pneumonia,never-primary,hospital admission type,DIRECT EMER.,322,10862,3.0
+MIMIC-IV,pneumonia,never-primary,hospital admission type,ELECTIVE,105,10862,1.0
+MIMIC-IV,pneumonia,never-primary,hospital admission type,EU OBSERVATION,6,10862,0.1
+MIMIC-IV,pneumonia,never-primary,hospital admission type,DIRECT OBSERVATION,2,10862,0.0
+MIMIC-IV,pneumonia,never-primary,hospital admission type,AMBULATORY OBSERVATION,1,10862,0.0

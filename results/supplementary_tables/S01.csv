@@ -1,0 +1,119 @@
+﻿Database,Condition,Row type,Group / analysis,Records / source n,Patients,Score complete,Outcome known,Analyzed,Δ_w (pp),CI lower (pp),CI upper (pp),Interval status,Selection rule / estimand
+eICU-CRD,sepsis,Eligibility flow,primary,"16,101","14,878","10,564","15,931","10,467",,,,,
+eICU-CRD,sepsis,Eligibility flow,never-primary,"8,563","8,204","6,166","8,478","6,109",,,,,
+eICU-CRD,pneumonia,Eligibility flow,primary,"4,955","4,737","2,684","4,876","2,645",,,,,
+eICU-CRD,pneumonia,Eligibility flow,never-primary,"14,313","13,360","8,928","14,166","8,836",,,,,
+eICU-CRD,pancreatitis,Eligibility flow,primary,255,247,154,254,153,,,,,
+eICU-CRD,pancreatitis,Eligibility flow,never-primary,346,340,202,342,198,,,,,
+eICU-CRD,heart failure,Eligibility flow,primary,"4,507","4,173","2,568","4,472","2,548",,,,,
+eICU-CRD,heart failure,Eligibility flow,never-primary,"11,055","10,073","7,073","10,919","6,992",,,,,
+eICU-CRD,COPD,Eligibility flow,primary,"2,617","2,344","1,550","2,598","1,541",,,,,
+eICU-CRD,COPD,Eligibility flow,never-primary,"10,026","8,756","6,218","9,927","6,162",,,,,
+eICU-CRD,sepsis,Sensitivity,one record per patient,"15,217","15,217",,,,-0.10,-1.34,1.14,computed,one admission per patient selected by prespecified hash
+eICU-CRD,sepsis,Sensitivity,patient-weighted supported-admission sensitivity,"16,576","15,217",,,,-0.01,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+eICU-CRD,sepsis,Sensitivity,qsofa_gcs15,"16,576","15,217",,,,0.24,—,—,not computed (degenerate_outcome_cell),Delta_w weighted summary
+eICU-CRD,pneumonia,Sensitivity,one record per patient,"10,724","10,724",,,,3.77,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+eICU-CRD,pneumonia,Sensitivity,patient-weighted supported-admission sensitivity,"11,481","10,724",,,,3.87,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+eICU-CRD,pancreatitis,Sensitivity,one record per patient,343,343,,,,1.11,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+eICU-CRD,pancreatitis,Sensitivity,patient-weighted supported-admission sensitivity,351,343,,,,0.79,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+eICU-CRD,heart failure,Sensitivity,one record per patient,"8,611","8,611",,,,3.28,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+eICU-CRD,heart failure,Sensitivity,patient-weighted supported-admission sensitivity,"9,540","8,611",,,,3.45,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+eICU-CRD,heart failure,Sensitivity,qsofa_gcs15,"9,540","8,611",,,,3.59,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+eICU-CRD,COPD,Sensitivity,one record per patient,"6,711","6,711",,,,4.68,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+eICU-CRD,COPD,Sensitivity,patient-weighted supported-admission sensitivity,"7,703","6,711",,,,4.72,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+eICU-CRD,COPD,Sensitivity,qsofa_gcs15,"7,703","6,711",,,,4.33,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-IV,sepsis,Eligibility flow,primary,"8,756","7,764","6,679","8,756","6,679",,,,,
+MIMIC-IV,sepsis,Eligibility flow,never-primary,"5,366","5,024","4,125","5,366","4,125",,,,,
+MIMIC-IV,pneumonia,Eligibility flow,primary,"1,936","1,755","1,640","1,936","1,640",,,,,
+MIMIC-IV,pneumonia,Eligibility flow,never-primary,"15,087","13,441","10,862","15,087","10,862",,,,,
+MIMIC-IV,pancreatitis,Eligibility flow,primary,476,440,389,476,389,,,,,
+MIMIC-IV,pancreatitis,Eligibility flow,never-primary,922,881,678,922,678,,,,,
+MIMIC-IV,heart failure,Eligibility flow,primary,"2,941","2,427","2,760","2,941","2,760",,,,,
+MIMIC-IV,heart failure,Eligibility flow,never-primary,"19,721","15,229","16,514","19,721","16,514",,,,,
+MIMIC-IV,COPD,Eligibility flow,primary,489,391,440,489,440,,,,,
+MIMIC-IV,COPD,Eligibility flow,never-primary,"11,410","8,909","9,619","11,410","9,619",,,,,
+MIMIC-IV,sepsis,Sensitivity,one record per patient,"9,398","9,398",,,,11.80,9.98,13.61,computed,chronological first eligible admission
+MIMIC-IV,sepsis,Sensitivity,patient-weighted supported-admission sensitivity,"10,804","9,398",,,,12.15,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-IV,sepsis,Sensitivity,qsofa_gcs15,"10,804","9,398",,,,11.23,—,—,not computed (degenerate_outcome_cell),Delta_w weighted summary
+MIMIC-IV,sepsis,Sensitivity,qsofa_ett_as1,"13,924","11,999",,,,9.19,7.66,10.73,computed,Delta_w weighted summary
+MIMIC-IV,sepsis,Sensitivity,qsofa_gcs15_ett_as1,"13,924","11,999",,,,9.33,—,—,not computed (degenerate_outcome_cell),Delta_w weighted summary
+MIMIC-IV,pneumonia,Sensitivity,one record per patient,"10,976","10,976",,,,9.00,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-IV,pneumonia,Sensitivity,patient-weighted supported-admission sensitivity,"12,502","10,976",,,,8.87,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-IV,pneumonia,Sensitivity,curb65_ett_as1,"16,531","14,331",,,,9.71,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-IV,pancreatitis,Sensitivity,one record per patient,981,981,,,,6.95,2.69,11.20,computed,chronological first eligible admission
+MIMIC-IV,pancreatitis,Sensitivity,patient-weighted supported-admission sensitivity,"1,067",988,,,,6.38,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-IV,pancreatitis,Sensitivity,bisap4_ett_as1,"1,291","1,185",,,,6.12,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-IV,heart failure,Sensitivity,one record per patient,"14,338","14,338",,,,0.28,-1.36,1.91,computed,chronological first eligible admission
+MIMIC-IV,heart failure,Sensitivity,patient-weighted supported-admission sensitivity,"19,274","14,338",,,,-0.77,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-IV,heart failure,Sensitivity,qsofa_gcs15,"19,274","14,338",,,,0.02,—,—,not computed (degenerate_outcome_cell),Delta_w weighted summary
+MIMIC-IV,heart failure,Sensitivity,qsofa_ett_as1,"22,350","16,461",,,,0.80,-0.73,2.33,computed,Delta_w weighted summary
+MIMIC-IV,heart failure,Sensitivity,qsofa_gcs15_ett_as1,"22,350","16,461",,,,1.24,—,—,not computed (degenerate_outcome_cell),Delta_w weighted summary
+MIMIC-IV,COPD,Sensitivity,one record per patient,"7,825","7,825",,,,5.09,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-IV,COPD,Sensitivity,patient-weighted supported-admission sensitivity,"10,059","7,825",,,,5.97,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-IV,COPD,Sensitivity,qsofa_gcs15,"10,059","7,825",,,,6.27,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-IV,COPD,Sensitivity,qsofa_ett_as1,"11,747","9,001",,,,6.64,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-IV,COPD,Sensitivity,qsofa_gcs15_ett_as1,"11,747","9,001",,,,6.39,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,sepsis,Eligibility flow,primary,"3,398","3,075","2,958","3,398","2,958",,,,,
+MIMIC-III,sepsis,Eligibility flow,never-primary,"2,914","2,725","2,630","2,914","2,630",,,,,
+MIMIC-III,pneumonia,Eligibility flow,primary,"1,756","1,559","1,603","1,756","1,603",,,,,
+MIMIC-III,pneumonia,Eligibility flow,never-primary,"8,544","7,690","7,545","8,544","7,545",,,,,
+MIMIC-III,pancreatitis,Eligibility flow,primary,366,344,320,366,320,,,,,
+MIMIC-III,pancreatitis,Eligibility flow,never-primary,587,574,495,587,495,,,,,
+MIMIC-III,heart failure,Eligibility flow,primary,"1,543","1,316","1,467","1,543","1,467",,,,,
+MIMIC-III,heart failure,Eligibility flow,never-primary,"11,904","9,312","10,952","11,904","10,952",,,,,
+MIMIC-III,COPD,Eligibility flow,primary,309,244,294,309,294,,,,,
+MIMIC-III,COPD,Eligibility flow,never-primary,"5,988","4,706","5,463","5,988","5,463",,,,,
+MIMIC-III,sepsis,Sensitivity,one record per patient,"4,957","4,957",,,,9.13,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-III,sepsis,Sensitivity,patient-weighted supported-admission sensitivity,"5,588","4,957",,,,9.14,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-III,sepsis,Sensitivity,qsofa_gcs15,"5,588","4,957",,,,8.73,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,sepsis,Sensitivity,qsofa_ett_as1,"6,147","5,427",,,,8.03,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,sepsis,Sensitivity,qsofa_gcs15_ett_as1,"6,147","5,427",,,,8.17,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,pneumonia,Sensitivity,one record per patient,"7,974","7,974",,,,5.31,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-III,pneumonia,Sensitivity,patient-weighted supported-admission sensitivity,"9,148","7,974",,,,5.41,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-III,pneumonia,Sensitivity,curb65_ett_as1,"10,035","8,693",,,,6.13,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,pancreatitis,Sensitivity,one record per patient,779,779,,,,3.93,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-III,pancreatitis,Sensitivity,patient-weighted supported-admission sensitivity,815,779,,,,3.91,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-III,pancreatitis,Sensitivity,bisap4_ett_as1,891,845,,,,4.99,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,heart failure,Sensitivity,one record per patient,"9,490","9,490",,,,1.35,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-III,heart failure,Sensitivity,patient-weighted supported-admission sensitivity,"12,419","9,490",,,,0.50,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-III,heart failure,Sensitivity,qsofa_gcs15,"12,419","9,490",,,,1.32,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,heart failure,Sensitivity,qsofa_ett_as1,"13,090","9,936",,,,1.68,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,heart failure,Sensitivity,qsofa_gcs15_ett_as1,"13,090","9,936",,,,1.68,—,—,"not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,COPD,Sensitivity,one record per patient,"4,500","4,500",,,,1.06,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",chronological first eligible admission
+MIMIC-III,COPD,Sensitivity,patient-weighted supported-admission sensitivity,"5,757","4,500",,,,0.09,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+MIMIC-III,COPD,Sensitivity,qsofa_gcs15,"5,757","4,500",,,,3.50,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,COPD,Sensitivity,qsofa_ett_as1,"6,142","4,767",,,,3.23,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+MIMIC-III,COPD,Sensitivity,qsofa_gcs15_ett_as1,"6,142","4,767",,,,4.13,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,sepsis,Eligibility flow,primary,167,167,48,167,48,,,,,
+Zigong,sepsis,Eligibility flow,never-primary,374,374,90,373,89,,,,,
+Zigong,pneumonia,Eligibility flow,primary,235,235,43,234,42,,,,,
+Zigong,pneumonia,Eligibility flow,never-primary,"1,463","1,463",388,"1,463",388,,,,,
+Zigong,pancreatitis,Eligibility flow,primary,63,63,14,63,14,,,,,
+Zigong,pancreatitis,Eligibility flow,never-primary,47,47,14,47,14,,,,,
+Zigong,heart failure,Eligibility flow,primary,53,53,10,53,10,,,,,
+Zigong,heart failure,Eligibility flow,never-primary,553,553,138,552,137,,,,,
+Zigong,COPD,Eligibility flow,primary,68,68,18,68,18,,,,,
+Zigong,COPD,Eligibility flow,never-primary,523,523,146,522,145,,,,,
+Zigong,sepsis,Sensitivity,one record per patient,137,137,,,,4.80,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+Zigong,sepsis,Sensitivity,patient-weighted supported-admission sensitivity,137,137,,,,4.80,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+Zigong,sepsis,Sensitivity,qsofa_gcs15,136,136,,,,4.28,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,sepsis,Sensitivity,died_strict_status,137,137,,,,4.80,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,sepsis,Sensitivity,died_v1_timing,138,138,,,,2.55,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,pneumonia,Sensitivity,one record per patient,430,430,,,,6.33,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+Zigong,pneumonia,Sensitivity,patient-weighted supported-admission sensitivity,430,430,,,,6.33,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+Zigong,pneumonia,Sensitivity,died_strict_status,430,430,,,,6.08,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,pneumonia,Sensitivity,died_v1_timing,431,431,,,,-6.03,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,pancreatitis,Sensitivity,one record per patient,28,28,,,,-5.36,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+Zigong,pancreatitis,Sensitivity,patient-weighted supported-admission sensitivity,28,28,,,,-5.36,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+Zigong,pancreatitis,Sensitivity,died_strict_status,28,28,,,,-5.36,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,pancreatitis,Sensitivity,died_v1_timing,28,28,,,,30.71,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,heart failure,Sensitivity,one record per patient,147,147,,,,-9.36,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+Zigong,heart failure,Sensitivity,patient-weighted supported-admission sensitivity,147,147,,,,-9.36,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+Zigong,heart failure,Sensitivity,qsofa_gcs15,125,125,,,,-8.42,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,heart failure,Sensitivity,died_strict_status,147,147,,,,-10.07,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,heart failure,Sensitivity,died_v1_timing,148,148,,,,15.62,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,COPD,Sensitivity,one record per patient,146,146,,,,5.46,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",one admission per patient selected by prespecified hash
+Zigong,COPD,Sensitivity,patient-weighted supported-admission sensitivity,146,146,,,,5.46,—,—,,"Delta_w weighted summary, patient-weighted sensitivity"
+Zigong,COPD,Sensitivity,qsofa_gcs15,160,160,,,,4.95,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,COPD,Sensitivity,died_strict_status,146,146,,,,5.46,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary
+Zigong,COPD,Sensitivity,died_v1_timing,147,147,,,,13.60,—,—,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",Delta_w weighted summary

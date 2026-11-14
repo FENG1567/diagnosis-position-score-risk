@@ -1,0 +1,5 @@
+database,disease,comparison,estimand,difference_pp,numerical_se_pp,numerical_lo_pp,numerical_hi_pp,interval_status
+MIMIC-IV,sepsis,F minus E score-source repair on matched records,difference between Delta_w weighted summaries,0.54111914273067,0.10596651115703014,0.3334285972955291,0.748809688165811,descriptive paired version comparison
+MIMIC-IV,sepsis,G minus F diagnosis-scope change on matched records,difference between Delta_w weighted summaries,0.0,0.0,0.0,0.0,descriptive paired version comparison
+MIMIC-IV,pneumonia,F minus E score-source repair on matched records,difference between Delta_w weighted summaries,0.01937260847661576,0.08087900177336826,-0.1391473221047372,0.17789253905796873,descriptive paired version comparison
+MIMIC-IV,pneumonia,G minus F diagnosis-scope change on matched records,difference between Delta_w weighted summaries,0.0,0.0,0.0,0.0,descriptive paired version comparison

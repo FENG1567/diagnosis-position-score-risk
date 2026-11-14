@@ -1,0 +1,13 @@
+disease,cohort,cohort_label,hospital_group,grp,n_qualifying_ed_episodes,n_analysis_admissions_with_qualifying_episode,n_analysis_admissions_with_multiple_qualifying_episodes,max_qualifying_episodes_per_admission,analysis_unit
+sepsis,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",primary hospital billing position,0,3360,3353,7,2,one hospital admission per disease
+sepsis,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",never-primary hospital billing position,1,1049,1048,1,2,one hospital admission per disease
+sepsis,row3_ed_coded,Linked ED episode with MAIN-matching ED code,primary hospital billing position,0,944,944,0,1,one hospital admission per disease
+sepsis,row3_ed_coded,Linked ED episode with MAIN-matching ED code,never-primary hospital billing position,1,172,172,0,1,one hospital admission per disease
+sepsis,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,primary hospital billing position,0,944,944,0,1,one hospital admission per disease
+sepsis,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,never-primary hospital billing position,1,172,172,0,1,one hospital admission per disease
+pneumonia,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",primary hospital billing position,0,601,600,1,2,one hospital admission per disease
+pneumonia,row2_linked_ed_episode,"Linked ED episode, any ED diagnosis",never-primary hospital billing position,1,3653,3648,5,2,one hospital admission per disease
+pneumonia,row3_ed_coded,Linked ED episode with MAIN-matching ED code,primary hospital billing position,0,361,361,0,1,one hospital admission per disease
+pneumonia,row3_ed_coded,Linked ED episode with MAIN-matching ED code,never-primary hospital billing position,1,1026,1026,0,1,one hospital admission per disease
+pneumonia,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,primary hospital billing position,0,361,361,0,1,one hospital admission per disease
+pneumonia,row4_ed_code_ends_by_icu,MAIN-matching ED episode ends by index ICU,never-primary hospital billing position,1,1026,1026,0,1,one hospital admission per disease

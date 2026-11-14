@@ -1,0 +1,2999 @@
+{
+  "sepsis": {
+    "primary": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "sepsis",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 10467,
+        "never-principal": 6109,
+        "patients": 15217,
+        "rows": 16576,
+        "rows_before_filtering": 16576,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.09
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 0.13,
+      "observed_supported_rd_pp": 0.13,
+      "population_target_rd_pp": 0.13,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": [
+        -1.04,
+        1.13
+      ],
+      "model_rd_pp": null,
+      "delta_ci_pp": [
+        -1.05,
+        1.3
+      ],
+      "delta_se_pp": 0.6,
+      "legacy_fixed_weight_se_pp": 0.6,
+      "model_status": "not requested",
+      "interval_status": "computed",
+      "refusal_reasons": [],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 65,
+          "n_never": 24,
+          "n_primary": 41,
+          "patients_never": 24,
+          "patients_primary": 41,
+          "events_never": 2.0,
+          "events_primary": 1.0,
+          "risk_never": 8.33,
+          "risk_primary": 2.44,
+          "diff_pp": 5.89,
+          "risk_never_ci_pp": [
+            2.09,
+            27.88
+          ],
+          "risk_primary_ci_pp": [
+            0.34,
+            15.39
+          ],
+          "delta_ci_pp": [
+            -6.13,
+            17.92
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.003921332046332046
+        },
+        {
+          "level": 1.0,
+          "n": 1892,
+          "n_never": 741,
+          "n_primary": 1151,
+          "patients_never": 736,
+          "patients_primary": 1140,
+          "events_never": 43.0,
+          "events_primary": 80.0,
+          "risk_never": 5.8,
+          "risk_primary": 6.95,
+          "diff_pp": -1.15,
+          "risk_never_ci_pp": [
+            4.33,
+            7.73
+          ],
+          "risk_primary_ci_pp": [
+            5.62,
+            8.57
+          ],
+          "delta_ci_pp": [
+            -3.38,
+            1.09
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.11414092664092663
+        },
+        {
+          "level": 2.0,
+          "n": 8036,
+          "n_never": 2885,
+          "n_primary": 5151,
+          "patients_never": 2817,
+          "patients_primary": 4970,
+          "events_never": 320.0,
+          "events_primary": 618.0,
+          "risk_never": 11.09,
+          "risk_primary": 12.0,
+          "diff_pp": -0.91,
+          "risk_never_ci_pp": [
+            9.99,
+            12.29
+          ],
+          "risk_primary_ci_pp": [
+            11.14,
+            12.91
+          ],
+          "delta_ci_pp": [
+            -2.36,
+            0.55
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.4847972972972973
+        },
+        {
+          "level": 3.0,
+          "n": 6583,
+          "n_never": 2459,
+          "n_primary": 4124,
+          "patients_never": 2390,
+          "patients_primary": 3948,
+          "events_never": 737.0,
+          "events_primary": 1166.0,
+          "risk_never": 29.97,
+          "risk_primary": 28.27,
+          "diff_pp": 1.7,
+          "risk_never_ci_pp": [
+            28.19,
+            31.82
+          ],
+          "risk_primary_ci_pp": [
+            26.91,
+            29.68
+          ],
+          "delta_ci_pp": [
+            -0.58,
+            3.98
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.397140444015444
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 60,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 60
+        },
+        "status": "computed"
+      },
+      "verdict": "estimable",
+      "api": "audit_v2"
+    },
+    "one record per patient": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "sepsis",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 9578,
+        "never-principal": 5639,
+        "patients": 15217,
+        "rows": 15217,
+        "rows_before_filtering": 15217,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.0
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": -0.1,
+      "observed_supported_rd_pp": -0.1,
+      "population_target_rd_pp": -0.1,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": [
+        -1.48,
+        0.83
+      ],
+      "model_rd_pp": null,
+      "delta_ci_pp": [
+        -1.34,
+        1.14
+      ],
+      "delta_se_pp": 0.63,
+      "legacy_fixed_weight_se_pp": 0.63,
+      "model_status": "not requested",
+      "interval_status": "computed",
+      "refusal_reasons": [],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 61,
+          "n_never": 24,
+          "n_primary": 37,
+          "patients_never": 24,
+          "patients_primary": 37,
+          "events_never": 2.0,
+          "events_primary": 1.0,
+          "risk_never": 8.33,
+          "risk_primary": 2.7,
+          "diff_pp": 5.63,
+          "risk_never_ci_pp": [
+            2.09,
+            27.88
+          ],
+          "risk_primary_ci_pp": [
+            0.38,
+            16.85
+          ],
+          "delta_ci_pp": [
+            -6.6,
+            17.86
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.004008674508773083
+        },
+        {
+          "level": 1.0,
+          "n": 1757,
+          "n_never": 684,
+          "n_primary": 1073,
+          "patients_never": 684,
+          "patients_primary": 1073,
+          "events_never": 42.0,
+          "events_primary": 79.0,
+          "risk_never": 6.14,
+          "risk_primary": 7.36,
+          "diff_pp": -1.22,
+          "risk_never_ci_pp": [
+            4.57,
+            8.21
+          ],
+          "risk_primary_ci_pp": [
+            5.94,
+            9.09
+          ],
+          "delta_ci_pp": [
+            -3.61,
+            1.16
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.11546296904777552
+        },
+        {
+          "level": 2.0,
+          "n": 7407,
+          "n_never": 2672,
+          "n_primary": 4735,
+          "patients_never": 2672,
+          "patients_primary": 4735,
+          "events_never": 310.0,
+          "events_primary": 595.0,
+          "risk_never": 11.6,
+          "risk_primary": 12.57,
+          "diff_pp": -0.96,
+          "risk_never_ci_pp": [
+            10.44,
+            12.87
+          ],
+          "risk_primary_ci_pp": [
+            11.65,
+            13.54
+          ],
+          "delta_ci_pp": [
+            -2.5,
+            0.57
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.4867582309259381
+        },
+        {
+          "level": 3.0,
+          "n": 5992,
+          "n_never": 2259,
+          "n_primary": 3733,
+          "patients_never": 2259,
+          "patients_primary": 3733,
+          "events_never": 701.0,
+          "events_primary": 1112.0,
+          "risk_never": 31.03,
+          "risk_primary": 29.79,
+          "diff_pp": 1.24,
+          "risk_never_ci_pp": [
+            29.16,
+            32.97
+          ],
+          "risk_primary_ci_pp": [
+            28.34,
+            31.28
+          ],
+          "delta_ci_pp": [
+            -1.16,
+            3.65
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.3937701255175133
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 60,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 60
+        },
+        "status": "computed"
+      },
+      "verdict": "estimable",
+      "api": "audit_v2"
+    },
+    "qsofa_gcs15": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "sepsis",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 10467,
+        "never-principal": 6109,
+        "patients": 15217,
+        "rows": 16576,
+        "rows_before_filtering": 16576,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.09
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 0.24,
+      "observed_supported_rd_pp": 0.24,
+      "population_target_rd_pp": 0.24,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.61,
+      "legacy_fixed_weight_se_pp": 0.61,
+      "model_status": "not requested",
+      "interval_status": "not computed (degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 58,
+          "n_never": 21,
+          "n_primary": 37,
+          "patients_never": 21,
+          "patients_primary": 37,
+          "events_never": 1.0,
+          "events_primary": 0.0,
+          "risk_never": 4.76,
+          "risk_primary": 0.0,
+          "diff_pp": 4.76,
+          "risk_never_ci_pp": [
+            0.67,
+            27.15
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "degenerate outcome: point estimate only",
+          "delta_ci_status": "degenerate outcome: point estimate only",
+          "weight": 0.003499034749034749
+        },
+        {
+          "level": 1.0,
+          "n": 1414,
+          "n_never": 545,
+          "n_primary": 869,
+          "patients_never": 543,
+          "patients_primary": 862,
+          "events_never": 28.0,
+          "events_primary": 52.0,
+          "risk_never": 5.14,
+          "risk_primary": 5.98,
+          "diff_pp": -0.85,
+          "risk_never_ci_pp": [
+            3.57,
+            7.34
+          ],
+          "risk_primary_ci_pp": [
+            4.59,
+            7.77
+          ],
+          "delta_ci_pp": [
+            -3.28,
+            1.59
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.08530405405405406
+        },
+        {
+          "level": 2.0,
+          "n": 6497,
+          "n_never": 2369,
+          "n_primary": 4128,
+          "patients_never": 2327,
+          "patients_primary": 4019,
+          "events_never": 242.0,
+          "events_primary": 447.0,
+          "risk_never": 10.22,
+          "risk_primary": 10.83,
+          "diff_pp": -0.61,
+          "risk_never_ci_pp": [
+            9.06,
+            11.5
+          ],
+          "risk_primary_ci_pp": [
+            9.92,
+            11.82
+          ],
+          "delta_ci_pp": [
+            -2.16,
+            0.93
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.3919522200772201
+        },
+        {
+          "level": 3.0,
+          "n": 8607,
+          "n_never": 3174,
+          "n_primary": 5433,
+          "patients_never": 3074,
+          "patients_primary": 5182,
+          "events_never": 831.0,
+          "events_primary": 1366.0,
+          "risk_never": 26.18,
+          "risk_primary": 25.14,
+          "diff_pp": 1.04,
+          "risk_never_ci_pp": [
+            24.68,
+            27.74
+          ],
+          "risk_primary_ci_pp": [
+            24.0,
+            26.32
+          ],
+          "delta_ci_pp": [
+            -0.88,
+            2.96
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.5192446911196911
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: degenerate_outcome_cell",
+      "api": "audit_v2"
+    }
+  },
+  "pneumonia": {
+    "primary": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "pneumonia",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 2645,
+        "never-principal": 8836,
+        "patients": 10724,
+        "rows": 11481,
+        "rows_before_filtering": 11481,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.07
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 6,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 3.7,
+      "observed_supported_rd_pp": 3.7,
+      "population_target_rd_pp": 3.7,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.78,
+      "legacy_fixed_weight_se_pp": 0.78,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 55,
+          "n_never": 38,
+          "n_primary": 17,
+          "patients_never": 38,
+          "patients_primary": 17,
+          "events_never": 2.0,
+          "events_primary": 0.0,
+          "risk_never": 5.26,
+          "risk_primary": 0.0,
+          "diff_pp": 5.26,
+          "risk_never_ci_pp": [
+            1.32,
+            18.75
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.00479052347356502
+        },
+        {
+          "level": 1.0,
+          "n": 532,
+          "n_never": 378,
+          "n_primary": 154,
+          "patients_never": 374,
+          "patients_primary": 151,
+          "events_never": 19.0,
+          "events_primary": 5.0,
+          "risk_never": 5.03,
+          "risk_primary": 3.25,
+          "diff_pp": 1.78,
+          "risk_never_ci_pp": [
+            3.23,
+            7.75
+          ],
+          "risk_primary_ci_pp": [
+            1.36,
+            7.57
+          ],
+          "delta_ci_pp": [
+            -1.78,
+            5.34
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.04633742705339256
+        },
+        {
+          "level": 2.0,
+          "n": 1838,
+          "n_never": 1373,
+          "n_primary": 465,
+          "patients_never": 1341,
+          "patients_primary": 457,
+          "events_never": 92.0,
+          "events_primary": 31.0,
+          "risk_never": 6.7,
+          "risk_primary": 6.67,
+          "diff_pp": 0.03,
+          "risk_never_ci_pp": [
+            5.49,
+            8.15
+          ],
+          "risk_primary_ci_pp": [
+            4.73,
+            9.31
+          ],
+          "delta_ci_pp": [
+            -2.58,
+            2.65
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.1600905844438638
+        },
+        {
+          "level": 3.0,
+          "n": 3393,
+          "n_never": 2541,
+          "n_primary": 852,
+          "patients_never": 2472,
+          "patients_primary": 845,
+          "events_never": 330.0,
+          "events_primary": 81.0,
+          "risk_never": 12.99,
+          "risk_primary": 9.51,
+          "diff_pp": 3.48,
+          "risk_never_ci_pp": [
+            11.74,
+            14.35
+          ],
+          "risk_primary_ci_pp": [
+            7.71,
+            11.67
+          ],
+          "delta_ci_pp": [
+            1.12,
+            5.84
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.2955317481055657
+        },
+        {
+          "level": 4.0,
+          "n": 3753,
+          "n_never": 2984,
+          "n_primary": 769,
+          "patients_never": 2916,
+          "patients_primary": 758,
+          "events_never": 626.0,
+          "events_primary": 129.0,
+          "risk_never": 20.98,
+          "risk_primary": 16.78,
+          "diff_pp": 4.2,
+          "risk_never_ci_pp": [
+            19.55,
+            22.48
+          ],
+          "risk_primary_ci_pp": [
+            14.29,
+            19.59
+          ],
+          "delta_ci_pp": [
+            1.19,
+            7.22
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.3268879017507186
+        },
+        {
+          "level": 5.0,
+          "n": 1910,
+          "n_never": 1522,
+          "n_primary": 388,
+          "patients_never": 1494,
+          "patients_primary": 381,
+          "events_never": 473.0,
+          "events_primary": 93.0,
+          "risk_never": 31.08,
+          "risk_primary": 23.97,
+          "diff_pp": 7.11,
+          "risk_never_ci_pp": [
+            28.79,
+            33.46
+          ],
+          "risk_primary_ci_pp": [
+            19.98,
+            28.47
+          ],
+          "delta_ci_pp": [
+            2.27,
+            11.95
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.16636181517289433
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    },
+    "one record per patient": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "pneumonia",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 2466,
+        "never-principal": 8258,
+        "patients": 10724,
+        "rows": 10724,
+        "rows_before_filtering": 10724,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.0
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 6,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 3.77,
+      "observed_supported_rd_pp": 3.77,
+      "population_target_rd_pp": 3.77,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.82,
+      "legacy_fixed_weight_se_pp": 0.82,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 51,
+          "n_never": 36,
+          "n_primary": 15,
+          "patients_never": 36,
+          "patients_primary": 15,
+          "events_never": 2.0,
+          "events_primary": 0.0,
+          "risk_never": 5.56,
+          "risk_primary": 0.0,
+          "diff_pp": 5.56,
+          "risk_never_ci_pp": [
+            1.39,
+            19.67
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.0047556881760537125
+        },
+        {
+          "level": 1.0,
+          "n": 491,
+          "n_never": 352,
+          "n_primary": 139,
+          "patients_never": 352,
+          "patients_primary": 139,
+          "events_never": 19.0,
+          "events_primary": 5.0,
+          "risk_never": 5.4,
+          "risk_primary": 3.6,
+          "diff_pp": 1.8,
+          "risk_never_ci_pp": [
+            3.47,
+            8.31
+          ],
+          "risk_primary_ci_pp": [
+            1.51,
+            8.35
+          ],
+          "delta_ci_pp": [
+            -2.09,
+            5.69
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.0457851547929877
+        },
+        {
+          "level": 2.0,
+          "n": 1710,
+          "n_never": 1280,
+          "n_primary": 430,
+          "patients_never": 1280,
+          "patients_primary": 430,
+          "events_never": 91.0,
+          "events_primary": 31.0,
+          "risk_never": 7.11,
+          "risk_primary": 7.21,
+          "diff_pp": -0.1,
+          "risk_never_ci_pp": [
+            5.82,
+            8.65
+          ],
+          "risk_primary_ci_pp": [
+            5.12,
+            10.07
+          ],
+          "delta_ci_pp": [
+            -2.92,
+            2.72
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.159455427079448
+        },
+        {
+          "level": 3.0,
+          "n": 3143,
+          "n_never": 2345,
+          "n_primary": 798,
+          "patients_never": 2345,
+          "patients_primary": 798,
+          "events_never": 321.0,
+          "events_primary": 79.0,
+          "risk_never": 13.69,
+          "risk_primary": 9.9,
+          "diff_pp": 3.79,
+          "risk_never_ci_pp": [
+            12.36,
+            15.14
+          ],
+          "risk_primary_ci_pp": [
+            8.01,
+            12.17
+          ],
+          "delta_ci_pp": [
+            1.29,
+            6.28
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.2930809399477807
+        },
+        {
+          "level": 4.0,
+          "n": 3530,
+          "n_never": 2806,
+          "n_primary": 724,
+          "patients_never": 2806,
+          "patients_primary": 724,
+          "events_never": 611.0,
+          "events_primary": 127.0,
+          "risk_never": 21.77,
+          "risk_primary": 17.54,
+          "diff_pp": 4.23,
+          "risk_never_ci_pp": [
+            20.29,
+            23.34
+          ],
+          "risk_primary_ci_pp": [
+            14.94,
+            20.49
+          ],
+          "delta_ci_pp": [
+            1.07,
+            7.4
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.32916822081312946
+        },
+        {
+          "level": 5.0,
+          "n": 1799,
+          "n_never": 1439,
+          "n_primary": 360,
+          "patients_never": 1439,
+          "patients_primary": 360,
+          "events_never": 460.0,
+          "events_primary": 90.0,
+          "risk_never": 31.97,
+          "risk_primary": 25.0,
+          "diff_pp": 6.97,
+          "risk_never_ci_pp": [
+            29.61,
+            34.42
+          ],
+          "risk_primary_ci_pp": [
+            20.8,
+            29.73
+          ],
+          "delta_ci_pp": [
+            1.89,
+            12.05
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.16775456919060056
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    }
+  },
+  "pancreatitis": {
+    "primary": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "pancreatitis",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 153,
+        "never-principal": 198,
+        "patients": 343,
+        "rows": 351,
+        "rows_before_filtering": 351,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.02
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "target_levels": [
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 0.78,
+      "observed_supported_rd_pp": 0.78,
+      "population_target_rd_pp": 0.78,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 3.0,
+      "legacy_fixed_weight_se_pp": 2.98,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 1.0,
+          "n": 94,
+          "n_never": 44,
+          "n_primary": 50,
+          "patients_never": 44,
+          "patients_primary": 50,
+          "events_never": 0.0,
+          "events_primary": 0.0,
+          "risk_never": 0.0,
+          "risk_primary": 0.0,
+          "diff_pp": 0.0,
+          "risk_never_ci_pp": null,
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "degenerate outcome: point estimate only",
+          "risk_primary_ci_status": "degenerate outcome: point estimate only",
+          "delta_ci_status": "degenerate outcome: point estimate only",
+          "weight": 0.2678062678062678
+        },
+        {
+          "level": 2.0,
+          "n": 132,
+          "n_never": 69,
+          "n_primary": 63,
+          "patients_never": 69,
+          "patients_primary": 63,
+          "events_never": 4.0,
+          "events_primary": 3.0,
+          "risk_never": 5.8,
+          "risk_primary": 4.76,
+          "diff_pp": 1.04,
+          "risk_never_ci_pp": [
+            2.19,
+            14.47
+          ],
+          "risk_primary_ci_pp": [
+            1.54,
+            13.77
+          ],
+          "delta_ci_pp": [
+            -6.6,
+            8.67
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.37606837606837606
+        },
+        {
+          "level": 3.0,
+          "n": 87,
+          "n_never": 62,
+          "n_primary": 25,
+          "patients_never": 62,
+          "patients_primary": 24,
+          "events_never": 11.0,
+          "events_primary": 3.0,
+          "risk_never": 17.74,
+          "risk_primary": 12.0,
+          "diff_pp": 5.74,
+          "risk_never_ci_pp": [
+            10.1,
+            29.29
+          ],
+          "risk_primary_ci_pp": [
+            3.89,
+            31.48
+          ],
+          "delta_ci_pp": [
+            -10.17,
+            21.65
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.24786324786324787
+        },
+        {
+          "level": 4.0,
+          "n": 38,
+          "n_never": 23,
+          "n_primary": 15,
+          "patients_never": 23,
+          "patients_primary": 14,
+          "events_never": 7.0,
+          "events_primary": 6.0,
+          "risk_never": 30.43,
+          "risk_primary": 40.0,
+          "diff_pp": -9.57,
+          "risk_never_ci_pp": [
+            15.24,
+            51.57
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.10826210826210826
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    },
+    "one record per patient": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "pancreatitis",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 148,
+        "never-principal": 195,
+        "patients": 343,
+        "rows": 343,
+        "rows_before_filtering": 343,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.0
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "target_levels": [
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 1.11,
+      "observed_supported_rd_pp": 1.11,
+      "population_target_rd_pp": 1.11,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 3.1,
+      "legacy_fixed_weight_se_pp": 3.1,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 1.0,
+          "n": 91,
+          "n_never": 43,
+          "n_primary": 48,
+          "patients_never": 43,
+          "patients_primary": 48,
+          "events_never": 0.0,
+          "events_primary": 0.0,
+          "risk_never": 0.0,
+          "risk_primary": 0.0,
+          "diff_pp": 0.0,
+          "risk_never_ci_pp": null,
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "degenerate outcome: point estimate only",
+          "risk_primary_ci_status": "degenerate outcome: point estimate only",
+          "delta_ci_status": "degenerate outcome: point estimate only",
+          "weight": 0.26530612244897966
+        },
+        {
+          "level": 2.0,
+          "n": 132,
+          "n_never": 69,
+          "n_primary": 63,
+          "patients_never": 69,
+          "patients_primary": 63,
+          "events_never": 4.0,
+          "events_primary": 3.0,
+          "risk_never": 5.8,
+          "risk_primary": 4.76,
+          "diff_pp": 1.04,
+          "risk_never_ci_pp": [
+            2.19,
+            14.47
+          ],
+          "risk_primary_ci_pp": [
+            1.54,
+            13.77
+          ],
+          "delta_ci_pp": [
+            -6.6,
+            8.67
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.38483965014577265
+        },
+        {
+          "level": 3.0,
+          "n": 83,
+          "n_never": 60,
+          "n_primary": 23,
+          "patients_never": 60,
+          "patients_primary": 23,
+          "events_never": 11.0,
+          "events_primary": 3.0,
+          "risk_never": 18.33,
+          "risk_primary": 13.04,
+          "diff_pp": 5.29,
+          "risk_never_ci_pp": [
+            10.44,
+            30.17
+          ],
+          "risk_primary_ci_pp": [
+            4.26,
+            33.59
+          ],
+          "delta_ci_pp": [
+            -11.63,
+            22.21
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.24198250728862977
+        },
+        {
+          "level": 4.0,
+          "n": 37,
+          "n_never": 23,
+          "n_primary": 14,
+          "patients_never": 23,
+          "patients_primary": 14,
+          "events_never": 7.0,
+          "events_primary": 5.0,
+          "risk_never": 30.43,
+          "risk_primary": 35.71,
+          "diff_pp": -5.28,
+          "risk_never_ci_pp": [
+            15.24,
+            51.57
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.1078717201166181
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    }
+  },
+  "heart failure": {
+    "primary": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "heart failure",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 2548,
+        "never-principal": 6992,
+        "patients": 8611,
+        "rows": 9540,
+        "rows_before_filtering": 9540,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.11
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 3.38,
+      "observed_supported_rd_pp": 3.38,
+      "population_target_rd_pp": 3.38,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.73,
+      "legacy_fixed_weight_se_pp": 0.73,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 75,
+          "n_never": 57,
+          "n_primary": 18,
+          "patients_never": 57,
+          "patients_primary": 18,
+          "events_never": 1.0,
+          "events_primary": 0.0,
+          "risk_never": 1.75,
+          "risk_primary": 0.0,
+          "diff_pp": 1.75,
+          "risk_never_ci_pp": [
+            0.25,
+            11.43
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.007861635220125786
+        },
+        {
+          "level": 1.0,
+          "n": 2096,
+          "n_never": 1398,
+          "n_primary": 698,
+          "patients_never": 1362,
+          "patients_primary": 676,
+          "events_never": 73.0,
+          "events_primary": 17.0,
+          "risk_never": 5.22,
+          "risk_primary": 2.44,
+          "diff_pp": 2.79,
+          "risk_never_ci_pp": [
+            4.17,
+            6.52
+          ],
+          "risk_primary_ci_pp": [
+            1.52,
+            3.88
+          ],
+          "delta_ci_pp": [
+            1.15,
+            4.42
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.21970649895178196
+        },
+        {
+          "level": 2.0,
+          "n": 4941,
+          "n_never": 3581,
+          "n_primary": 1360,
+          "patients_never": 3412,
+          "patients_primary": 1313,
+          "events_never": 382.0,
+          "events_primary": 122.0,
+          "risk_never": 10.67,
+          "risk_primary": 8.97,
+          "diff_pp": 1.7,
+          "risk_never_ci_pp": [
+            9.7,
+            11.72
+          ],
+          "risk_primary_ci_pp": [
+            7.56,
+            10.61
+          ],
+          "delta_ci_pp": [
+            -0.13,
+            3.52
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.5179245283018868
+        },
+        {
+          "level": 3.0,
+          "n": 2428,
+          "n_never": 1956,
+          "n_primary": 472,
+          "patients_never": 1891,
+          "patients_primary": 464,
+          "events_never": 496.0,
+          "events_primary": 85.0,
+          "risk_never": 25.36,
+          "risk_primary": 18.01,
+          "diff_pp": 7.35,
+          "risk_never_ci_pp": [
+            23.47,
+            27.34
+          ],
+          "risk_primary_ci_pp": [
+            14.8,
+            21.73
+          ],
+          "delta_ci_pp": [
+            3.39,
+            11.31
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.25450733752620547
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    },
+    "one record per patient": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "heart failure",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 2248,
+        "never-principal": 6363,
+        "patients": 8611,
+        "rows": 8611,
+        "rows_before_filtering": 8611,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.0
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 3.28,
+      "observed_supported_rd_pp": 3.28,
+      "population_target_rd_pp": 3.28,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.79,
+      "legacy_fixed_weight_se_pp": 0.79,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 70,
+          "n_never": 53,
+          "n_primary": 17,
+          "patients_never": 53,
+          "patients_primary": 17,
+          "events_never": 1.0,
+          "events_primary": 0.0,
+          "risk_never": 1.89,
+          "risk_primary": 0.0,
+          "diff_pp": 1.89,
+          "risk_never_ci_pp": [
+            0.27,
+            12.21
+          ],
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.008129137150156776
+        },
+        {
+          "level": 1.0,
+          "n": 1880,
+          "n_never": 1275,
+          "n_primary": 605,
+          "patients_never": 1275,
+          "patients_primary": 605,
+          "events_never": 70.0,
+          "events_primary": 17.0,
+          "risk_never": 5.49,
+          "risk_primary": 2.81,
+          "diff_pp": 2.68,
+          "risk_never_ci_pp": [
+            4.37,
+            6.88
+          ],
+          "risk_primary_ci_pp": [
+            1.75,
+            4.47
+          ],
+          "delta_ci_pp": [
+            0.86,
+            4.5
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.21832539774706772
+        },
+        {
+          "level": 2.0,
+          "n": 4453,
+          "n_never": 3251,
+          "n_primary": 1202,
+          "patients_never": 3251,
+          "patients_primary": 1202,
+          "events_never": 361.0,
+          "events_primary": 111.0,
+          "risk_never": 11.1,
+          "risk_primary": 9.23,
+          "diff_pp": 1.87,
+          "risk_never_ci_pp": [
+            10.07,
+            12.23
+          ],
+          "risk_primary_ci_pp": [
+            7.72,
+            11.01
+          ],
+          "delta_ci_pp": [
+            -0.09,
+            3.83
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.5171292532806875
+        },
+        {
+          "level": 3.0,
+          "n": 2208,
+          "n_never": 1784,
+          "n_primary": 424,
+          "patients_never": 1784,
+          "patients_primary": 424,
+          "events_never": 464.0,
+          "events_primary": 82.0,
+          "risk_never": 26.01,
+          "risk_primary": 19.34,
+          "diff_pp": 6.67,
+          "risk_never_ci_pp": [
+            24.03,
+            28.1
+          ],
+          "risk_primary_ci_pp": [
+            15.85,
+            23.38
+          ],
+          "delta_ci_pp": [
+            2.39,
+            10.94
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.256416211822088
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    },
+    "qsofa_gcs15": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "heart failure",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 2548,
+        "never-principal": 6992,
+        "patients": 8611,
+        "rows": 9540,
+        "rows_before_filtering": 9540,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.11
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 3.59,
+      "observed_supported_rd_pp": 3.59,
+      "population_target_rd_pp": 3.59,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.72,
+      "legacy_fixed_weight_se_pp": 0.72,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 60,
+          "n_never": 45,
+          "n_primary": 15,
+          "patients_never": 45,
+          "patients_primary": 15,
+          "events_never": 0.0,
+          "events_primary": 0.0,
+          "risk_never": 0.0,
+          "risk_primary": 0.0,
+          "diff_pp": 0.0,
+          "risk_never_ci_pp": null,
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "degenerate outcome: point estimate only",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.006289308176100629
+        },
+        {
+          "level": 1.0,
+          "n": 1716,
+          "n_never": 1133,
+          "n_primary": 583,
+          "patients_never": 1112,
+          "patients_primary": 569,
+          "events_never": 55.0,
+          "events_primary": 10.0,
+          "risk_never": 4.85,
+          "risk_primary": 1.72,
+          "diff_pp": 3.14,
+          "risk_never_ci_pp": [
+            3.75,
+            6.27
+          ],
+          "risk_primary_ci_pp": [
+            0.93,
+            3.16
+          ],
+          "delta_ci_pp": [
+            1.5,
+            4.77
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.17987421383647798
+        },
+        {
+          "level": 2.0,
+          "n": 4358,
+          "n_never": 3140,
+          "n_primary": 1218,
+          "patients_never": 3005,
+          "patients_primary": 1177,
+          "events_never": 300.0,
+          "events_primary": 100.0,
+          "risk_never": 9.55,
+          "risk_primary": 8.21,
+          "diff_pp": 1.34,
+          "risk_never_ci_pp": [
+            8.57,
+            10.63
+          ],
+          "risk_primary_ci_pp": [
+            6.79,
+            9.89
+          ],
+          "delta_ci_pp": [
+            -0.51,
+            3.2
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.4568134171907757
+        },
+        {
+          "level": 3.0,
+          "n": 3406,
+          "n_never": 2674,
+          "n_primary": 732,
+          "patients_never": 2570,
+          "patients_primary": 712,
+          "events_never": 597.0,
+          "events_primary": 114.0,
+          "risk_never": 22.33,
+          "risk_primary": 15.57,
+          "diff_pp": 6.75,
+          "risk_never_ci_pp": [
+            20.79,
+            23.95
+          ],
+          "risk_primary_ci_pp": [
+            13.13,
+            18.38
+          ],
+          "delta_ci_pp": [
+            3.7,
+            9.81
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.3570230607966457
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    }
+  },
+  "COPD": {
+    "primary": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "COPD",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 1541,
+        "never-principal": 6162,
+        "patients": 6711,
+        "rows": 7703,
+        "rows_before_filtering": 7703,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.15
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 4.41,
+      "observed_supported_rd_pp": 4.41,
+      "population_target_rd_pp": 4.41,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.74,
+      "legacy_fixed_weight_se_pp": 0.74,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_records_per_score_definition_cell",
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 54,
+          "n_never": 48,
+          "n_primary": 6,
+          "patients_never": 47,
+          "patients_primary": 6,
+          "events_never": 0.0,
+          "events_primary": 0.0,
+          "risk_never": 0.0,
+          "risk_primary": 0.0,
+          "diff_pp": 0.0,
+          "risk_never_ci_pp": null,
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "degenerate outcome: point estimate only",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.007010255744515124
+        },
+        {
+          "level": 1.0,
+          "n": 1717,
+          "n_never": 1277,
+          "n_primary": 440,
+          "patients_never": 1230,
+          "patients_primary": 427,
+          "events_never": 55.0,
+          "events_primary": 10.0,
+          "risk_never": 4.31,
+          "risk_primary": 2.27,
+          "diff_pp": 2.03,
+          "risk_never_ci_pp": [
+            3.32,
+            5.57
+          ],
+          "risk_primary_ci_pp": [
+            1.23,
+            4.17
+          ],
+          "delta_ci_pp": [
+            0.25,
+            3.82
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.22290016876541607
+        },
+        {
+          "level": 2.0,
+          "n": 3744,
+          "n_never": 3024,
+          "n_primary": 720,
+          "patients_never": 2831,
+          "patients_primary": 687,
+          "events_never": 257.0,
+          "events_primary": 36.0,
+          "risk_never": 8.5,
+          "risk_primary": 5.0,
+          "diff_pp": 3.5,
+          "risk_never_ci_pp": [
+            7.56,
+            9.55
+          ],
+          "risk_primary_ci_pp": [
+            3.63,
+            6.85
+          ],
+          "delta_ci_pp": [
+            1.63,
+            5.37
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.4860443982863819
+        },
+        {
+          "level": 3.0,
+          "n": 2188,
+          "n_never": 1813,
+          "n_primary": 375,
+          "patients_never": 1731,
+          "patients_primary": 368,
+          "events_never": 352.0,
+          "events_primary": 43.0,
+          "risk_never": 19.42,
+          "risk_primary": 11.47,
+          "diff_pp": 7.95,
+          "risk_never_ci_pp": [
+            17.65,
+            21.31
+          ],
+          "risk_primary_ci_pp": [
+            8.62,
+            15.1
+          ],
+          "delta_ci_pp": [
+            4.25,
+            11.65
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.2840451772036869
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    },
+    "one record per patient": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "COPD",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 1308,
+        "never-principal": 5403,
+        "patients": 6711,
+        "rows": 6711,
+        "rows_before_filtering": 6711,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.0
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 4.68,
+      "observed_supported_rd_pp": 4.68,
+      "population_target_rd_pp": 4.68,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.82,
+      "legacy_fixed_weight_se_pp": 0.82,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_records_per_score_definition_cell",
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 48,
+          "n_never": 43,
+          "n_primary": 5,
+          "patients_never": 43,
+          "patients_primary": 5,
+          "events_never": 0.0,
+          "events_primary": 0.0,
+          "risk_never": 0.0,
+          "risk_primary": 0.0,
+          "diff_pp": 0.0,
+          "risk_never_ci_pp": null,
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "degenerate outcome: point estimate only",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.007152436298614216
+        },
+        {
+          "level": 1.0,
+          "n": 1494,
+          "n_never": 1124,
+          "n_primary": 370,
+          "patients_never": 1124,
+          "patients_primary": 370,
+          "events_never": 51.0,
+          "events_primary": 10.0,
+          "risk_never": 4.54,
+          "risk_primary": 2.7,
+          "diff_pp": 1.83,
+          "risk_never_ci_pp": [
+            3.46,
+            5.92
+          ],
+          "risk_primary_ci_pp": [
+            1.46,
+            4.95
+          ],
+          "delta_ci_pp": [
+            -0.22,
+            3.89
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.22261957979436744
+        },
+        {
+          "level": 2.0,
+          "n": 3264,
+          "n_never": 2650,
+          "n_primary": 614,
+          "patients_never": 2650,
+          "patients_primary": 614,
+          "events_never": 238.0,
+          "events_primary": 32.0,
+          "risk_never": 8.98,
+          "risk_primary": 5.21,
+          "diff_pp": 3.77,
+          "risk_never_ci_pp": [
+            7.95,
+            10.13
+          ],
+          "risk_primary_ci_pp": [
+            3.71,
+            7.28
+          ],
+          "delta_ci_pp": [
+            1.7,
+            5.84
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.48636566830576666
+        },
+        {
+          "level": 3.0,
+          "n": 1905,
+          "n_never": 1586,
+          "n_primary": 319,
+          "patients_never": 1586,
+          "patients_primary": 319,
+          "events_never": 330.0,
+          "events_primary": 39.0,
+          "risk_never": 20.81,
+          "risk_primary": 12.23,
+          "diff_pp": 8.58,
+          "risk_never_ci_pp": [
+            18.88,
+            22.88
+          ],
+          "risk_primary_ci_pp": [
+            9.06,
+            16.3
+          ],
+          "delta_ci_pp": [
+            4.47,
+            12.69
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.2838623156012517
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    },
+    "qsofa_gcs15": {
+      "tool_version": "0.3.0-v2",
+      "dataset": "eICU-CRD",
+      "disease": "COPD",
+      "instrument": "score",
+      "metadata": {
+        "diagnosis_semantics": "unspecified",
+        "primary_definition_value": "0",
+        "never_definition_values_or_rule": "1",
+        "score_window": "unspecified",
+        "outcome_window": "unspecified",
+        "row_unit": "admission",
+        "cluster_unit": "patient",
+        "weighting_unit": "record",
+        "missingness_assumption": "unknown",
+        "missing_data_handling": "complete-case: drop missing score, outcome, or definition group",
+        "missing_counts_before_filtering": {
+          "patient_id": 0,
+          "score": 0,
+          "outcome": 0,
+          "definition": 0,
+          "unclassified_definition": 0
+        },
+        "support_definition": "observed common support; no extrapolation",
+        "expected_support_levels": null
+      },
+      "rules": {
+        "min_records_per_score_level": {
+          "value": 20,
+          "unit": "records"
+        },
+        "min_records_per_score_definition_cell": {
+          "value": 10,
+          "unit": "records"
+        },
+        "min_distinct_patients_total": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "min_distinct_patients_per_score_definition_cell": {
+          "value": 20,
+          "unit": "patients"
+        },
+        "nondegenerate_outcome_per_score_definition_cell": true,
+        "min_events_per_definition_in_bootstrap": {
+          "value": 10,
+          "unit": "events"
+        },
+        "bootstrap_replicates": 60,
+        "min_usable_bootstrap_replicates": 20
+      },
+      "input_problems": [],
+      "flow": {
+        "principal": 1541,
+        "never-principal": 6162,
+        "patients": 6711,
+        "rows": 7703,
+        "rows_before_filtering": 7703,
+        "rows_dropped_complete_case_or_unclassified": 0,
+        "unclassified_definition_rows": 0,
+        "duplicate_rows_per_patient": 1.15
+      },
+      "common_support": {
+        "share_pct": 100.0,
+        "n_levels": 4,
+        "observed_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "target_levels": [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "share_observed_pct": 100.0
+      },
+      "stratified_rd_pp": 4.33,
+      "observed_supported_rd_pp": 4.33,
+      "population_target_rd_pp": 4.33,
+      "estimate_label": "observed common support",
+      "target_support_status": "complete",
+      "stratified_rd_ci_pp": null,
+      "model_rd_pp": null,
+      "delta_ci_pp": null,
+      "delta_se_pp": 0.74,
+      "legacy_fixed_weight_se_pp": 0.74,
+      "model_status": "not requested",
+      "interval_status": "not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell)",
+      "refusal_reasons": [
+        "too_few_records_per_score_definition_cell",
+        "too_few_distinct_patients_per_score_definition_cell",
+        "degenerate_outcome_cell"
+      ],
+      "per_level": [
+        {
+          "level": 0.0,
+          "n": 44,
+          "n_never": 39,
+          "n_primary": 5,
+          "patients_never": 39,
+          "patients_primary": 5,
+          "events_never": 0.0,
+          "events_primary": 0.0,
+          "risk_never": 0.0,
+          "risk_primary": 0.0,
+          "diff_pp": 0.0,
+          "risk_never_ci_pp": null,
+          "risk_primary_ci_pp": null,
+          "delta_ci_pp": null,
+          "risk_never_ci_status": "degenerate outcome: point estimate only",
+          "risk_primary_ci_status": "too few distinct patients",
+          "delta_ci_status": "too few distinct patients in a definition",
+          "weight": 0.005712060236271583
+        },
+        {
+          "level": 1.0,
+          "n": 1398,
+          "n_never": 1028,
+          "n_primary": 370,
+          "patients_never": 1002,
+          "patients_primary": 359,
+          "events_never": 38.0,
+          "events_primary": 8.0,
+          "risk_never": 3.7,
+          "risk_primary": 2.16,
+          "diff_pp": 1.53,
+          "risk_never_ci_pp": [
+            2.7,
+            5.04
+          ],
+          "risk_primary_ci_pp": [
+            1.08,
+            4.27
+          ],
+          "delta_ci_pp": [
+            -0.35,
+            3.41
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.1814877320524471
+        },
+        {
+          "level": 2.0,
+          "n": 3318,
+          "n_never": 2655,
+          "n_primary": 663,
+          "patients_never": 2513,
+          "patients_primary": 628,
+          "events_never": 207.0,
+          "events_primary": 26.0,
+          "risk_never": 7.8,
+          "risk_primary": 3.92,
+          "diff_pp": 3.88,
+          "risk_never_ci_pp": [
+            6.84,
+            8.88
+          ],
+          "risk_primary_ci_pp": [
+            2.69,
+            5.69
+          ],
+          "delta_ci_pp": [
+            2.08,
+            5.67
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.43074126963520704
+        },
+        {
+          "level": 3.0,
+          "n": 2943,
+          "n_never": 2440,
+          "n_primary": 503,
+          "patients_never": 2294,
+          "patients_primary": 490,
+          "events_never": 419.0,
+          "events_primary": 55.0,
+          "risk_never": 17.17,
+          "risk_primary": 10.93,
+          "diff_pp": 6.24,
+          "risk_never_ci_pp": [
+            15.72,
+            18.73
+          ],
+          "risk_primary_ci_pp": [
+            8.49,
+            13.98
+          ],
+          "delta_ci_pp": [
+            3.13,
+            9.35
+          ],
+          "risk_never_ci_status": "computed",
+          "risk_primary_ci_status": "computed",
+          "delta_ci_status": "computed",
+          "weight": 0.3820589380760743
+        }
+      ],
+      "bootstrap": {
+        "reps": 60,
+        "usable": 0,
+        "failures": {
+          "no_support": 0,
+          "few_events": 0,
+          "lost_levels": 0,
+          "ok": 0
+        },
+        "status": "skipped after deterministic refusal rule"
+      },
+      "verdict": "interval withheld: too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, degenerate_outcome_cell",
+      "api": "audit_v2"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "benchmark_id": "audit_refusal_rules_v2_2026-11-12",
+  "output_schema_version": 2,
+  "hashes": {
+    "config_sha256": "71855154a4afd3a5c7ee7aa9b5475cd4827bb75e8d462453cf5d1ca76afb45ca",
+    "benchmark_script_sha256": "43dc393dbd804a29c9948a9245b4125537061408f57d72a1268b603bd852eb14",
+    "audit_tool_sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994"
+  },
+  "runtime": {
+    "executable": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+    "python_version_short": "3.12.5",
+    "packages": {
+      "numpy": "2.5.2",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "statsmodels": "0.14.5"
+    },
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "config_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\benchmark_config.json",
+  "output_directory": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\audit\\confirmatory_v2",
+  "outer_replicates_per_design": 1000,
+  "bootstrap_replicates_per_eligible_C_dataset": 60,
+  "seed": 27112026,
+  "designs": [
+    "null_balanced_iid",
+    "null_heterogeneous_iid",
+    "heterogeneous_random_weights",
+    "repeated_admissions_cross_group",
+    "unequal_cluster_sizes",
+    "near_boundary_risks",
+    "partial_structural_support",
+    "rare_common_support_holdout",
+    "few_large_clusters",
+    "no_common_support",
+    "high_icc_unbalanced_holdout"
+  ],
+  "start_timestamp_utc": "2026-11-12T13:02:29.572711+00:00",
+  "finish_timestamp_utc": "2026-11-12T13:40:30.984483+00:00",
+  "elapsed_seconds": 2281.412,
+  "outputs": [
+    "benchmark_summary.csv",
+    "benchmark_paired_comparisons.csv",
+    "benchmark_replicate_metrics.csv"
+  ],
+  "raw_patient_records_written": false
+}

@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+      "sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c"
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\incoming\\mimic_score_panel.csv.gz",
+      "sha256": "13bd89dfa0775c4e407019e1e81da18035ca815c97909b401e3aac162ca9d81f"
+    }
+  ],
+  "code": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\compare_versions.py",
+      "sha256": "9791473db3912d0d4cf90eae4302bc00b27fb9e4272cebc28315270e7acba39a"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\analyse_panels.py",
+      "sha256": "9fcc4ae2955a515900b05a6c95e1d295f38ef0db4d47b7faad17db650781df48"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\estimands.py",
+      "sha256": "290b5996e9ead6d7a3ad6d9a1b05ef4fca75b0c2d71f00e482cd515e148dfe26"
+    }
+  ],
+  "stage_b": "joint index-stay restriction and revised disease eligibility, not a pure deduplication effect"
+}

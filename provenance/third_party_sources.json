@@ -1,0 +1,42 @@
+[
+  {
+    "repository": "hlzhou/peer-score",
+    "commit": "bad2996b233cb118302d7453f6bb356e72912176",
+    "upstream_file": "src/data_processing/eicu/eicu_extraction.sql",
+    "file": "work/v2/sources/public_code/hlzhou__peer-score/src/data_processing/eicu/eicu_extraction.sql",
+    "source_url": "https://raw.githubusercontent.com/hlzhou/peer-score/bad2996b233cb118302d7453f6bb356e72912176/src/data_processing/eicu/eicu_extraction.sql",
+    "license": "MIT",
+    "license_file": "third_party/hlzhou__peer-score/LICENSE",
+    "sha256": "6eb95f1a3fd141a673f1a5776236c265129d246b3da25c679de604992d486dd9"
+  },
+  {
+    "repository": "AmsterdamUMC/AmsterdamUMCdb",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "upstream_file": "amsterdamumcdb/sql/common/legacy/gcs.sql",
+    "file": "work/v2/amsterdam/references/gcs.sql",
+    "source_url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/amsterdamumcdb/sql/common/legacy/gcs.sql",
+    "license": "MIT",
+    "license_file": "third_party/AmsterdamUMC__AmsterdamUMCdb/LICENSE",
+    "sha256": "0bcdc8d1d9143a71c7305d676c25b1e49a41d3056c626d3610acc980618b2fa0"
+  },
+  {
+    "repository": "AmsterdamUMC/AmsterdamUMCdb",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "upstream_file": "amsterdamumcdb/sql/diagnosis/legacy/reason_for_admission.sql",
+    "file": "work/v2/amsterdam/references/reason_for_admission.sql",
+    "source_url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/amsterdamumcdb/sql/diagnosis/legacy/reason_for_admission.sql",
+    "license": "MIT",
+    "license_file": "third_party/AmsterdamUMC__AmsterdamUMCdb/LICENSE",
+    "sha256": "183fc75d4ebff12a1839ac718641c29bf716d0e6b4154c30ead83d9f1b49b11b"
+  },
+  {
+    "repository": "AmsterdamUMC/AmsterdamUMCdb",
+    "commit": "5422b94dbaba6c1d9b7c301f059c425ca1fc13ce",
+    "upstream_file": "amsterdamumcdb/dictionary/dictionary.csv",
+    "file": "work/v2/sources/amsterdam_metadata/dictionary.csv",
+    "source_url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/amsterdamumcdb/dictionary/dictionary.csv",
+    "license": "MIT",
+    "license_file": "third_party/AmsterdamUMC__AmsterdamUMCdb/LICENSE",
+    "sha256": "3dfb898825434282de6104f057dd858671cbc4ccfde1e2d1e76965b1c21bfe30"
+  }
+]

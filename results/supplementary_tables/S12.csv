@@ -1,0 +1,85 @@
+﻿disease,analysis,score,grp,n,deaths
+sepsis,timed nursing GCS,0.0,0.0,41,1.0
+sepsis,timed nursing GCS,0.0,1.0,24,2.0
+sepsis,timed nursing GCS,1.0,0.0,1151,80.0
+sepsis,timed nursing GCS,1.0,1.0,741,43.0
+sepsis,timed nursing GCS,2.0,0.0,5151,618.0
+sepsis,timed nursing GCS,2.0,1.0,2885,320.0
+sepsis,timed nursing GCS,3.0,0.0,4124,1166.0
+sepsis,timed nursing GCS,3.0,1.0,2459,737.0
+sepsis,timed GCS excluding meds1,0.0,0.0,41,1.0
+sepsis,timed GCS excluding meds1,0.0,1.0,24,2.0
+sepsis,timed GCS excluding meds1,1.0,0.0,1151,80.0
+sepsis,timed GCS excluding meds1,1.0,1.0,740,43.0
+sepsis,timed GCS excluding meds1,2.0,0.0,5145,616.0
+sepsis,timed GCS excluding meds1,2.0,1.0,2882,319.0
+sepsis,timed GCS excluding meds1,3.0,0.0,4081,1155.0
+sepsis,timed GCS excluding meds1,3.0,1.0,2438,730.0
+sepsis,APACHE valid GCS with timed fallback,0.0,0.0,66,1.0
+sepsis,APACHE valid GCS with timed fallback,0.0,1.0,35,3.0
+sepsis,APACHE valid GCS with timed fallback,1.0,0.0,1598,132.0
+sepsis,APACHE valid GCS with timed fallback,1.0,1.0,1010,70.0
+sepsis,APACHE valid GCS with timed fallback,2.0,0.0,7768,1148.0
+sepsis,APACHE valid GCS with timed fallback,2.0,1.0,3843,558.0
+sepsis,APACHE valid GCS with timed fallback,3.0,0.0,4527,1253.0
+sepsis,APACHE valid GCS with timed fallback,3.0,1.0,2721,828.0
+pneumonia,timed nursing GCS,0.0,0.0,17,0.0
+pneumonia,timed nursing GCS,0.0,1.0,38,2.0
+pneumonia,timed nursing GCS,1.0,0.0,154,5.0
+pneumonia,timed nursing GCS,1.0,1.0,378,19.0
+pneumonia,timed nursing GCS,2.0,0.0,465,31.0
+pneumonia,timed nursing GCS,2.0,1.0,1373,92.0
+pneumonia,timed nursing GCS,3.0,0.0,852,81.0
+pneumonia,timed nursing GCS,3.0,1.0,2541,330.0
+pneumonia,timed nursing GCS,4.0,0.0,769,129.0
+pneumonia,timed nursing GCS,4.0,1.0,2984,626.0
+pneumonia,timed nursing GCS,5.0,0.0,388,93.0
+pneumonia,timed nursing GCS,5.0,1.0,1522,473.0
+pneumonia,timed GCS excluding meds1,0.0,0.0,17,0.0
+pneumonia,timed GCS excluding meds1,0.0,1.0,38,2.0
+pneumonia,timed GCS excluding meds1,1.0,0.0,154,5.0
+pneumonia,timed GCS excluding meds1,1.0,1.0,377,19.0
+pneumonia,timed GCS excluding meds1,2.0,0.0,462,31.0
+pneumonia,timed GCS excluding meds1,2.0,1.0,1369,91.0
+pneumonia,timed GCS excluding meds1,3.0,0.0,847,81.0
+pneumonia,timed GCS excluding meds1,3.0,1.0,2518,321.0
+pneumonia,timed GCS excluding meds1,4.0,0.0,766,128.0
+pneumonia,timed GCS excluding meds1,4.0,1.0,2960,623.0
+pneumonia,timed GCS excluding meds1,5.0,0.0,386,93.0
+pneumonia,timed GCS excluding meds1,5.0,1.0,1510,463.0
+pneumonia,APACHE valid GCS with timed fallback,0.0,0.0,25,0.0
+pneumonia,APACHE valid GCS with timed fallback,0.0,1.0,64,1.0
+pneumonia,APACHE valid GCS with timed fallback,1.0,0.0,207,7.0
+pneumonia,APACHE valid GCS with timed fallback,1.0,1.0,580,44.0
+pneumonia,APACHE valid GCS with timed fallback,2.0,0.0,729,51.0
+pneumonia,APACHE valid GCS with timed fallback,2.0,1.0,1940,140.0
+pneumonia,APACHE valid GCS with timed fallback,3.0,0.0,1190,132.0
+pneumonia,APACHE valid GCS with timed fallback,3.0,1.0,3420,473.0
+pneumonia,APACHE valid GCS with timed fallback,4.0,0.0,1088,188.0
+pneumonia,APACHE valid GCS with timed fallback,4.0,1.0,3700,829.0
+pneumonia,APACHE valid GCS with timed fallback,5.0,0.0,466,114.0
+pneumonia,APACHE valid GCS with timed fallback,5.0,1.0,1733,543.0
+pancreatitis,timed nursing GCS,1.0,0.0,50,0.0
+pancreatitis,timed nursing GCS,1.0,1.0,44,0.0
+pancreatitis,timed nursing GCS,2.0,0.0,63,3.0
+pancreatitis,timed nursing GCS,2.0,1.0,69,4.0
+pancreatitis,timed nursing GCS,3.0,0.0,25,3.0
+pancreatitis,timed nursing GCS,3.0,1.0,62,11.0
+pancreatitis,timed nursing GCS,4.0,0.0,15,6.0
+pancreatitis,timed nursing GCS,4.0,1.0,23,7.0
+pancreatitis,timed GCS excluding meds1,1.0,0.0,50,0.0
+pancreatitis,timed GCS excluding meds1,1.0,1.0,44,0.0
+pancreatitis,timed GCS excluding meds1,2.0,0.0,62,3.0
+pancreatitis,timed GCS excluding meds1,2.0,1.0,68,4.0
+pancreatitis,timed GCS excluding meds1,3.0,0.0,24,3.0
+pancreatitis,timed GCS excluding meds1,3.0,1.0,62,11.0
+pancreatitis,timed GCS excluding meds1,4.0,0.0,15,6.0
+pancreatitis,timed GCS excluding meds1,4.0,1.0,23,7.0
+pancreatitis,APACHE valid GCS with timed fallback,1.0,0.0,78,1.0
+pancreatitis,APACHE valid GCS with timed fallback,1.0,1.0,79,2.0
+pancreatitis,APACHE valid GCS with timed fallback,2.0,0.0,71,4.0
+pancreatitis,APACHE valid GCS with timed fallback,2.0,1.0,82,6.0
+pancreatitis,APACHE valid GCS with timed fallback,3.0,0.0,34,6.0
+pancreatitis,APACHE valid GCS with timed fallback,3.0,1.0,83,16.0
+pancreatitis,APACHE valid GCS with timed fallback,4.0,0.0,13,4.0
+pancreatitis,APACHE valid GCS with timed fallback,4.0,1.0,26,7.0

@@ -1,0 +1,24 @@
+{
+  "amendment": "secondary multiplicity method specified after revised primary results",
+  "inputs": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+      "sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\eicu\\levels.csv",
+      "sha256": "f35759c847e935d39bb863adf3fbba40c7df10624a05f223491d575969ab1795"
+    },
+    {
+      "path": "F:\\\u5206\u6790\u4e13\u7528\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+      "sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c"
+    },
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\outputs\\v2\\analysis\\mimic_iv\\levels.csv",
+      "sha256": "715b5d9aec21eb1f6974e73ffc2fb5dd005f2c28eba5c56c2df0dbcd4949a1e6"
+    }
+  ],
+  "script_sha256": "f40ed80da19c6d7a035345b17382808a6d395ed4be023c6cf03a11e7541e9183",
+  "audit_sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994",
+  "analysis_driver_sha256": "9fcc4ae2955a515900b05a6c95e1d295f38ef0db4d47b7faad17db650781df48"
+}

@@ -1,0 +1,181 @@
+{
+  "scope": "metadata and first-line CSV headers only; no clinical records read",
+  "accessed_utc_date": "2026-11-12",
+  "sources": {
+    "INSPIRE 1.4.2": {
+      "files_present": {
+        "schema.csv": true,
+        "parameters.csv": true,
+        "diagnosis.csv.gz": true,
+        "operations.csv.gz": true
+      },
+      "table_headers": {
+        "diagnosis.csv.gz": [
+          "subject_id",
+          "chart_time",
+          "icd10_cm"
+        ],
+        "operations.csv.gz": [
+          "op_id",
+          "subject_id",
+          "hadm_id",
+          "case_id",
+          "opdate",
+          "age",
+          "sex",
+          "weight",
+          "height",
+          "race",
+          "asa",
+          "emop",
+          "department",
+          "antype",
+          "icd10_pcs",
+          "orin_time",
+          "orout_time",
+          "opstart_time",
+          "opend_time",
+          "admission_time",
+          "discharge_time",
+          "anstart_time",
+          "anend_time",
+          "cpbon_time",
+          "cpboff_time",
+          "icuin_time",
+          "icuout_time",
+          "inhosp_death_time",
+          "allcause_death_time"
+        ]
+      }
+    },
+    "NWICU 0.1.0": {
+      "archive_present": true,
+      "archive_bytes": 622528840,
+      "table_headers": {
+        "nw_hosp/admissions.csv.gz": [
+          "subject_id",
+          "hadm_id",
+          "admittime",
+          "dischtime",
+          "deathtime",
+          "admission_type",
+          "admit_provider_id",
+          "admission_location",
+          "discharge_location",
+          "insurance",
+          "language",
+          "marital_status",
+          "race",
+          "edregtime",
+          "edouttime",
+          "hospital_expire_flag"
+        ],
+        "nw_hosp/diagnoses_icd.csv.gz": [
+          "subject_id",
+          "hadm_id",
+          "seq_num",
+          "icd_code",
+          "icd_version"
+        ],
+        "nw_hosp/patients.csv.gz": [
+          "subject_id",
+          "gender",
+          "anchor_age",
+          "anchor_year",
+          "anchor_year_group",
+          "dod"
+        ],
+        "nw_hosp/labevents.csv.gz": [
+          "labevent_id",
+          "subject_id",
+          "hadm_id",
+          "specimen_id",
+          "itemid",
+          "order_provider_id",
+          "charttime",
+          "storetime",
+          "value",
+          "valuenum",
+          "valueuom",
+          "ref_range_lower",
+          "ref_range_upper",
+          "flag",
+          "priority",
+          "comments"
+        ],
+        "nw_icu/icustays.csv.gz": [
+          "subject_id",
+          "hadm_id",
+          "stay_id",
+          "first_careunit",
+          "last_careunit",
+          "intime",
+          "outtime",
+          "los"
+        ],
+        "nw_icu/d_items.csv.gz": [
+          "itemid",
+          "label",
+          "abbreviation",
+          "linksto",
+          "category",
+          "unitname",
+          "param_type",
+          "lownormalvalue",
+          "highnormalvalue"
+        ],
+        "nw_icu/chartevents.csv.gz": [
+          "subject_id",
+          "hadm_id",
+          "stay_id",
+          "caregiver_id",
+          "charttime",
+          "storetime",
+          "itemid",
+          "value",
+          "valuenum",
+          "valueuom",
+          "warning"
+        ]
+      },
+      "dictionary_matches": {
+        "nw_icu/d_items.csv.gz": [],
+        "nw_hosp/labitems.csv.gz": null
+      },
+      "archive_members": [
+        "northwestern-icu-nwicu-database-0.1.0/LICENSE.txt",
+        "northwestern-icu-nwicu-database-0.1.0/SHA256SUMS.txt",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/admissions.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/d_icd_diagnoses.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/d_labitems.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/diagnoses_icd.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/emar.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/labevents.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/patients.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/prescriptions.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_icu/chartevents.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_icu/d_items.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_icu/icustays.csv.gz",
+        "northwestern-icu-nwicu-database-0.1.0/data/nw_icu/procedureevents.csv.gz"
+      ]
+    },
+    "AmsterdamUMCdb 1.0.2": {
+      "archive_present": true,
+      "archive_bytes": 8096620866,
+      "archive_name": "AmsterdamUMCdb-1.0.2数据集.7z",
+      "clinical_archive_opened": false
+    },
+    "SICdb 1.0.8": {
+      "archive_present": true,
+      "archive_bytes": 10646623372,
+      "archive_name": "salzburg-intensive-care-database-sicdb-a-freely-accessible-intensive-care-database-1.0.8.rar",
+      "clinical_archive_opened": false
+    },
+    "HiRID 1.1.1": {
+      "archive_present": true,
+      "archive_bytes": 7956346146,
+      "archive_name": "hirid-a-high-time-resolution-icu-dataset-1.1.1.rar",
+      "clinical_archive_opened": false
+    }
+  }
+}

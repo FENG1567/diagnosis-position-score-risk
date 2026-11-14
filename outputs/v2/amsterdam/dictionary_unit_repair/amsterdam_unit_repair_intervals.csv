@@ -1,0 +1,9 @@
+measurement_version,score,interval_type,estimate_pp,ci_lower_pp,ci_upper_pp,interval_status,canonical_for_root_tables
+strict_row_units,gcs_le_13,normal_influence_function,15.02,,,not computed (too_few_distinct_patients_per_score_definition_cell),True
+strict_row_units,gcs_le_13,patient_cluster_percentile_bootstrap,15.02,,,not computed (too_few_distinct_patients_per_score_definition_cell),False
+dictionary_unit_repair,gcs_le_13,normal_influence_function,18.91,,,not computed (too_few_distinct_patients_per_score_definition_cell),True
+dictionary_unit_repair,gcs_le_13,patient_cluster_percentile_bootstrap,18.91,,,not computed (too_few_distinct_patients_per_score_definition_cell),False
+strict_row_units,gcs_lt_15_sensitivity,normal_influence_function,14.07,-2.91,31.05,computed,True
+strict_row_units,gcs_lt_15_sensitivity,patient_cluster_percentile_bootstrap,14.07,-3.35,33.46,computed,False
+dictionary_unit_repair,gcs_lt_15_sensitivity,normal_influence_function,18.43,3.2,33.67,computed,True
+dictionary_unit_repair,gcs_lt_15_sensitivity,patient_cluster_percentile_bootstrap,18.43,-1.51,33.24,computed,False

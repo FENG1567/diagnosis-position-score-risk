@@ -1,0 +1,2 @@
+﻿Database,Condition / instrument,Eligible sequence-one / other-sequence,Complete sequence-one / other-sequence,Shared sequence-one / other-sequence,Supported score levels,Δ_w weighted summary (percentage points),95% patient-cluster CI,Interval status
+Zigong,heart failure / qSOFA,53 / 553,10 / 137,10 / 137,4,-9.36,not computed,"not computed (too_few_records_per_score_definition_cell, too_few_distinct_patients_per_score_definition_cell, too_few_records_per_score_level, degenerate_outcome_cell)"

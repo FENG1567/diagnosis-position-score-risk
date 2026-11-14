@@ -1,0 +1,653 @@
+{
+  "benchmark_id": "per_level_inference_v2_2026-11-12",
+  "config_status": "frozen_before_confirmatory_outcomes",
+  "output_schema_version": 1,
+  "freeze_date": "2026-11-12",
+  "outer_replicates_per_design": 1000,
+  "seed": 27112027,
+  "python": "C:/Users/aaa12/AppData/Local/Programs/Python/Python312/python.exe",
+  "environment": {
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "statsmodels": "0.14.5"
+  },
+  "estimand": {
+    "record_unit": "admission record",
+    "cluster_unit": "patient",
+    "group_0": "principal definition",
+    "group_1": "never-principal definition",
+    "delta_s": "p_never,s - p_principal,s; observed binary outcome risk per admission within score level s",
+    "delta_w": "sum over prespecified population common support S* of pooled-record weights w_s times delta_s",
+    "w_s": "population pooled record frequency for score s conditional on S*; estimated-weight main estimator uses sample pooled record counts",
+    "main_variance": "full estimated-weight patient-cluster influence function, contributions summed within patient, finite-sample M/(M-1) correction",
+    "fixed_weight_sensitivity": "same truth weights held fixed and the weight influence-function term omitted; reported separately from main A/B/C",
+    "support_rule": "S* is supplied by each simulation design; missing a positive-probability target cell is target_support_lost",
+    "target_support_lost_metrics": "A/B/D may emit observed-common-support intervals and are marked off-target; C withholds the population-target interval and retains a labelled observed-supported point estimate"
+  },
+  "policies": {
+    "A": "No refusal rule; emit a finite estimated-weight interval on observed common support, including a zero-width interval when the estimated variance is zero.",
+    "B": "Emit only when every score-by-definition cell on the prespecified target support has at least 10 records per definition; a missing target cell is below threshold.",
+    "C": "Full v2 audit: prespecified support stability; at least 20 distinct patients overall and per score-by-definition cell; at least 20 records per score level and 10 per score-by-definition cell; nondegenerate outcomes in every target cell; at least 20 usable patient-bootstrap replicates.",
+    "D": "Supplementary matched-threshold ablation: at least 20 distinct patients per observed score-by-definition cell and exact nondegenerate outcomes; no bootstrap or prespecified-support stability gate.",
+    "legacy_variance_comparator": "A policy using the same estimated-weight point estimate but the legacy fixed-observed-weight influence function; not part of the primary A/B/C rule comparison.",
+    "fixed_weight_sensitivity": "A policy using the known population pooled-record weights as fixed reference weights; the target equals the main estimand but the estimator omits weight estimation by design."
+  },
+  "rule_thresholds": {
+    "B_min_records_per_score_definition_cell": 10,
+    "C_min_records_per_score_level": 20,
+    "C_min_records_per_score_definition_cell": 10,
+    "C_min_distinct_patients_total": 20,
+    "C_min_distinct_patients_per_score_definition_cell": 20,
+    "C_requires_nonzero_and_noncomplete_events_in_each_score_definition_cell": true,
+    "C_min_events_per_definition_per_bootstrap_replicate": 10,
+    "C_min_usable_bootstrap_replicates": 20,
+    "D_min_distinct_patients_per_score_definition_cell": 20,
+    "D_requires_nonzero_and_noncomplete_events_in_each_observed_score_definition_cell": true,
+    "D_omits_bootstrap_and_support_stability_gates": true
+  },
+  "bootstrap_gate": {
+    "replicates_per_eligible_C_dataset": 60,
+    "minimum_usable": 20,
+    "minimum_events_per_definition_per_replicate": 10,
+    "seed_rule": "outer scenario seed plus replicate index namespace; bootstrap does not alter outcome draws"
+  },
+  "metrics": {
+    "conditional_coverage": "covered intervals divided by emitted intervals whose observed support equals S*",
+    "conditional_observed_weight_truth": "per-replicate sum of observed pooled-record weights times known delta_s, computed only when observed common support exactly equals S*; null when support is lost",
+    "conditional_observed_weight_coverage": "separately labeled diagnostic coverage against conditional_observed_weight_truth; it does not replace population-truth coverage and is not computed when support is lost",
+    "emission": "intervals emitted divided by all outer datasets",
+    "unconditional_missed_interval": "emitted interval that fails to cover the population truth OR is emitted on changed support, divided by all outer datasets",
+    "width": "median and mean 95% interval width among emitted intervals on target support",
+    "paired_comparisons": "same simulated dataset is evaluated by every policy; report paired differences and paired Monte Carlo SE for emission, unconditional misses, and conditional coverage",
+    "per_level_conditional_coverage": "covered emitted pointwise CIs divided by emitted CIs among replicates where that score-specific estimand is population-defined",
+    "per_level_output": "emitted shared-function CIs divided by all 1000 replicates for that population-defined score-specific estimand",
+    "complete_family": "all pointwise CIs for every population-defined group-risk cell and every common-support delta_s are emitted and cover; report as descriptive complete-family diagnostic only"
+  },
+  "designs": [
+    {
+      "name": "null_balanced_iid",
+      "role": "primary",
+      "n_patients": 1000,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "null_heterogeneous_iid",
+      "role": "primary",
+      "n_patients": 1200,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.1,
+        0.4,
+        0.3
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "heterogeneous_random_weights",
+      "role": "primary",
+      "n_patients": 1200,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.32,
+          0.1,
+          0.05,
+          0.03
+        ],
+        [
+          0.05,
+          0.1,
+          0.12,
+          0.23
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.4,
+        0.15,
+        0.35
+      ],
+      "risks_never": [
+        0.3,
+        0.2,
+        0.25,
+        0.1
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "repeated_admissions_cross_group",
+      "role": "primary",
+      "n_patients": 900,
+      "cluster_sizes": [
+        [
+          3,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.3,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.25,
+        0.35,
+        0.5
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "unequal_cluster_sizes",
+      "role": "primary",
+      "n_patients": 800,
+      "cluster_sizes": [
+        [
+          1,
+          0.55
+        ],
+        [
+          2,
+          0.25
+        ],
+        [
+          4,
+          0.15
+        ],
+        [
+          8,
+          0.05
+        ]
+      ],
+      "outcome_icc": 0.35,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.2,
+          0.15,
+          0.1,
+          0.05
+        ],
+        [
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ]
+      ],
+      "risks_principal": [
+        0.08,
+        0.2,
+        0.35,
+        0.5
+      ],
+      "risks_never": [
+        0.18,
+        0.3,
+        0.25,
+        0.6
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "near_boundary_risks",
+      "role": "stress",
+      "n_patients": 1800,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.005,
+        0.02,
+        0.65,
+        0.85
+      ],
+      "risks_never": [
+        0.01,
+        0.025,
+        0.7,
+        0.8
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "partial_structural_support",
+      "role": "stress",
+      "n_patients": 1000,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.1,
+          0.1,
+          0.15,
+          0.15,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.1,
+          0.1,
+          0.15,
+          0.15
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35
+      ],
+      "risks_never": [
+        0.08,
+        0.1,
+        0.4,
+        0.45,
+        0.3,
+        0.5
+      ],
+      "expected_support": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "rare_common_support_holdout",
+      "role": "holdout",
+      "n_patients": 800,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.249,
+          0.249,
+          0.002
+        ],
+        [
+          0.249,
+          0.249,
+          0.002
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "risks_never": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "expected_support": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "few_large_clusters",
+      "role": "stress",
+      "n_patients": 16,
+      "cluster_sizes": [
+        [
+          10,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.4,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.25,
+        0.35,
+        0.5
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "no_common_support",
+      "role": "stress",
+      "n_patients": 1000,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.25,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.25
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.25,
+        0.35,
+        0.5
+      ],
+      "expected_support": []
+    },
+    {
+      "name": "high_icc_unbalanced_holdout",
+      "role": "holdout",
+      "n_patients": 800,
+      "cluster_sizes": [
+        [
+          1,
+          0.7
+        ],
+        [
+          10,
+          0.3
+        ]
+      ],
+      "outcome_icc": 0.6,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.25,
+          0.15,
+          0.07,
+          0.03
+        ],
+        [
+          0.03,
+          0.07,
+          0.15,
+          0.25
+        ]
+      ],
+      "risks_principal": [
+        0.15,
+        0.3,
+        0.45,
+        0.6
+      ],
+      "risks_never": [
+        0.2,
+        0.2,
+        0.5,
+        0.55
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "inference_validation": {
+    "shared_function": "cohort_definition_audit.per_level_inference",
+    "invocation": "direct call with all configured score levels after renaming simulated y to outcome",
+    "min_patients": 20,
+    "min_records_per_arm": 10,
+    "min_records_per_level": 20,
+    "estimands": {
+      "group_risk": "score- and definition-specific observed binary outcome risk per admission; defined only when the configured joint group-score probability is positive",
+      "delta_s": "risk_never,s - risk_principal,s; defined only when both configured group-score probabilities are positive"
+    },
+    "support_eligibility": {
+      "common_support": "both group-score population probabilities are positive",
+      "partial_support": "summarize group risks only for positive-probability cells and delta_s only on positive-probability common support",
+      "no_common_support": "no delta_s estimand or complete all-CI family; report explicit ineligibility and refusals without inventing a contrast"
+    },
+    "coverage": "conditional pointwise coverage among emitted intervals for defined estimands; use the returned rounded CI arrays as emitted by the shared function",
+    "bias": "point-estimate bias in percentage points among replicates with the relevant defined cell(s) observed; separately report bias among CI-emitted replicates",
+    "family_diagnostic": "complete output and simultaneous containment among all emitted pointwise group-risk and delta_s intervals for a design's defined cells; descriptive only, no 95% familywise claim",
+    "random_stream": "for design index j and replicate r starting at 0, default_rng(seed + j*1000003 + r*10007), same Gaussian-copula DGP generator as the frozen benchmark",
+    "bootstrap_or_logistic": "not called"
+  }
+}

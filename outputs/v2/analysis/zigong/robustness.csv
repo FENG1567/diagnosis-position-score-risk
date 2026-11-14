@@ -1,0 +1,10 @@
+analysis,estimand,n,n_patients,delta_w_pp,numerical_se_pp,levels,support_share,interval_status,excluded_records_without_fine_support,component_reconstruction_agreement,database,disease,difference_pp,numerical_lo_pp,numerical_hi_pp
+component pattern score-only on matched records,Delta_w weighted summary,133,133,3.9863050483351232,3.3295063162920373,4.0,1.0,descriptive paired sensitivity,4.0,1.0,Zigong,sepsis,,,
+component pattern fine-cell contrast,Delta_w weighted summary,133,133,4.0549289891395155,3.4307625754405766,7.0,1.0,descriptive paired sensitivity,,1.0,Zigong,sepsis,,,
+component pattern fine minus score-only,difference between Delta_w weighted summaries,133,133,,0.78539970894377,,,"descriptive, fine-cell interval calibration unverified",,1.0,Zigong,sepsis,0.06862394080439232,-1.4707312021936378,1.6079790838024224
+age and sex refinement score-only on matched records,Delta_w weighted summary,119,119,6.824316683195017,3.977210656584509,4.0,1.0,descriptive paired sensitivity,18.0,,Zigong,sepsis,,,
+age and sex refinement fine-cell contrast,Delta_w weighted summary,119,119,8.339699516170104,4.309486682868091,16.0,1.0,descriptive paired sensitivity,,,Zigong,sepsis,,,
+age and sex refinement fine minus score-only,difference between Delta_w weighted summaries,119,119,,1.4679711107518436,,,"descriptive, fine-cell interval calibration unverified",,,Zigong,sepsis,1.5153828329750874,-1.3617876744437853,4.39255334039396
+age and sex refinement score-only on matched records,Delta_w weighted summary,356,356,7.015386751704258,2.6715129467299006,6.0,1.0,descriptive paired sensitivity,74.0,,Zigong,pneumonia,,,
+age and sex refinement fine-cell contrast,Delta_w weighted summary,356,356,2.8498330093991457,2.225882584047584,20.0,1.0,descriptive paired sensitivity,,,Zigong,pneumonia,,,
+age and sex refinement fine minus score-only,difference between Delta_w weighted summaries,356,356,,1.7559323999367233,,,"descriptive, fine-cell interval calibration unverified",,,Zigong,pneumonia,-4.1655537423051126,-7.607118005468072,-0.723989479142153

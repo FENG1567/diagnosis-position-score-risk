@@ -1,0 +1,5 @@
+﻿score,interval_type,estimate_pp,ci_lower_pp,ci_upper_pp,interval_status
+GCS ≤13,normal_influence_function,18.91,,,not computed (too_few_distinct_patients_per_score_definition_cell)
+GCS ≤13,patient_cluster_percentile_bootstrap,18.91,,,not computed (too_few_distinct_patients_per_score_definition_cell)
+GCS <15,normal_influence_function,18.43,3.2,33.67,computed
+GCS <15,patient_cluster_percentile_bootstrap,18.43,-1.51,33.24,computed

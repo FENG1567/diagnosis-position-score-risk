@@ -1,0 +1,13 @@
+Analysis block,Database,Condition,Records (patients),Narrow / score-only Δ_w weighted summary,Broad / refined Δ_w weighted summary,Paired difference (percentage points; numerical interval),Cell inventory / reconstruction,Interval status
+Paired code breadth,eICU-CRD,sepsis,"16,576 (15,217)",0.13,0.13,"0.00 [0.00, 0.00]",Same records; common score support,"descriptive paired interval, audit gates require separate assessment"
+Paired code breadth,eICU-CRD,pneumonia,"11,222 (10,476)",3.52,3.56,"0.04 [-0.06, 0.13]",Same records; common score support,"descriptive paired interval, audit gates require separate assessment"
+Paired code breadth,MIMIC-IV,sepsis,"10,433 (9,094)",11.32,11.35,"0.02 [-0.08, 0.13]",Same records; common score support,"descriptive paired interval, audit gates require separate assessment"
+Paired code breadth,MIMIC-IV,pneumonia,"2,179 (2,056)",10.37,11.04,"0.66 [-0.38, 1.71]",Same records; common score support,"descriptive paired interval, audit gates require separate assessment"
+Paired code breadth,MIMIC-III,sepsis,"5,500 (4,881)",8.57,8.57,"-0.01 [-0.17, 0.15]",Same records; common score support,"descriptive paired interval, audit gates require separate assessment"
+Paired code breadth,MIMIC-III,pneumonia,"2,046 (1,884)",8.08,8.07,"-0.01 [-1.57, 1.54]",Same records; common score support,"descriptive paired interval, audit gates require separate assessment"
+Hospital × score,eICU-CRD,sepsis,"16,234 (14,892)",0.24,0.24,"-0.00 [-0.80, 0.79]",533 hospital-score cells; 366 with either arm ≤5; 68.67%,"descriptive, fine-cell interval calibration unverified"
+Hospital × score,eICU-CRD,pneumonia,"10,402 (9,728)",3.91,3.04,"-0.87 [-1.92, 0.18]",809 hospital-score cells; 701 with either arm ≤5; 86.65%,"descriptive, fine-cell interval calibration unverified"
+Component pattern,eICU-CRD,sepsis,"16,576 (15,217)",0.13,0.08,"-0.05 [-0.14, 0.03]",100.00%,"descriptive, fine-cell interval calibration unverified"
+Component pattern,MIMIC-IV,sepsis,"10,804 (9,398)",11.30,11.21,"-0.09 [-0.18, 0.01]",100.00%,"descriptive, fine-cell interval calibration unverified"
+Component pattern,MIMIC-III,sepsis,"5,588 (4,957)",8.61,8.26,"-0.35 [-0.60, -0.09]",100.00%,"descriptive, fine-cell interval calibration unverified"
+Component pattern,Zigong,sepsis,133 (133),3.99,4.05,"0.07 [-1.47, 1.61]",100.00%,"descriptive, fine-cell interval calibration unverified"

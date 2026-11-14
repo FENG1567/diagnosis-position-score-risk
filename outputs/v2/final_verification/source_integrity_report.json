@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-12T20:01:31.653659+00:00",
+  "original_tables": 18,
+  "original_copies_checked": 36,
+  "original_tables_modified": false,
+  "current_main_panel_bindings": [
+    {
+      "database": "eicu",
+      "panel_sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163",
+      "provenance_sha256": "0ed639c307b196f8756435844d32988850c45c7b2e787ee9284daa43482c66d1",
+      "passed": true
+    },
+    {
+      "database": "mimic_iv",
+      "panel_sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c",
+      "provenance_sha256": "0d55b23f95eedcf5e93371454799837ade08aba6457d1a7ef8619167c11cf870",
+      "passed": true
+    },
+    {
+      "database": "mimic_iii",
+      "panel_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+      "provenance_sha256": "0fb9a1e30a15052ba561da48b830d010d561ce85de70719eddfefeb3bb83ed9c",
+      "passed": true
+    },
+    {
+      "database": "zigong",
+      "panel_sha256": "a979429a888758de3f33471fc8f846c56a0a2cd21206e234bde6aed88afb1f97",
+      "provenance_sha256": "0b244243162a35c9dd1c03c4769c8bd534c74dce0edf70029546f33256211e22",
+      "passed": true
+    }
+  ]
+}

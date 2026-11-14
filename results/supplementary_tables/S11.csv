@@ -1,0 +1,11 @@
+﻿disease,grp,instrument,admissions,complete_score,known_outcome,deaths,complete_score_known_outcome
+COPD,0.0,qsofa,68,18,68,3,18
+COPD,1.0,qsofa,523,146,522,25,145
+heart failure,0.0,qsofa,53,10,53,3,10
+heart failure,1.0,qsofa,553,138,552,45,137
+pancreatitis,0.0,bisap4,63,14,63,4,14
+pancreatitis,1.0,bisap4,47,14,47,1,14
+pneumonia,0.0,curb65,235,43,234,12,42
+pneumonia,1.0,curb65,1463,388,1463,97,388
+sepsis,0.0,qsofa,167,48,167,10,48
+sepsis,1.0,qsofa,374,90,373,25,89

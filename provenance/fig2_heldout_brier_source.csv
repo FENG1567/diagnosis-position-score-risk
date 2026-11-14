@@ -1,0 +1,25 @@
+﻿Database,Condition,Test population,Contrast,Brier loss difference,95% CI lower,95% CI upper,Interval,_source_row
+eICU,sepsis,all,primary_fixed_minus_broad_fixed,5.6e-05,-6.3e-05,0.000167,pointwise_95pct,2
+eICU,sepsis,all,primary_recalibrated_minus_broad_recalibrated,9e-06,-2.1e-05,3.9e-05,pointwise_95pct,3
+eICU,sepsis,primary,primary_fixed_minus_broad_fixed,0.000116,-1.9e-05,0.000246,pointwise_95pct,6
+eICU,sepsis,primary,primary_recalibrated_minus_broad_recalibrated,-1.1e-05,-4.8e-05,2.6e-05,pointwise_95pct,7
+eICU,sepsis,never_primary,primary_fixed_minus_broad_fixed,-8.1e-05,-0.000299,0.000135,pointwise_95pct,10
+eICU,sepsis,never_primary,primary_recalibrated_minus_broad_recalibrated,5.5e-05,-1e-06,0.00011,pointwise_95pct,11
+eICU,pneumonia,all,primary_fixed_minus_broad_fixed,0.002412,0.000862,0.004033,pointwise_95pct,18
+eICU,pneumonia,all,primary_recalibrated_minus_broad_recalibrated,2.4e-05,-0.000217,0.000272,pointwise_95pct,19
+eICU,pneumonia,primary,primary_fixed_minus_broad_fixed,0.00109,-0.001503,0.003742,pointwise_95pct,22
+eICU,pneumonia,primary,primary_recalibrated_minus_broad_recalibrated,6e-05,-0.000347,0.000465,pointwise_95pct,23
+eICU,pneumonia,never_primary,primary_fixed_minus_broad_fixed,0.003015,0.00106,0.004976,pointwise_95pct,26
+eICU,pneumonia,never_primary,primary_recalibrated_minus_broad_recalibrated,7e-06,-0.000295,0.000309,pointwise_95pct,27
+MIMIC-IV,sepsis,all,primary_fixed_minus_broad_fixed,0.001899,0.000515,0.003197,pointwise_95pct,34
+MIMIC-IV,sepsis,all,primary_recalibrated_minus_broad_recalibrated,-0.000247,-0.001355,0.000922,pointwise_95pct,35
+MIMIC-IV,sepsis,primary,primary_fixed_minus_broad_fixed,-0.002936,-0.004461,-0.001422,pointwise_95pct,38
+MIMIC-IV,sepsis,primary,primary_recalibrated_minus_broad_recalibrated,-0.000832,-0.002269,0.000703,pointwise_95pct,39
+MIMIC-IV,sepsis,never_primary,primary_fixed_minus_broad_fixed,0.008808,0.00641,0.011224,pointwise_95pct,42
+MIMIC-IV,sepsis,never_primary,primary_recalibrated_minus_broad_recalibrated,0.000589,-0.001227,0.002472,pointwise_95pct,43
+MIMIC-IV,pneumonia,all,primary_fixed_minus_broad_fixed,0.007381,0.005685,0.009095,pointwise_95pct,46
+MIMIC-IV,pneumonia,all,primary_recalibrated_minus_broad_recalibrated,0.000471,-0.000456,0.001347,pointwise_95pct,47
+MIMIC-IV,pneumonia,primary,primary_fixed_minus_broad_fixed,-0.007298,-0.011632,-0.002597,pointwise_95pct,50
+MIMIC-IV,pneumonia,primary,primary_recalibrated_minus_broad_recalibrated,0.001928,-0.001133,0.004863,pointwise_95pct,51
+MIMIC-IV,pneumonia,never_primary,primary_fixed_minus_broad_fixed,0.008566,0.006785,0.01035,pointwise_95pct,54
+MIMIC-IV,pneumonia,never_primary,primary_recalibrated_minus_broad_recalibrated,0.000353,-0.000582,0.001256,pointwise_95pct,55

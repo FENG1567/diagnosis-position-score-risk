@@ -1,0 +1,1347 @@
+{
+  "config_status": "frozen_before_validation_outcomes",
+  "benchmark_id": "conditional_design_hoeffding_supplement_v1_2026-11-13",
+  "amendment_timing": "Exploratory amendment after eICU results had been disclosed; not part of the original frozen plan.",
+  "interpretation_limits": [
+    "The conditional target is theta_D = E(sum_i a_i Y_i | observed complete-case design D).",
+    "It is distinct from the population-weight Delta_w target when observed weights or support differ.",
+    "Population-target comparisons are mismatch diagnostics, not conditional-interval coverage claims.",
+    "This interval does not replace the primary C rule or any existing population-target interval.",
+    "Report every prespecified design, including wide/full-range and adverse results; do not tune thresholds.",
+    "Finite-sample validity requires mutually independent patient clusters conditional on D."
+  ],
+  "seed": 27112029,
+  "outer_replicates_per_design": 1000,
+  "alpha": 0.05,
+  "confidence_level": 0.95,
+  "seed_rule": "default_rng(seed + design_index*1000003 + replicate_index*10007), indices start at zero",
+  "original_frozen_dgp": {
+    "source_config_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\benchmark_config.json",
+    "source_config_sha256": "71855154a4afd3a5c7ee7aa9b5475cd4827bb75e8d462453cf5d1ca76afb45ca",
+    "generator_path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\audit\\benchmark.py",
+    "design_count": 11,
+    "replicates_per_design": 1000,
+    "generator": "benchmark.simulate_dataset, unchanged"
+  },
+  "fixed_design_supplement": {
+    "replicates_per_design": 1000,
+    "n_primary_records": 1000,
+    "n_never_records": 1000,
+    "bad_score_record_masses": [
+      0.001,
+      0.005,
+      0.02,
+      0.1,
+      0.5
+    ],
+    "contrast_patterns": [
+      "null",
+      "positive",
+      "cancelling"
+    ],
+    "cross_group_pairing": "Pair min(cell counts) within each score; unmatched records remain singleton clusters.",
+    "outcome_icc": 0.35,
+    "outcome_probability_calibration": "Gaussian random-intercept copula with exact marginal cell risks from the frozen config."
+  },
+  "design_count": 26,
+  "original_dgp_count": 11,
+  "fixed_design_count": 15,
+  "designs": [
+    {
+      "name": "null_balanced_iid",
+      "role": "primary",
+      "n_patients": 1000,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 0
+    },
+    {
+      "name": "null_heterogeneous_iid",
+      "role": "primary",
+      "n_patients": 1200,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.1,
+        0.4,
+        0.3
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 1
+    },
+    {
+      "name": "heterogeneous_random_weights",
+      "role": "primary",
+      "n_patients": 1200,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.32,
+          0.1,
+          0.05,
+          0.03
+        ],
+        [
+          0.05,
+          0.1,
+          0.12,
+          0.23
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.4,
+        0.15,
+        0.35
+      ],
+      "risks_never": [
+        0.3,
+        0.2,
+        0.25,
+        0.1
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 2
+    },
+    {
+      "name": "repeated_admissions_cross_group",
+      "role": "primary",
+      "n_patients": 900,
+      "cluster_sizes": [
+        [
+          3,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.3,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.25,
+        0.35,
+        0.5
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 3
+    },
+    {
+      "name": "unequal_cluster_sizes",
+      "role": "primary",
+      "n_patients": 800,
+      "cluster_sizes": [
+        [
+          1,
+          0.55
+        ],
+        [
+          2,
+          0.25
+        ],
+        [
+          4,
+          0.15
+        ],
+        [
+          8,
+          0.05
+        ]
+      ],
+      "outcome_icc": 0.35,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.2,
+          0.15,
+          0.1,
+          0.05
+        ],
+        [
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ]
+      ],
+      "risks_principal": [
+        0.08,
+        0.2,
+        0.35,
+        0.5
+      ],
+      "risks_never": [
+        0.18,
+        0.3,
+        0.25,
+        0.6
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 4
+    },
+    {
+      "name": "near_boundary_risks",
+      "role": "stress",
+      "n_patients": 1800,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.005,
+        0.02,
+        0.65,
+        0.85
+      ],
+      "risks_never": [
+        0.01,
+        0.025,
+        0.7,
+        0.8
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 5
+    },
+    {
+      "name": "partial_structural_support",
+      "role": "stress",
+      "n_patients": 1000,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.1,
+          0.1,
+          0.15,
+          0.15,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.1,
+          0.1,
+          0.15,
+          0.15
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35
+      ],
+      "risks_never": [
+        0.08,
+        0.1,
+        0.4,
+        0.45,
+        0.3,
+        0.5
+      ],
+      "expected_support": [
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 6
+    },
+    {
+      "name": "rare_common_support_holdout",
+      "role": "holdout",
+      "n_patients": 800,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.249,
+          0.249,
+          0.002
+        ],
+        [
+          0.249,
+          0.249,
+          0.002
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "risks_never": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "expected_support": [
+        0,
+        1,
+        2
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 7
+    },
+    {
+      "name": "few_large_clusters",
+      "role": "stress",
+      "n_patients": 16,
+      "cluster_sizes": [
+        [
+          10,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.4,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.25,
+        0.35,
+        0.5
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 8
+    },
+    {
+      "name": "no_common_support",
+      "role": "stress",
+      "n_patients": 1000,
+      "cluster_sizes": [
+        [
+          1,
+          1.0
+        ]
+      ],
+      "outcome_icc": 0.0,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.25,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.25
+        ]
+      ],
+      "risks_principal": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "risks_never": [
+        0.2,
+        0.25,
+        0.35,
+        0.5
+      ],
+      "expected_support": [],
+      "family": "original_frozen_dgp",
+      "design_index": 9
+    },
+    {
+      "name": "high_icc_unbalanced_holdout",
+      "role": "holdout",
+      "n_patients": 800,
+      "cluster_sizes": [
+        [
+          1,
+          0.7
+        ],
+        [
+          10,
+          0.3
+        ]
+      ],
+      "outcome_icc": 0.6,
+      "scores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.25,
+          0.15,
+          0.07,
+          0.03
+        ],
+        [
+          0.03,
+          0.07,
+          0.15,
+          0.25
+        ]
+      ],
+      "risks_principal": [
+        0.15,
+        0.3,
+        0.45,
+        0.6
+      ],
+      "risks_never": [
+        0.2,
+        0.2,
+        0.5,
+        0.55
+      ],
+      "expected_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "family": "original_frozen_dgp",
+      "design_index": 10
+    },
+    {
+      "name": "fixed_badmass_0.001_null",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4995,
+          0.0005
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.25,
+        0.25
+      ],
+      "contrast_pattern": "null",
+      "requested_bad_score_record_mass": 0.001,
+      "actual_bad_score_record_mass": 0.001,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 999,
+        "never_score_1": 1
+      },
+      "n_records": 2000,
+      "n_patients": 1000,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 11
+    },
+    {
+      "name": "fixed_badmass_0.001_positive",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4995,
+          0.0005
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.4,
+        0.4
+      ],
+      "contrast_pattern": "positive",
+      "requested_bad_score_record_mass": 0.001,
+      "actual_bad_score_record_mass": 0.001,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 999,
+        "never_score_1": 1
+      },
+      "n_records": 2000,
+      "n_patients": 1000,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 12
+    },
+    {
+      "name": "fixed_badmass_0.001_cancelling",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4995,
+          0.0005
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.4
+      ],
+      "risks_never": [
+        0.4,
+        0.25
+      ],
+      "contrast_pattern": "cancelling",
+      "requested_bad_score_record_mass": 0.001,
+      "actual_bad_score_record_mass": 0.001,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 999,
+        "never_score_1": 1
+      },
+      "n_records": 2000,
+      "n_patients": 1000,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 13
+    },
+    {
+      "name": "fixed_badmass_0.005_null",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4955,
+          0.0045
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.25,
+        0.25
+      ],
+      "contrast_pattern": "null",
+      "requested_bad_score_record_mass": 0.005,
+      "actual_bad_score_record_mass": 0.005,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 991,
+        "never_score_1": 9
+      },
+      "n_records": 2000,
+      "n_patients": 1008,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 14
+    },
+    {
+      "name": "fixed_badmass_0.005_positive",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4955,
+          0.0045
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.4,
+        0.4
+      ],
+      "contrast_pattern": "positive",
+      "requested_bad_score_record_mass": 0.005,
+      "actual_bad_score_record_mass": 0.005,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 991,
+        "never_score_1": 9
+      },
+      "n_records": 2000,
+      "n_patients": 1008,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 15
+    },
+    {
+      "name": "fixed_badmass_0.005_cancelling",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4955,
+          0.0045
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.4
+      ],
+      "risks_never": [
+        0.4,
+        0.25
+      ],
+      "contrast_pattern": "cancelling",
+      "requested_bad_score_record_mass": 0.005,
+      "actual_bad_score_record_mass": 0.005,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 991,
+        "never_score_1": 9
+      },
+      "n_records": 2000,
+      "n_patients": 1008,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 16
+    },
+    {
+      "name": "fixed_badmass_0.02_null",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4805,
+          0.0195
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.25,
+        0.25
+      ],
+      "contrast_pattern": "null",
+      "requested_bad_score_record_mass": 0.02,
+      "actual_bad_score_record_mass": 0.02,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 961,
+        "never_score_1": 39
+      },
+      "n_records": 2000,
+      "n_patients": 1038,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 17
+    },
+    {
+      "name": "fixed_badmass_0.02_positive",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4805,
+          0.0195
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.4,
+        0.4
+      ],
+      "contrast_pattern": "positive",
+      "requested_bad_score_record_mass": 0.02,
+      "actual_bad_score_record_mass": 0.02,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 961,
+        "never_score_1": 39
+      },
+      "n_records": 2000,
+      "n_patients": 1038,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 18
+    },
+    {
+      "name": "fixed_badmass_0.02_cancelling",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4805,
+          0.0195
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.4
+      ],
+      "risks_never": [
+        0.4,
+        0.25
+      ],
+      "contrast_pattern": "cancelling",
+      "requested_bad_score_record_mass": 0.02,
+      "actual_bad_score_record_mass": 0.02,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 961,
+        "never_score_1": 39
+      },
+      "n_records": 2000,
+      "n_patients": 1038,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 19
+    },
+    {
+      "name": "fixed_badmass_0.1_null",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4005,
+          0.0995
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.25,
+        0.25
+      ],
+      "contrast_pattern": "null",
+      "requested_bad_score_record_mass": 0.1,
+      "actual_bad_score_record_mass": 0.1,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 801,
+        "never_score_1": 199
+      },
+      "n_records": 2000,
+      "n_patients": 1198,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 20
+    },
+    {
+      "name": "fixed_badmass_0.1_positive",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4005,
+          0.0995
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.4,
+        0.4
+      ],
+      "contrast_pattern": "positive",
+      "requested_bad_score_record_mass": 0.1,
+      "actual_bad_score_record_mass": 0.1,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 801,
+        "never_score_1": 199
+      },
+      "n_records": 2000,
+      "n_patients": 1198,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 21
+    },
+    {
+      "name": "fixed_badmass_0.1_cancelling",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.4005,
+          0.0995
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.4
+      ],
+      "risks_never": [
+        0.4,
+        0.25
+      ],
+      "contrast_pattern": "cancelling",
+      "requested_bad_score_record_mass": 0.1,
+      "actual_bad_score_record_mass": 0.1,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 801,
+        "never_score_1": 199
+      },
+      "n_records": 2000,
+      "n_patients": 1198,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 22
+    },
+    {
+      "name": "fixed_badmass_0.5_null",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.0005,
+          0.4995
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.25,
+        0.25
+      ],
+      "contrast_pattern": "null",
+      "requested_bad_score_record_mass": 0.5,
+      "actual_bad_score_record_mass": 0.5,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 1,
+        "never_score_1": 999
+      },
+      "n_records": 2000,
+      "n_patients": 1998,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 23
+    },
+    {
+      "name": "fixed_badmass_0.5_positive",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.0005,
+          0.4995
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.25
+      ],
+      "risks_never": [
+        0.4,
+        0.4
+      ],
+      "contrast_pattern": "positive",
+      "requested_bad_score_record_mass": 0.5,
+      "actual_bad_score_record_mass": 0.5,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 1,
+        "never_score_1": 999
+      },
+      "n_records": 2000,
+      "n_patients": 1998,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 24
+    },
+    {
+      "name": "fixed_badmass_0.5_cancelling",
+      "family": "fixed_small_bad_mass",
+      "dgp_type": "fixed_design_paired_patients",
+      "role": "prespecified_supplement",
+      "scores": [
+        0,
+        1
+      ],
+      "expected_support": [
+        0,
+        1
+      ],
+      "joint_probabilities_group_score": [
+        [
+          0.4995,
+          0.0005
+        ],
+        [
+          0.0005,
+          0.4995
+        ]
+      ],
+      "risks_principal": [
+        0.25,
+        0.4
+      ],
+      "risks_never": [
+        0.4,
+        0.25
+      ],
+      "contrast_pattern": "cancelling",
+      "requested_bad_score_record_mass": 0.5,
+      "actual_bad_score_record_mass": 0.5,
+      "fixed_cell_record_counts": {
+        "primary_score_0": 999,
+        "primary_score_1": 1,
+        "never_score_0": 1,
+        "never_score_1": 999
+      },
+      "n_records": 2000,
+      "n_patients": 1998,
+      "outcome_icc": 0.35,
+      "cluster_structure": "Within each score, pair min(n_primary, n_never) records into cross-group patient clusters; remaining records are single-record patient clusters. A patient random intercept plus record residual induces marginally calibrated Bernoulli risks.",
+      "design_index": 25
+    }
+  ],
+  "estimands": {
+    "conditional_target": "For each replicate, E(sum_i a_i Y_i | D) using the actual observed common-support levels and the actual pooled-record weights on that observed support, whether or not expected support is lost.",
+    "population_target": "Frozen DGP expected-support Delta_w; reported separately as a target-mismatch diagnostic."
+  },
+  "metrics": {
+    "conditional_coverage": "Among emitted conditional-design intervals when observed common support is nonempty.",
+    "population_truth_diagnostic": "Compare the conditional interval with population truth separately; not a coverage claim.",
+    "width": "Report actual clipped interval width in percentage points, plus median/mean and quantiles.",
+    "full_range": "Count intervals whose actual clipped endpoints are exactly [-1, 1].",
+    "halfwidth_ge_one": "Separately count unclipped Hoeffding half-width >= 1, regardless of whether clipped endpoints are full range.",
+    "support": "Report observed common-support rate, expected-support match, and target-support-loss rate.",
+    "mcse": "Binomial Monte Carlo SE over independent outer replicates; coverage MCSE uses emitted intervals as denominator."
+  },
+  "runtime": {
+    "python": "C:\\Users\\aaa12\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1,
+      "MKL_NUM_THREADS": 1
+    }
+  }
+}

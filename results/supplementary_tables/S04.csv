@@ -1,0 +1,9 @@
+﻿Database,Condition,Group,Records,Patients,Age ≥65 / known,Male / known sex,Also in other complete main cohort
+eICU,sepsis,primary,10467,9804,5895 / 10462,5419 / 10466,3274
+eICU,sepsis,never-primary,6109,5867,3372 / 6107,3248 / 6109,1897
+eICU,pneumonia,primary,2645,2555,1540 / 2645,1376 / 2645,558
+eICU,pneumonia,never-primary,8836,8352,5103 / 8836,4861 / 8835,4613
+MIMIC-IV,sepsis,primary,6679,5964,4199 / 6679,3555 / 6679,2643
+MIMIC-IV,sepsis,never-primary,4125,3872,2347 / 4125,2361 / 4125,1645
+MIMIC-IV,pneumonia,primary,1640,1498,1110 / 1640,927 / 1640,121
+MIMIC-IV,pneumonia,never-primary,10862,9847,6652 / 10862,6219 / 10862,4167

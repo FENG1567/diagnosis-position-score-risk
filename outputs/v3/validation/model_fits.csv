@@ -1,0 +1,17 @@
+﻿database,disease,branch_state,model_training_arm,train_records,train_patients,train_events,train_nonevents,train_event_patients,train_nonevent_patients,train_score_support,beta0,beta1,log_likelihood,iterations,fit_state,fit_error,recalibration_delta,recalibration_iterations,recalibration_records,recalibration_patients
+eICU,sepsis,eligible,primary_only,5724,5419,1076,4648,1076,4392,0;1;2;3,-3.7613859620622487,0.9556631074528196,-2623.588518463959,5,converged,,,,,
+eICU,sepsis,eligible,broad,9449,8744,1734,7715,1734,7130,0;1;2;3,-3.823206098926312,0.9690325115017,-4263.009100311783,5,converged,,,,,
+eICU,sepsis,eligible,primary_only,,,,,,,,,,,,intercept_recalibrated,,-0.01862912486079204,4,3361,3199
+eICU,sepsis,eligible,broad,,,,,,,,,,,,intercept_recalibrated,,0.009401801391188678,4,3361,3199
+eICU,pneumonia,eligible,primary_only,1441,1391,172,1269,172,1222,0;1;2;3;4;5,-3.7636284521385215,0.5004658935281097,-506.5322283216177,6,converged,,,,,
+eICU,pneumonia,eligible,broad,6607,6175,1095,5512,1095,5146,0;1;2;3;4;5,-3.6245465611980276,0.5549628179662301,-2823.6448742938974,5,converged,,,,,
+eICU,pneumonia,eligible,primary_only,,,,,,,,,,,,intercept_recalibrated,,0.4271250208290818,4,2068,2008
+eICU,pneumonia,eligible,broad,,,,,,,,,,,,intercept_recalibrated,,0.08397399464205163,5,2068,2008
+MIMIC-IV,sepsis,eligible,primary_only,1585,1467,344,1241,344,1149,0;1;2;3,-3.3015336846019157,0.8976471913070353,-789.1136172579609,5,converged,,,,,
+MIMIC-IV,sepsis,eligible,broad,2634,2393,675,1959,675,1765,0;1;2;3,-2.2367054430618634,0.5395294775371611,-1469.912656971128,4,converged,,,,,
+MIMIC-IV,sepsis,eligible,primary_only,,,,,,,,,,,,intercept_recalibrated,,0.1989791300083671,4,1339,1287
+MIMIC-IV,sepsis,eligible,broad,,,,,,,,,,,,intercept_recalibrated,,-0.0698522421787527,4,1339,1287
+MIMIC-IV,pneumonia,eligible,primary_only,775,704,95,680,95,619,0;1;2;3;4;5,-4.313814416333061,0.665865103801671,-268.9969759630006,6,converged,,,,,
+MIMIC-IV,pneumonia,eligible,broad,3824,3446,709,3115,709,2814,0;1;2;3;4;5,-2.9951068729001404,0.4556886215333288,-1762.7238056802785,5,converged,,,,,
+MIMIC-IV,pneumonia,eligible,primary_only,,,,,,,,,,,,intercept_recalibrated,,0.682300980128523,4,1464,1405
+MIMIC-IV,pneumonia,eligible,broad,,,,,,,,,,,,intercept_recalibrated,,0.12288832799729468,3,1464,1405

@@ -1,0 +1,82 @@
+{
+  "generated_utc": "2026-11-12T19:52:40.404614+00:00",
+  "source": "verified filtered MIMIC-III chart cache only; no source event-table reads",
+  "cache_validation_passed": true,
+  "cache_name": "mimic_iii_chartevents_filtered.csv.gz",
+  "cache_bytes": 19447571,
+  "cache_sha256": "bdff83b72cc52abb083e8794d122ddb5fe5ab6fa1e6d397cf91024947e309c89",
+  "panel_name": "mimic_iii_v2_score_panel.csv.gz",
+  "panel_bytes": 4718456,
+  "panel_sha256": "ee935d72baea239d5b1e4dfdedb2abea5684abf17c2363ea86ade41d456f3538",
+  "gcs_event_mapping": {
+    "gcs_component_rows": 215908,
+    "carevue_gcs_total_rows": 98492,
+    "explicit_unassessable_rows": 21956,
+    "explicit_unassessable_primary_missing_rows": 21956,
+    "unassessable_numeric_fallback_suppressed_rows": 21956,
+    "no_response_ett_rows": 21956,
+    "no_response_ett_primary_missing_rows": 21956,
+    "no_response_ett_ett_as1_mapped_to_one_rows": 21956
+  },
+  "gcs_event_mapping_by_itemid": {
+    "220739": {
+      "component_rows": 72192,
+      "unassessable_rows": 0,
+      "no_response_ett_rows": 0,
+      "no_response_ett_ett_as1_mapped_to_one_rows": 0
+    },
+    "223900": {
+      "component_rows": 71881,
+      "unassessable_rows": 21956,
+      "no_response_ett_rows": 21956,
+      "no_response_ett_ett_as1_mapped_to_one_rows": 21956
+    },
+    "223901": {
+      "component_rows": 71835,
+      "unassessable_rows": 0,
+      "no_response_ett_rows": 0,
+      "no_response_ett_ett_as1_mapped_to_one_rows": 0
+    }
+  },
+  "score_panel": {
+    "panel_rows": 38253,
+    "rows_primary_gcs_missing_but_ett_as1_observed": 2657,
+    "gcs_worst_source_rows": {
+      "carevue_total_item_198": 20965,
+      "metavision_complete_components": 13756,
+      "nan": 3532
+    },
+    "gcs_worst_ett_as1_source_rows": {
+      "carevue_total_item_198": 20959,
+      "metavision_components_ett_as1": 16419,
+      "nan": 875
+    },
+    "scores": {
+      "qsofa": {
+        "primary_complete": 34654,
+        "ett_as1_complete": 37302,
+        "primary_missing_but_ett_as1_complete": 2648,
+        "paired_rows_with_different_score": 1979
+      },
+      "qsofa_gcs15": {
+        "primary_complete": 34654,
+        "ett_as1_complete": 37302,
+        "primary_missing_but_ett_as1_complete": 2648,
+        "paired_rows_with_different_score": 1377
+      },
+      "curb65": {
+        "primary_complete": 34533,
+        "ett_as1_complete": 37174,
+        "primary_missing_but_ett_as1_complete": 2641,
+        "paired_rows_with_different_score": 1376
+      },
+      "bisap4": {
+        "primary_complete": 32467,
+        "ett_as1_complete": 34999,
+        "primary_missing_but_ett_as1_complete": 2532,
+        "paired_rows_with_different_score": 1312
+      }
+    }
+  },
+  "policy": "All explicit unassessable/intubated GCS components are missing in primary mapping; No Response-ETT maps to 1 only in the labeled ETT-as-1 sensitivity where specified by component item mapping. CareVue total GCS remains a separate direct total source."
+}

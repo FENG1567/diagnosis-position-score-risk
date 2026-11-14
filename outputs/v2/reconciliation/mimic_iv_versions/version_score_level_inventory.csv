@@ -1,0 +1,161 @@
+database,disease,stage,score,grp,records,deaths,patients,risk
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,0.0,0.0,50,6.0,50,0.12
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,0.0,1.0,54,13.0,53,0.24074074074074073
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,1.0,0.0,772,108.0,738,0.13989637305699482
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,1.0,1.0,614,181.0,585,0.2947882736156352
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,2.0,0.0,3835,830.0,3402,0.21642764015645372
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,2.0,1.0,2727,829.0,2350,0.303997066373304
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,3.0,0.0,5424,1653.0,4545,0.3047566371681416
+MIMIC-IV,sepsis,A v1 original ICU-stay records and original score,3.0,1.0,3866,1449.0,3154,0.37480600103466116
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,0.0,0.0,33,3.0,33,0.09090909090909091
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,0.0,1.0,38,11.0,38,0.2894736842105263
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,1.0,0.0,638,90.0,628,0.14106583072100312
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,1.0,1.0,465,142.0,462,0.3053763440860215
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,2.0,0.0,3394,712.0,3188,0.20978196817913966
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,2.0,1.0,2086,635.0,2029,0.3044103547459252
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,3.0,0.0,4684,1374.0,4312,0.2933390264730999
+MIMIC-IV,sepsis,B v1 restricted to revised index ICU stays and revised disease eligibility,3.0,1.0,2759,1008.0,2655,0.365349764407394
+MIMIC-IV,sepsis,C B with all required stored fields observed,0.0,0.0,25,0.0,25,0.0
+MIMIC-IV,sepsis,C B with all required stored fields observed,0.0,1.0,27,5.0,27,0.18518518518518517
+MIMIC-IV,sepsis,C B with all required stored fields observed,1.0,0.0,557,44.0,548,0.07899461400359066
+MIMIC-IV,sepsis,C B with all required stored fields observed,1.0,1.0,381,95.0,378,0.24934383202099739
+MIMIC-IV,sepsis,C B with all required stored fields observed,2.0,0.0,2859,364.0,2668,0.1273172437915355
+MIMIC-IV,sepsis,C B with all required stored fields observed,2.0,1.0,1805,451.0,1754,0.24986149584487535
+MIMIC-IV,sepsis,C B with all required stored fields observed,3.0,0.0,4684,1374.0,4312,0.2933390264730999
+MIMIC-IV,sepsis,C B with all required stored fields observed,3.0,1.0,2759,1008.0,2655,0.365349764407394
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,0.0,0.0,45,2.0,44,0.044444444444444446
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,0.0,1.0,34,8.0,34,0.23529411764705882
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,1.0,0.0,772,63.0,756,0.08160621761658031
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,1.0,1.0,528,138.0,522,0.26136363636363635
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,2.0,0.0,3627,526.0,3323,0.145023435346016
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,2.0,1.0,2199,563.0,2105,0.25602546612096405
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,3.0,0.0,3681,1191.0,3429,0.3235533822330888
+MIMIC-IV,sepsis,D C with canonical threshold and urea conversion on stored fields,3.0,1.0,2211,850.0,2148,0.38444142921754865
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",0.0,0.0,45,2.0,44,0.044444444444444446
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",0.0,1.0,34,8.0,34,0.23529411764705882
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",1.0,0.0,752,57.0,738,0.07579787234042554
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",1.0,1.0,517,133.0,511,0.2572533849129594
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",2.0,0.0,3403,469.0,3117,0.137819570966794
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",2.0,1.0,2030,517.0,1938,0.254679802955665
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",3.0,0.0,2352,744.0,2227,0.3163265306122449
+MIMIC-IV,sepsis,"E matched records, canonical stored-field score and original group",3.0,1.0,1473,566.0,1432,0.38424983027834353
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",0.0,0.0,48,2.0,47,0.041666666666666664
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",0.0,1.0,37,9.0,37,0.24324324324324326
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",1.0,0.0,827,69.0,807,0.08343409915356712
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",1.0,1.0,600,153.0,594,0.255
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",2.0,0.0,3997,649.0,3652,0.1623717788341256
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",2.0,1.0,2498,699.0,2379,0.2798238590872698
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",3.0,0.0,1680,552.0,1592,0.32857142857142857
+MIMIC-IV,sepsis,"F matched records, revised source score and original group",3.0,1.0,919,363.0,900,0.39499455930359084
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",0.0,0.0,48,2.0,47,0.041666666666666664
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",0.0,1.0,37,9.0,37,0.24324324324324326
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",1.0,0.0,827,69.0,807,0.08343409915356712
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",1.0,1.0,600,153.0,594,0.255
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",2.0,0.0,3997,649.0,3652,0.1623717788341256
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",2.0,1.0,2498,699.0,2379,0.2798238590872698
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",3.0,0.0,1680,552.0,1592,0.32857142857142857
+MIMIC-IV,sepsis,"G matched records, revised source score and admission-level group",3.0,1.0,919,363.0,900,0.39499455930359084
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",0.0,0.0,48,2.0,47,0.041666666666666664
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",0.0,1.0,37,9.0,37,0.24324324324324326
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",1.0,0.0,828,69.0,808,0.08333333333333333
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",1.0,1.0,601,154.0,595,0.2562396006655574
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",2.0,0.0,4012,659.0,3666,0.16425722831505485
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",2.0,1.0,2513,706.0,2393,0.2809391165937127
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",3.0,0.0,1791,613.0,1698,0.34226689000558347
+MIMIC-IV,sepsis,"H revised full admission target, complete score and known outcome",3.0,1.0,974,402.0,955,0.4127310061601643
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,0.0,0.0,23,0.0,23,0.0
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,0.0,1.0,181,18.0,173,0.09944751381215469
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,1.0,0.0,147,11.0,133,0.07482993197278912
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,1.0,1.0,1084,153.0,1001,0.1411439114391144
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,2.0,0.0,387,24.0,356,0.06201550387596899
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,2.0,1.0,3512,540.0,3110,0.15375854214123008
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,3.0,0.0,619,68.0,562,0.1098546042003231
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,3.0,1.0,5662,1254.0,4843,0.2214765100671141
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,4.0,0.0,647,119.0,605,0.1839258114374034
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,4.0,1.0,5737,1666.0,4919,0.2903956771831968
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,5.0,0.0,278,82.0,259,0.2949640287769784
+MIMIC-IV,pneumonia,A v1 original ICU-stay records and original score,5.0,1.0,2441,905.0,2103,0.3707496927488734
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,0.0,0.0,19,0.0,19,0.0
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,0.0,1.0,148,15.0,148,0.10135135135135136
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,1.0,0.0,139,10.0,129,0.07194244604316546
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,1.0,1.0,893,121.0,870,0.135498320268757
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,2.0,0.0,367,21.0,345,0.05722070844686648
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,2.0,1.0,2939,429.0,2812,0.14596801633208575
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,3.0,0.0,560,56.0,533,0.1
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,3.0,1.0,4613,989.0,4367,0.21439410362020378
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,4.0,0.0,598,105.0,580,0.17558528428093645
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,4.0,1.0,4628,1314.0,4400,0.283923941227312
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,5.0,0.0,253,73.0,247,0.2885375494071146
+MIMIC-IV,pneumonia,B v1 restricted to revised index ICU stays and revised disease eligibility,5.0,1.0,1866,674.0,1780,0.3612004287245445
+MIMIC-IV,pneumonia,C B with all required stored fields observed,0.0,0.0,14,0.0,14,0.0
+MIMIC-IV,pneumonia,C B with all required stored fields observed,0.0,1.0,105,5.0,105,0.047619047619047616
+MIMIC-IV,pneumonia,C B with all required stored fields observed,1.0,0.0,127,7.0,119,0.05511811023622047
+MIMIC-IV,pneumonia,C B with all required stored fields observed,1.0,1.0,716,65.0,696,0.09078212290502793
+MIMIC-IV,pneumonia,C B with all required stored fields observed,2.0,0.0,336,14.0,316,0.041666666666666664
+MIMIC-IV,pneumonia,C B with all required stored fields observed,2.0,1.0,2583,292.0,2471,0.11304684475416182
+MIMIC-IV,pneumonia,C B with all required stored fields observed,3.0,0.0,521,41.0,495,0.07869481765834933
+MIMIC-IV,pneumonia,C B with all required stored fields observed,3.0,1.0,4109,733.0,3881,0.17838890240934535
+MIMIC-IV,pneumonia,C B with all required stored fields observed,4.0,0.0,574,91.0,558,0.15853658536585366
+MIMIC-IV,pneumonia,C B with all required stored fields observed,4.0,1.0,4420,1182.0,4208,0.267420814479638
+MIMIC-IV,pneumonia,C B with all required stored fields observed,5.0,0.0,253,73.0,247,0.2885375494071146
+MIMIC-IV,pneumonia,C B with all required stored fields observed,5.0,1.0,1866,674.0,1780,0.3612004287245445
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,0.0,0.0,14,0.0,14,0.0
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,0.0,1.0,105,5.0,105,0.047619047619047616
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,1.0,0.0,127,7.0,119,0.05511811023622047
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,1.0,1.0,716,65.0,696,0.09078212290502793
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,2.0,0.0,336,14.0,316,0.041666666666666664
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,2.0,1.0,2583,292.0,2471,0.11304684475416182
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,3.0,0.0,521,41.0,495,0.07869481765834933
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,3.0,1.0,4109,733.0,3881,0.17838890240934535
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,4.0,0.0,574,91.0,558,0.15853658536585366
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,4.0,1.0,4420,1182.0,4208,0.267420814479638
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,5.0,0.0,253,73.0,247,0.2885375494071146
+MIMIC-IV,pneumonia,D C with canonical threshold and urea conversion on stored fields,5.0,1.0,1866,674.0,1780,0.3612004287245445
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",0.0,0.0,14,0.0,14,0.0
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",0.0,1.0,105,5.0,105,0.047619047619047616
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",1.0,0.0,126,7.0,118,0.05555555555555555
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",1.0,1.0,657,59.0,639,0.0898021308980213
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",2.0,0.0,299,13.0,283,0.043478260869565216
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",2.0,1.0,2014,235.0,1934,0.1166832174776564
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",3.0,0.0,459,34.0,436,0.07407407407407407
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",3.0,1.0,3174,550.0,3020,0.17328292375551355
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",4.0,0.0,494,68.0,480,0.13765182186234817
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",4.0,1.0,3260,802.0,3133,0.2460122699386503
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",5.0,0.0,232,65.0,228,0.2801724137931034
+MIMIC-IV,pneumonia,"E matched records, canonical stored-field score and original group",5.0,1.0,1439,508.0,1389,0.35302293259207784
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",0.0,0.0,13,0.0,13,0.0
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",0.0,1.0,110,5.0,110,0.045454545454545456
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",1.0,0.0,127,8.0,119,0.06299212598425197
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",1.0,1.0,733,68.0,715,0.0927694406548431
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",2.0,0.0,300,13.0,286,0.043333333333333335
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",2.0,1.0,2075,248.0,1993,0.11951807228915663
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",3.0,0.0,466,34.0,447,0.07296137339055794
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",3.0,1.0,3191,580.0,3031,0.18176120338451895
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",4.0,0.0,509,75.0,493,0.14734774066797643
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",4.0,1.0,3168,774.0,3036,0.24431818181818182
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",5.0,0.0,209,57.0,205,0.2727272727272727
+MIMIC-IV,pneumonia,"F matched records, revised source score and original group",5.0,1.0,1372,484.0,1331,0.35276967930029157
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",0.0,0.0,13,0.0,13,0.0
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",0.0,1.0,110,5.0,110,0.045454545454545456
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",1.0,0.0,127,8.0,119,0.06299212598425197
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",1.0,1.0,733,68.0,715,0.0927694406548431
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",2.0,0.0,300,13.0,286,0.043333333333333335
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",2.0,1.0,2075,248.0,1993,0.11951807228915663
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",3.0,0.0,466,34.0,447,0.07296137339055794
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",3.0,1.0,3191,580.0,3031,0.18176120338451895
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",4.0,0.0,509,75.0,493,0.14734774066797643
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",4.0,1.0,3168,774.0,3036,0.24431818181818182
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",5.0,0.0,209,57.0,205,0.2727272727272727
+MIMIC-IV,pneumonia,"G matched records, revised source score and admission-level group",5.0,1.0,1372,484.0,1331,0.35276967930029157
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",0.0,0.0,13,0.0,13,0.0
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",0.0,1.0,110,5.0,110,0.045454545454545456
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",1.0,0.0,128,8.0,120,0.0625
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",1.0,1.0,738,70.0,720,0.0948509485094851
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",2.0,0.0,301,14.0,287,0.046511627906976744
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",2.0,1.0,2103,256.0,2021,0.12173086067522587
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",3.0,0.0,472,34.0,453,0.07203389830508475
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",3.0,1.0,3244,603.0,3081,0.18588162762022195
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",4.0,0.0,513,77.0,497,0.15009746588693956
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",4.0,1.0,3256,816.0,3122,0.25061425061425063
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",5.0,0.0,213,60.0,209,0.28169014084507044
+MIMIC-IV,pneumonia,"H revised full admission target, complete score and known outcome",5.0,1.0,1411,509.0,1367,0.36073706591070165

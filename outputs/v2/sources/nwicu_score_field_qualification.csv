@@ -1,0 +1,7 @@
+database,instrument,required_component,found_in_release_dictionary,decision
+NWICU 0.1.0,qSOFA,respiratory rate,True,"required mental-status field absent, complete-score replication fails metadata gate"
+NWICU 0.1.0,qSOFA,systolic blood pressure,True,"required mental-status field absent, complete-score replication fails metadata gate"
+NWICU 0.1.0,qSOFA,GCS or valid altered mentation field,False,"required mental-status field absent, complete-score replication fails metadata gate"
+NWICU 0.1.0,adapted CURB-65,blood urea nitrogen,True,"required mental-status field absent, complete-score replication fails metadata gate"
+NWICU 0.1.0,adapted CURB-65,GCS or confusion field,False,"required mental-status field absent, complete-score replication fails metadata gate"
+NWICU 0.1.0,BISAP-4,GCS or valid mental-status field,False,"required mental-status field absent, complete-score replication fails metadata gate"

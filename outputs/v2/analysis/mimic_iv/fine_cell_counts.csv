@@ -1,0 +1,145 @@
+refinement,score,pattern,grp,records,deaths,patients,risk,database,disease,age_band,sex_group
+component pattern,0.0,0.0,0.0,48,2.0,47,0.041666666666666664,MIMIC-IV,sepsis,,
+component pattern,0.0,0.0,1.0,37,9.0,37,0.24324324324324326,MIMIC-IV,sepsis,,
+component pattern,1.0,1.0,0.0,15,1.0,15,0.06666666666666667,MIMIC-IV,sepsis,,
+component pattern,1.0,1.0,1.0,24,9.0,24,0.375,MIMIC-IV,sepsis,,
+component pattern,1.0,2.0,0.0,230,25.0,220,0.10869565217391304,MIMIC-IV,sepsis,,
+component pattern,1.0,2.0,1.0,188,45.0,186,0.2393617021276596,MIMIC-IV,sepsis,,
+component pattern,1.0,4.0,0.0,583,43.0,580,0.07375643224699828,MIMIC-IV,sepsis,,
+component pattern,1.0,4.0,1.0,389,100.0,386,0.2570694087403599,MIMIC-IV,sepsis,,
+component pattern,2.0,3.0,0.0,122,25.0,119,0.20491803278688525,MIMIC-IV,sepsis,,
+component pattern,2.0,3.0,1.0,76,29.0,76,0.3815789473684211,MIMIC-IV,sepsis,,
+component pattern,2.0,5.0,0.0,238,48.0,235,0.20168067226890757,MIMIC-IV,sepsis,,
+component pattern,2.0,5.0,1.0,199,67.0,198,0.33668341708542715,MIMIC-IV,sepsis,,
+component pattern,2.0,6.0,0.0,3652,586.0,3341,0.16046002190580505,MIMIC-IV,sepsis,,
+component pattern,2.0,6.0,1.0,2238,610.0,2127,0.2725647899910634,MIMIC-IV,sepsis,,
+component pattern,3.0,7.0,0.0,1791,613.0,1698,0.34226689000558347,MIMIC-IV,sepsis,,
+component pattern,3.0,7.0,1.0,974,402.0,955,0.4127310061601643,MIMIC-IV,sepsis,,
+age and sex refinement,0.0,,0.0,7,0.0,7,0.0,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,0.0,,1.0,9,2.0,9,0.2222222222222222,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,0.0,,0.0,11,1.0,10,0.09090909090909091,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,0.0,,1.0,11,3.0,11,0.2727272727272727,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,0.0,,0.0,5,1.0,5,0.2,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,0.0,,1.0,2,1.0,2,0.5,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,0.0,,0.0,11,0.0,11,0.0,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,0.0,,1.0,6,1.0,6,0.16666666666666666,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,0.0,,0.0,11,0.0,11,0.0,MIMIC-IV,sepsis,80+,male
+age and sex refinement,0.0,,1.0,5,2.0,5,0.4,MIMIC-IV,sepsis,80+,male
+age and sex refinement,1.0,,0.0,23,0.0,23,0.0,MIMIC-IV,sepsis,18-39,female
+age and sex refinement,1.0,,1.0,24,3.0,24,0.125,MIMIC-IV,sepsis,18-39,female
+age and sex refinement,1.0,,0.0,47,2.0,43,0.0425531914893617,MIMIC-IV,sepsis,18-39,male
+age and sex refinement,1.0,,1.0,24,3.0,24,0.125,MIMIC-IV,sepsis,18-39,male
+age and sex refinement,1.0,,0.0,133,11.0,131,0.08270676691729323,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,1.0,,1.0,108,26.0,105,0.24074074074074073,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,1.0,,0.0,201,17.0,194,0.0845771144278607,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,1.0,,1.0,144,38.0,144,0.2638888888888889,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,1.0,,0.0,107,10.0,106,0.09345794392523364,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,1.0,,1.0,85,20.0,85,0.23529411764705882,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,1.0,,0.0,158,13.0,156,0.08227848101265822,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,1.0,,1.0,117,32.0,116,0.27350427350427353,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,1.0,,0.0,82,7.0,80,0.08536585365853659,MIMIC-IV,sepsis,80+,female
+age and sex refinement,1.0,,1.0,32,11.0,31,0.34375,MIMIC-IV,sepsis,80+,female
+age and sex refinement,1.0,,0.0,77,9.0,76,0.11688311688311688,MIMIC-IV,sepsis,80+,male
+age and sex refinement,1.0,,1.0,67,21.0,67,0.31343283582089554,MIMIC-IV,sepsis,80+,male
+age and sex refinement,2.0,,0.0,128,13.0,126,0.1015625,MIMIC-IV,sepsis,18-39,female
+age and sex refinement,2.0,,1.0,113,15.0,110,0.13274336283185842,MIMIC-IV,sepsis,18-39,female
+age and sex refinement,2.0,,0.0,125,14.0,106,0.112,MIMIC-IV,sepsis,18-39,male
+age and sex refinement,2.0,,1.0,76,11.0,68,0.14473684210526316,MIMIC-IV,sepsis,18-39,male
+age and sex refinement,2.0,,0.0,602,80.0,553,0.132890365448505,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,2.0,,1.0,367,89.0,340,0.24250681198910082,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,2.0,,0.0,709,114.0,642,0.1607898448519041,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,2.0,,1.0,557,149.0,532,0.26750448833034113,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,2.0,,0.0,640,111.0,587,0.1734375,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,2.0,,1.0,399,112.0,385,0.2807017543859649,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,2.0,,0.0,800,131.0,730,0.16375,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,2.0,,1.0,552,162.0,526,0.29347826086956524,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,2.0,,0.0,519,99.0,485,0.1907514450867052,MIMIC-IV,sepsis,80+,female
+age and sex refinement,2.0,,1.0,195,68.0,193,0.3487179487179487,MIMIC-IV,sepsis,80+,female
+age and sex refinement,2.0,,0.0,489,97.0,459,0.1983640081799591,MIMIC-IV,sepsis,80+,male
+age and sex refinement,2.0,,1.0,254,100.0,250,0.3937007874015748,MIMIC-IV,sepsis,80+,male
+age and sex refinement,3.0,,0.0,36,10.0,36,0.2777777777777778,MIMIC-IV,sepsis,18-39,female
+age and sex refinement,3.0,,1.0,19,11.0,19,0.5789473684210527,MIMIC-IV,sepsis,18-39,female
+age and sex refinement,3.0,,0.0,37,9.0,36,0.24324324324324326,MIMIC-IV,sepsis,18-39,male
+age and sex refinement,3.0,,1.0,25,8.0,25,0.32,MIMIC-IV,sepsis,18-39,male
+age and sex refinement,3.0,,0.0,182,49.0,172,0.2692307692307692,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,3.0,,1.0,131,46.0,126,0.3511450381679389,MIMIC-IV,sepsis,40-64,female
+age and sex refinement,3.0,,0.0,239,76.0,221,0.3179916317991632,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,3.0,,1.0,166,62.0,159,0.37349397590361444,MIMIC-IV,sepsis,40-64,male
+age and sex refinement,3.0,,0.0,260,94.0,252,0.36153846153846153,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,3.0,,1.0,154,74.0,152,0.4805194805194805,MIMIC-IV,sepsis,65-79,female
+age and sex refinement,3.0,,0.0,343,114.0,321,0.3323615160349854,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,3.0,,1.0,200,77.0,198,0.385,MIMIC-IV,sepsis,65-79,male
+age and sex refinement,3.0,,0.0,397,161.0,386,0.40554156171284633,MIMIC-IV,sepsis,80+,female
+age and sex refinement,3.0,,1.0,126,57.0,126,0.4523809523809524,MIMIC-IV,sepsis,80+,female
+age and sex refinement,3.0,,0.0,297,100.0,279,0.3367003367003367,MIMIC-IV,sepsis,80+,male
+age and sex refinement,3.0,,1.0,153,67.0,150,0.43790849673202614,MIMIC-IV,sepsis,80+,male
+age and sex refinement,0.0,,0.0,2,0.0,2,0.0,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,0.0,,1.0,9,2.0,9,0.2222222222222222,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,0.0,,0.0,1,0.0,1,0.0,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,0.0,,1.0,12,0.0,12,0.0,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,0.0,,0.0,2,0.0,2,0.0,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,0.0,,1.0,27,0.0,27,0.0,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,0.0,,0.0,8,0.0,8,0.0,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,0.0,,1.0,62,3.0,62,0.04838709677419355,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,1.0,,0.0,9,0.0,9,0.0,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,1.0,,1.0,56,3.0,56,0.05357142857142857,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,1.0,,0.0,16,0.0,16,0.0,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,1.0,,1.0,84,7.0,83,0.08333333333333333,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,1.0,,0.0,41,5.0,36,0.12195121951219512,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,1.0,,1.0,207,19.0,203,0.09178743961352658,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,1.0,,0.0,58,3.0,56,0.05172413793103448,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,1.0,,1.0,346,37.0,334,0.1069364161849711,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,1.0,,0.0,4,0.0,4,0.0,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,1.0,,1.0,27,2.0,27,0.07407407407407407,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,2.0,,0.0,20,0.0,20,0.0,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,2.0,,1.0,160,11.0,156,0.06875,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,2.0,,0.0,21,0.0,19,0.0,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,2.0,,1.0,156,16.0,149,0.10256410256410256,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,2.0,,0.0,76,8.0,75,0.10526315789473684,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,2.0,,1.0,544,81.0,516,0.1488970588235294,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,2.0,,0.0,98,2.0,94,0.02040816326530612,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,2.0,,1.0,724,98.0,699,0.13535911602209943,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,2.0,,0.0,21,2.0,21,0.09523809523809523,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,2.0,,1.0,183,19.0,180,0.10382513661202186,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,2.0,,0.0,39,1.0,33,0.02564102564102564,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,2.0,,1.0,223,18.0,215,0.08071748878923767,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,2.0,,0.0,14,0.0,13,0.0,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,2.0,,1.0,53,7.0,51,0.1320754716981132,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,2.0,,0.0,12,1.0,12,0.08333333333333333,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,2.0,,1.0,60,6.0,59,0.1,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,3.0,,0.0,7,2.0,7,0.2857142857142857,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,3.0,,1.0,93,16.0,92,0.17204301075268819,MIMIC-IV,pneumonia,18-39,female
+age and sex refinement,3.0,,0.0,8,0.0,8,0.0,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,3.0,,1.0,109,20.0,105,0.1834862385321101,MIMIC-IV,pneumonia,18-39,male
+age and sex refinement,3.0,,0.0,48,4.0,46,0.08333333333333333,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,3.0,,1.0,442,101.0,415,0.22850678733031674,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,3.0,,0.0,76,4.0,73,0.05263157894736842,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,3.0,,1.0,716,153.0,676,0.21368715083798884,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,3.0,,0.0,75,2.0,70,0.02666666666666667,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,3.0,,1.0,474,72.0,452,0.1518987341772152,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,3.0,,0.0,106,8.0,104,0.07547169811320754,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,3.0,,1.0,686,109.0,650,0.1588921282798834,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,3.0,,0.0,79,8.0,76,0.10126582278481013,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,3.0,,1.0,363,63.0,354,0.17355371900826447,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,3.0,,0.0,73,6.0,71,0.0821917808219178,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,3.0,,1.0,361,69.0,347,0.19113573407202217,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,4.0,,0.0,11,0.0,11,0.0,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,4.0,,1.0,146,45.0,146,0.3082191780821918,MIMIC-IV,pneumonia,40-64,female
+age and sex refinement,4.0,,0.0,28,5.0,28,0.17857142857142858,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,4.0,,1.0,255,84.0,250,0.32941176470588235,MIMIC-IV,pneumonia,40-64,male
+age and sex refinement,4.0,,0.0,96,10.0,93,0.10416666666666667,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,4.0,,1.0,653,149.0,619,0.22817764165390506,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,4.0,,0.0,116,16.0,107,0.13793103448275862,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,4.0,,1.0,902,208.0,858,0.23059866962305986,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,4.0,,0.0,116,22.0,115,0.1896551724137931,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,4.0,,1.0,590,150.0,572,0.2542372881355932,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,4.0,,0.0,146,24.0,144,0.1643835616438356,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,4.0,,1.0,648,169.0,627,0.26080246913580246,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,5.0,,0.0,27,8.0,27,0.2962962962962963,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,5.0,,1.0,240,95.0,238,0.3958333333333333,MIMIC-IV,pneumonia,65-79,female
+age and sex refinement,5.0,,0.0,43,8.0,41,0.18604651162790697,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,5.0,,1.0,426,147.0,411,0.34507042253521125,MIMIC-IV,pneumonia,65-79,male
+age and sex refinement,5.0,,0.0,69,19.0,67,0.2753623188405797,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,5.0,,1.0,366,130.0,362,0.3551912568306011,MIMIC-IV,pneumonia,80+,female
+age and sex refinement,5.0,,0.0,74,25.0,74,0.33783783783783783,MIMIC-IV,pneumonia,80+,male
+age and sex refinement,5.0,,1.0,379,137.0,358,0.36147757255936674,MIMIC-IV,pneumonia,80+,male

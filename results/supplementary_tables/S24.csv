@@ -1,0 +1,18 @@
+﻿Database,Panel-level split field,Recorded value,Scope
+eICU,split_method,"SHA-256 hospital buckets (60% train / 20% recalibration / 20% test); globally exclude patients with cross-role, multihospital, or missing-hospital records",combined supplied panel before disease-specific complete-record selection
+eICU,seed,JCE-v3-20261113,combined supplied panel before disease-specific complete-record selection
+eICU,hospitals_total,205,combined supplied panel before disease-specific complete-record selection
+eICU,hospitals_by_role,"{""test"": 40, ""recalibration"": 44, ""train"": 121}",combined supplied panel before disease-specific complete-record selection
+eICU,cross_role_patients_excluded,737,combined supplied panel before disease-specific complete-record selection
+eICU,patients_with_missing_hospital_excluded,0,combined supplied panel before disease-specific complete-record selection
+eICU,multi_hospital_patients_excluded_globally,1199,combined supplied panel before disease-specific complete-record selection
+eICU,multi_hospital_patient_records_excluded_globally,4426,combined supplied panel before disease-specific complete-record selection
+eICU,patient_count,45922,combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,split_method,"calendar-interval migration split from anchor_year_group plus admission-year shift; intervals wholly <=2013=train, 2014-2016=recalibration, 2017-2022=test; ambiguous/out-of-window records excluded",combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,seed,JCE-v3-20261113,combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,temporal_metadata_identifiable,True,combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,anchor_year_groups,"[""2008 - 2010"", ""2011 - 2013"", ""2014 - 2016"", ""2017 - 2019"", ""2020 - 2022""]",combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,calendar_windows,"{""train"": ""entire possible admission interval <= 2013"", ""recalibration"": ""2014-2016"", ""test"": ""2017-2022""}",combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,unresolved_or_ambiguous_records,13689,combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,cross_role_patients_excluded,756,combined supplied panel before disease-specific complete-record selection
+MIMIC-IV,patient_count,33769,combined supplied panel before disease-specific complete-record selection

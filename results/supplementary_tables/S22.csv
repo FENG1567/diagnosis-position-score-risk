@@ -1,0 +1,6 @@
+﻿database,disease,family_size,planned_levels,issued_intervals,pointwise_excludes_zero,adjusted_excludes_zero,point_only_levels
+eICU-CRD,sepsis,20,4,4,0,0,0
+eICU-CRD,pneumonia,20,6,5,3,0,1
+MIMIC-IV,sepsis,20,4,4,4,3,0
+MIMIC-IV,pneumonia,20,6,5,4,3,1
+all primary sources,all primary conditions,20,20,18,11,6,2

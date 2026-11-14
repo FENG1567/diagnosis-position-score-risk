@@ -1,0 +1,79 @@
+{
+  "version": "m58-mimic-iv-rebuild-2.3.0",
+  "source_zip": "D:\\\u6570\u636e\u5e93\u96c6\u5408\\mimic\u6570\u636e\\mimic-iv_3.1.0.zip",
+  "source_zip_size": 10551747784,
+  "archive_fingerprint": {
+    "zip_size": 10551747784,
+    "zip_mtime_ns": 1785862840979918900,
+    "member_count": 34,
+    "central_directory_fingerprint_sha256": "f0041c87c8f34ef5997c1b459f6faa738feec993cdc1eea2977901045d6b91e1"
+  },
+  "code_sha256": "538b44525e24d53d24b8ca5006f7b7a043da765c7918561b0832f0486957591c",
+  "config_sha256": "04f2f8ccc01e723151b3816486791a9a0d5d9527d106b1c58e8773b1efa4b465",
+  "index_rows": 68558,
+  "index_size": 5196876,
+  "index_sha256": "6c1b810c67c08e91fb1a76632d2ef67669a4eb0dd92075d2048750c8cd5bb156",
+  "index_filter_sha256": "d008f2f0c5f7fd45ce127f0a36b43b505d278833bcf3fdd8951d2d57efd6682a",
+  "index_stats": {
+    "diagnosis_rows": 6364488,
+    "adult_disease_admissions": 44363,
+    "diagnosis_seq_num_quality": {
+      "scope": "all diagnosis rows in diagnoses_icd.csv.gz",
+      "diagnosis_rows": 6364488,
+      "seq_num_missing_rows": 0,
+      "seq_num_invalid_nonmissing_rows": 0,
+      "seq_num_nonpositive_rows": 0,
+      "seq_num_unranked_rows": 0,
+      "matching_diagnosis_unranked_rows_proven_zero": true
+    },
+    "admission_disease_rows": 68558,
+    "diseases": {
+      "COPD": 12515,
+      "heart failure": 22819,
+      "pancreatitis": 1895,
+      "pneumonia": 17023,
+      "sepsis": 14306
+    },
+    "patients_anchor_age_91": 8445,
+    "patients_anchor_age_300": 0,
+    "adult_topcoded_rows": 3321,
+    "missing_hospital_expire_flag": 0,
+    "chart_window_truncated_by_discharge": 2171,
+    "chart_window_truncated_by_death": 84,
+    "dischtime_before_intime": 90,
+    "deathtime_before_intime": 12,
+    "window_anchor_inconsistent": 93,
+    "death_within_24h_observed": 68539
+  },
+  "diagnosis_seq_num_quality": {
+    "scope": "all diagnosis rows in diagnoses_icd.csv.gz",
+    "diagnosis_rows": 6364488,
+    "seq_num_missing_rows": 0,
+    "seq_num_invalid_nonmissing_rows": 0,
+    "seq_num_nonpositive_rows": 0,
+    "seq_num_unranked_rows": 0,
+    "matching_diagnosis_unranked_rows_proven_zero": true
+  },
+  "dictionary_audit": {
+    "lab_dictionary_items_matching_candidates": 17,
+    "lab_dictionary_band_itemids": [
+      51111,
+      51144,
+      51366,
+      51386,
+      51441,
+      52049,
+      52223,
+      52224,
+      52292,
+      52337,
+      52376
+    ],
+    "lab_dictionary_pco2_itemids": [
+      50818,
+      50830,
+      52040
+    ],
+    "icd_dictionary_rows_audited": 24
+  }
+}

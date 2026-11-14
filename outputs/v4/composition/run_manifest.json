@@ -1,0 +1,41 @@
+{
+  "completed": true,
+  "elapsed_seconds": 51.90064477920532,
+  "record_unit": "hospital admission",
+  "cluster_unit": "patient",
+  "row_level_exports": false,
+  "inputs": [
+    {
+      "path": "C:\\Users\\aaa12\\Documents\\Codex\\2026-11-08\\codex-journal-of-clinical-epidemiology-8\\work\\v2\\eicu\\eicu_disease_panel.csv.gz",
+      "bytes": 5119471,
+      "sha256": "9ee8ac9c3371c28d8de22820f0d8e0cd32327fa4d82c5f8b22e07d1888483163"
+    },
+    {
+      "path": "F:\\分析专用\\meta_measurement_20261103\\work\\paperB_v2\\mimic\\mimic_iv_v2_score_panel.csv.gz",
+      "bytes": 8968152,
+      "sha256": "0adcc9c464cf8fc9eea3513f691771724560c19154bd5bdc69dba87407f4934c"
+    },
+    {
+      "path": "D:\\数据库集合\\eicu数据库\\patient.csv.gz",
+      "bytes": 10359850,
+      "sha256": "2acf25f75144c5fc8a2a5b68c6741edac2dc7ca51021127f73e12f7428dc392b"
+    },
+    {
+      "path": "D:\\数据库集合\\eicu数据库\\diagnosis.csv.gz",
+      "bytes": 35218518,
+      "sha256": "1bc15709cfe9b376ef1da8b1ea47f61993e3d7dcc942f7c1eccbf162e5f2e0c8"
+    }
+  ],
+  "mimic_zip": {
+    "path": "D:\\数据库集合\\mimic数据\\mimic-iv_3.1.0.zip",
+    "bytes": 10551747784,
+    "mtime_ns": 1785862840979918900
+  },
+  "notes": [
+    "No new eligibility filters",
+    "Demographic and pathway denominators include unknown categories",
+    "Co-complete main disease indicator is not a diagnosis comorbidity prevalence",
+    "eICU multiple primary diagnoses can sum above100%; MIMIC unique seq1 does not",
+    "Age top coding does not affect age>=65 threshold"
+  ]
+}

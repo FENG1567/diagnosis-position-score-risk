@@ -1,0 +1,25 @@
+icd_code,icd_version,long_title,code_norm
+40201,9,Malignant hypertensive heart disease with heart failure,40201
+40211,9,Benign hypertensive heart disease with heart failure,40211
+40291,9,Unspecified hypertensive heart disease with heart failure,40291
+40401,9,"Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified",40401
+40403,9,"Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage V or end stage renal disease",40403
+40411,9,"Hypertensive heart and chronic kidney disease, benign, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified",40411
+40413,9,"Hypertensive heart and chronic kidney disease, benign, with heart failure and chronic kidney disease stage V or end stage renal disease",40413
+40491,9,"Hypertensive heart and chronic kidney disease, unspecified, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified",40491
+40493,9,"Hypertensive heart and chronic kidney disease, unspecified, with heart failure and chronic kidney disease stage V or end stage renal disease",40493
+496,9,"Chronic airway obstruction, not elsewhere classified",496
+5770,9,Acute pancreatitis,5770
+5771,9,Chronic pancreatitis,5771
+5772,9,Cyst and pseudocyst of pancreas,5772
+78552,9,Septic shock,78552
+99591,9,Sepsis,99591
+99592,9,Severe sepsis,99592
+A40,10,Streptococcal sepsis,A40
+A41,10,Other sepsis,A41
+I110,10,Hypertensive heart disease with heart failure,I110
+I130,10,"Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",I130
+I132,10,"Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease",I132
+J43,10,Emphysema,J43
+J44,10,Other chronic obstructive pulmonary disease,J44
+R652,10,Severe sepsis,R652

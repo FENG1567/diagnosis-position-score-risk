@@ -1,0 +1,168 @@
+{
+  "package": "JCE v2 manuscript figures",
+  "created_utc": "2026-11-12T17:26:15+00:00",
+  "backend": "Python / matplotlib",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "matplotlib": "3.11.1",
+  "pandas": "2.3.3",
+  "font": "Arial",
+  "page_width_mm": 183,
+  "pdf_text": "TrueType text, editable",
+  "png_dpi": 300,
+  "display_cap": {
+    "figures": 2,
+    "tables": 6
+  },
+  "figures": {
+    "fig2_audit_states": {
+      "state": "rendered",
+      "claim": "The shared v2 audit separates no-point from point-only interval refusal.",
+      "archetype": "process diagram",
+      "width_mm": 183,
+      "height_mm": 128,
+      "outputs": [
+        {
+          "file": "fig2_audit_states.pdf",
+          "sha256": "16a8c40ff6d5b430d435db94b82502abbcfc5f0ec399d9ade6b0affb494a13fe",
+          "format": "PDF",
+          "editable_text": true
+        },
+        {
+          "file": "fig2_audit_states.svg",
+          "sha256": "342dd2d8139bfbc4a29329e2944657d37d45213fc3454a327b2c651df0103675",
+          "format": "SVG",
+          "editable_text": true
+        },
+        {
+          "file": "fig2_audit_states.png",
+          "sha256": "28197818c211c7287578f544f210aec4a7825eae09a55901477ba5c150f05312",
+          "format": "PNG",
+          "dpi": 300
+        }
+      ],
+      "source_data": {
+        "role": "Figure 2 policy/source table",
+        "file": "fig2_audit_states_source.csv",
+        "sha256": "e1c4968c69c18f91b31d8477a79a5108e6c24f15ddacbec2f84a113d94676dc1",
+        "rows": 6
+      },
+      "source_evidence": [
+        {
+          "role": "shared audit implementation",
+          "file": "work/v2/audit/cohort_definition_audit.py",
+          "sha256": "8b074a3b3adf808311cc42e7f3fdf7d24427e31aab421569ea3460b07c184994"
+        },
+        {
+          "role": "analysis wrapper policy values",
+          "file": "work/v2/analyse_panels.py",
+          "sha256": "4841de8c31481c815b018ac5382fbe2cc3a2868d622241af822b773f6f79d768"
+        },
+        {
+          "role": "frozen policy protocol",
+          "file": "work/v2/audit/protocol.md",
+          "sha256": "42729f63449b1f30cc7243ccc8bb2be303c7e21505831e5a2b0eded47c2f2884"
+        },
+        {
+          "role": "frozen policy configuration",
+          "file": "work/v2/audit/benchmark_config.json",
+          "sha256": "71855154a4afd3a5c7ee7aa9b5475cd4827bb75e8d462453cf5d1ca76afb45ca"
+        },
+        {
+          "role": "regression cases",
+          "file": "work/v2/audit/tests/test_regressions.py",
+          "sha256": "5b88cade692cdb3d365b6df45cfc458230497f56a125c3d7e5b56d11ae0281ac"
+        }
+      ]
+    },
+    "fig1_score_specific_risk": {
+      "state": "rendered",
+      "claim": "Observed mortality risk and δ_s vary across shared integer score levels.",
+      "archetype": "quantitative 2-by-2 grid",
+      "panel_order": [
+        "eICU-CRD / sepsis",
+        "eICU-CRD / pneumonia",
+        "MIMIC-IV / sepsis",
+        "MIMIC-IV / pneumonia"
+      ],
+      "width_mm": 183,
+      "height_mm": 171,
+      "outputs": [
+        {
+          "file": "fig1_score_specific_risk.pdf",
+          "sha256": "0c07d13e69ab309f56646b6b1fdd1dbeab317925965df7f87237db3bd4a1b21d",
+          "format": "PDF",
+          "editable_text": true
+        },
+        {
+          "file": "fig1_score_specific_risk.svg",
+          "sha256": "97467361147ede2ca6a06b7bdcec752576ae77b0b5c6c1c8b331764d79d42dd0",
+          "format": "SVG",
+          "editable_text": true
+        },
+        {
+          "file": "fig1_score_specific_risk.png",
+          "sha256": "44edbf249c2375829f0b1cedc03a63c29bf048b31ff58a66fa13f22b30433e24",
+          "format": "PNG",
+          "dpi": 300
+        }
+      ],
+      "source_data": {
+        "file": "fig1_score_specific_risk_source.csv",
+        "sha256": "d6eede6aa22b12ca11abe5b5e4e792a99cbe53855008f73db2bb4dd0e1239fe6",
+        "rows": 20,
+        "inputs": [
+          {
+            "role": "eICU source",
+            "display_name": "eICU-CRD score-level output",
+            "sha256": "f35759c847e935d39bb863adf3fbba40c7df10624a05f223491d575969ab1795",
+            "input_rows": 22,
+            "selected_rows": 10,
+            "excluded_rows": 12,
+            "exclusion_rule": "Rows outside eICU-CRD sepsis/pneumonia; no score-level rows excluded.",
+            "path_label": "outputs/v2/analysis/eicu/levels.csv"
+          },
+          {
+            "role": "MIMIC-IV source",
+            "display_name": "MIMIC-IV score-level output",
+            "sha256": "715b5d9aec21eb1f6974e73ffc2fb5dd005f2c28eba5c56c2df0dbcd4949a1e6",
+            "input_rows": 23,
+            "selected_rows": 10,
+            "excluded_rows": 13,
+            "exclusion_rule": "Rows outside MIMIC-IV sepsis/pneumonia; no score-level rows excluded.",
+            "path_label": "outputs/v2/analysis/mimic_iv/levels.csv"
+          }
+        ]
+      }
+    }
+  },
+  "generator": {
+    "file": "work/v2/figures/build_jce_figures.py",
+    "sha256": "e03695974cccd585cc029a81807eab5de107a008df0aefbb26360b5afe109a5d",
+    "contract_file": "work/v2/figures/figure_contract.md",
+    "contract_sha256": "24b47b99d889c153785b23e5a13f4c154e3808a849a86a44176d2dda7a442a92",
+    "entrypoints": [
+      {
+        "file": "work/v2/figures/figure1_score_specific_risk.py",
+        "sha256": "91f48afddb476bff843e7fbf04a7471d61cb666ac0ed47c7b22585f18efbfdeb"
+      },
+      {
+        "file": "work/v2/figures/figure2_audit_states.py",
+        "sha256": "bc5a1ab5f9824fcee1f06f3c9ebd5967a26f004aa73c8f097f938a2c1632e809"
+      }
+    ]
+  },
+  "integrity_notes": [
+    "No simulated quantitative data are used.",
+    "Figure 1 intervals are read from source status and bound fields; the plotting script does not calculate intervals.",
+    "Score levels outside the four requested panels are excluded by the stated database-condition filter and counted in source metadata.",
+    "Figure 2 branches reproduce the shared v2 code and frozen policy; arrows are computational only."
+  ],
+  "source_preflight": {
+    "file": "figure_source_preflight.json",
+    "sha256": "f8bb0d8cd7c872fd8e297d474d6beb786909f96d0098aedf90d46c7fa001a665"
+  },
+  "qa_notes": {
+    "file": "figure_qa.md",
+    "sha256": "cdd3e75e5ee4143f189d9fabed15472027dca081dcae3efdac4e5f3ddcdce276"
+  }
+}

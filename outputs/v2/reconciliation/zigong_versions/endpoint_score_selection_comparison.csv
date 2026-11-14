@@ -1,0 +1,26 @@
+disease,stage,estimand,n_input,n_common_support,support_share,delta_w_pp,n_primary,deaths_primary,n_never,deaths_never,frozen_v1_delta_pp,matches_v1_frozen_point
+sepsis,A v1 score and timing-defined outcome,"Delta_w weighted summary, version-diagnostic point estimate",426,426,1.0,3.5194901494578144,137,36,289,81,3.52,True
+sepsis,"B matched records, v1 score and corrected hospital outcome","Delta_w weighted summary, version-diagnostic point estimate",425,425,1.0,0.6589428956032375,137,7,288,17,,
+sepsis,C B restricted to revised complete-score records,"Delta_w weighted summary, version-diagnostic point estimate",137,136,0.9927007299270073,4.3587597266963805,48,1,89,6,,
+sepsis,D C with revised score and rank group,"Delta_w weighted summary, version-diagnostic point estimate",137,137,1.0,4.7963623967273605,48,1,89,6,,
+sepsis,E full revised target,"Delta_w weighted summary, version-diagnostic point estimate",137,137,1.0,4.7963623967273605,48,1,89,6,,
+pneumonia,A v1 score and timing-defined outcome,"Delta_w weighted summary, version-diagnostic point estimate",1698,1698,1.0,-13.229401548991701,235,99,1463,423,-13.23,True
+pneumonia,"B matched records, v1 score and corrected hospital outcome","Delta_w weighted summary, version-diagnostic point estimate",1697,1697,1.0,2.328620290195799,234,12,1463,97,,
+pneumonia,C B restricted to revised complete-score records,"Delta_w weighted summary, version-diagnostic point estimate",430,430,1.0,6.076901662884506,42,3,388,38,,
+pneumonia,D C with revised score and rank group,"Delta_w weighted summary, version-diagnostic point estimate",430,430,1.0,6.327182326380034,42,3,388,38,,
+pneumonia,E full revised target,"Delta_w weighted summary, version-diagnostic point estimate",430,430,1.0,6.327182326380034,42,3,388,38,,
+pancreatitis,A v1 score and timing-defined outcome,"Delta_w weighted summary, version-diagnostic point estimate",110,110,1.0,15.16031894740029,63,11,47,16,15.16,True
+pancreatitis,"B matched records, v1 score and corrected hospital outcome","Delta_w weighted summary, version-diagnostic point estimate",110,110,1.0,-5.533720665299613,63,4,47,1,,
+pancreatitis,C B restricted to revised complete-score records,"Delta_w weighted summary, version-diagnostic point estimate",28,28,1.0,-1.9047619047619049,14,1,14,1,,
+pancreatitis,D C with revised score and rank group,"Delta_w weighted summary, version-diagnostic point estimate",28,28,1.0,-5.357142857142856,14,1,14,1,,
+pancreatitis,E full revised target,"Delta_w weighted summary, version-diagnostic point estimate",28,28,1.0,-5.357142857142856,14,1,14,1,,
+heart failure,A v1 score and timing-defined outcome,"Delta_w weighted summary, version-diagnostic point estimate",474,474,1.0,11.403207169716303,37,7,437,139,,
+heart failure,"B matched records, v1 score and corrected hospital outcome","Delta_w weighted summary, version-diagnostic point estimate",471,471,1.0,3.283854537573911,37,2,434,35,,
+heart failure,C B restricted to revised complete-score records,"Delta_w weighted summary, version-diagnostic point estimate",147,125,0.8503401360544217,-8.467140974967064,10,2,137,17,,
+heart failure,D C with revised score and rank group,"Delta_w weighted summary, version-diagnostic point estimate",147,147,1.0,-9.360848452121715,10,2,137,17,,
+heart failure,E full revised target,"Delta_w weighted summary, version-diagnostic point estimate",147,147,1.0,-9.360848452121715,10,2,137,17,,
+COPD,A v1 score and timing-defined outcome,"Delta_w weighted summary, version-diagnostic point estimate",527,527,1.0,10.179847244991919,55,10,472,128,10.18,True
+COPD,"B matched records, v1 score and corrected hospital outcome","Delta_w weighted summary, version-diagnostic point estimate",485,485,1.0,0.6819148358304751,55,2,430,18,,
+COPD,C B restricted to revised complete-score records,"Delta_w weighted summary, version-diagnostic point estimate",163,160,0.9815950920245399,4.9527027027027035,18,0,145,7,,
+COPD,D C with revised score and rank group,"Delta_w weighted summary, version-diagnostic point estimate",163,146,0.8957055214723927,5.458377239199157,18,0,145,7,,
+COPD,E full revised target,"Delta_w weighted summary, version-diagnostic point estimate",163,146,0.8957055214723927,5.458377239199157,18,0,145,7,,

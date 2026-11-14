@@ -1,0 +1,14 @@
+[
+  {
+    "name": "CC-BY-4.0",
+    "source_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+  },
+  {
+    "name": "hlzhou/peer-score MIT",
+    "source_url": "https://raw.githubusercontent.com/hlzhou/peer-score/bad2996b233cb118302d7453f6bb356e72912176/LICENSE"
+  },
+  {
+    "name": "AmsterdamUMC/AmsterdamUMCdb MIT",
+    "source_url": "https://raw.githubusercontent.com/AmsterdamUMC/AmsterdamUMCdb/5422b94dbaba6c1d9b7c301f059c425ca1fc13ce/LICENSE"
+  }
+]

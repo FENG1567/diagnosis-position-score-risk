@@ -1,0 +1,11 @@
+database,disease,group,n_source,n_patients,n_score_complete,n_outcome_known,n_analyzed
+eICU-CRD,sepsis,primary,16101,14878,10564,15931,10467
+eICU-CRD,sepsis,never-primary,8563,8204,6166,8478,6109
+eICU-CRD,pneumonia,primary,4955,4737,2684,4876,2645
+eICU-CRD,pneumonia,never-primary,14313,13360,8928,14166,8836
+eICU-CRD,pancreatitis,primary,255,247,154,254,153
+eICU-CRD,pancreatitis,never-primary,346,340,202,342,198
+eICU-CRD,heart failure,primary,4507,4173,2568,4472,2548
+eICU-CRD,heart failure,never-primary,11055,10073,7073,10919,6992
+eICU-CRD,COPD,primary,2617,2344,1550,2598,1541
+eICU-CRD,COPD,never-primary,10026,8756,6218,9927,6162

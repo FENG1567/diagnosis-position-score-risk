@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "run_id": "20261112T191140976725Z-1032",
+  "completed_at_utc": "2026-11-12T19:11:44Z",
+  "phase": "outcome",
+  "reps": 60,
+  "seed": 20261112,
+  "summary_sha256": "a16b499ca3d004e5168ba6fb9fad376f65ee63db3dd8167d6a8212cecaa7e844",
+  "repaired_outcome_panel_sha256": "6172f46ac88b26f9773fc990782c459251fdba3846a3b98ceffe230c75c2e61c",
+  "interval_comparison_csv_sha256": "c8f4d1e954dcd47cfcdae338eddb909fc1ed0cdd4d834d0f0b910e5d64dcb406",
+  "intervals_csv_sha256": "d0f871503a44c95a608a466d6bd2c83c9f0a7d5e565c029c8109af936c47109c",
+  "completeness_comparison_csv_sha256": "5e4c422fcb1bef233e4ab983bd00c5c8963dcb0f3320dce9b5236a15856f560b",
+  "mortality_by_score_csv_sha256": "0196ed31f3700587d628f9d8b4315254a7930a2afe6591568d4f580e24308922",
+  "strict_baseline_reproduction_passed": true,
+  "direct_estimand_crosschecks_passed": true
+}

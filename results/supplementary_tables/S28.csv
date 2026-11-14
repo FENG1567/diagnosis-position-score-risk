@@ -1,0 +1,7 @@
+﻿disease,alternative,n_matched,main_delta_w_pp,alternative_delta_w_pp,difference_pp,numerical_lo_pp,numerical_hi_pp,estimand,interval_status
+sepsis,timed GCS excluding meds1,16502,0.1009918157827517,0.1009918157827517,0.0,0.0,0.0,difference between Delta_w weighted summaries on matched records,descriptive paired influence interval
+sepsis,APACHE valid GCS with timed fallback,16502,0.1009918157827517,-0.22736618823389376,-0.3283580040166455,-0.48871398280283623,-0.1680020252304547,difference between Delta_w weighted summaries on matched records,descriptive paired influence interval
+pneumonia,timed GCS excluding meds1,11404,3.54780980006211,3.54780980006211,0.0,0.0,0.0,difference between Delta_w weighted summaries on matched records,descriptive paired influence interval
+pneumonia,APACHE valid GCS with timed fallback,11404,3.54780980006211,3.6277179851879797,0.07990818512586956,-0.02523987454290167,0.18505624479464078,difference between Delta_w weighted summaries on matched records,descriptive paired influence interval
+pancreatitis,timed GCS excluding meds1,348,0.6408098133096642,0.6408098133096642,0.0,0.0,0.0,difference between Delta_w weighted summaries on matched records,descriptive paired influence interval
+pancreatitis,APACHE valid GCS with timed fallback,348,0.6408098133096642,-0.26122139303451963,-0.9020312063441838,-2.572699503401768,0.7686370907134005,difference between Delta_w weighted summaries on matched records,descriptive paired influence interval

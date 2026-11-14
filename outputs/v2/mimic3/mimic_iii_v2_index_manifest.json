@@ -1,0 +1,445 @@
+{
+  "version": "m58-mimic-iii-rebuild-1.3.0",
+  "source_zip": "D:\\\u6570\u636e\u5e93\u96c6\u5408\\mimic3\\mimic-iii-clinical-database-1.4.zip",
+  "source_zip_size": 6620711553,
+  "archive_fingerprint": {
+    "zip_size": 6620711553,
+    "zip_mtime_ns": 1793781600460469500,
+    "member_count": 31,
+    "central_directory_fingerprint_sha256": "400d69d4d2e8fe135878bccd6e9e6f1828d19a490eeac80d5f051d3b9c9bdeca"
+  },
+  "code_sha256": "e5e9007eb2ccfc423cc22af3fcbaea018d443f65d1e317a6b16ea2bbd8be56ab",
+  "config_sha256": "ac130402a103f8678fece14e75a0082139d6a9ccac488da79ffcae0e7c2e116d",
+  "index_rows": 38253,
+  "index_size": 2456715,
+  "index_sha256": "6c3dac514983814295922b93cd24f97f08dc19b4f61f7bcee4adf8736f6409c6",
+  "index_filter_sha256": "89808879985484e91927db584538c6cefd81aaccfc9fb5f1d0e3121c826064f2",
+  "index_stats": {
+    "diagnosis_rows": 651047,
+    "diagnosis_seq_num_quality": {
+      "scope": "all diagnosis rows in diagnoses_icd.csv.gz",
+      "diagnosis_rows": 651047,
+      "seq_num_missing_rows": 47,
+      "seq_num_invalid_nonmissing_rows": 0,
+      "seq_num_nonpositive_rows": 0,
+      "seq_num_unranked_rows": 47,
+      "matching_diagnosis_unranked_rows_proven_zero": false
+    },
+    "diagnosis_group_quality": {
+      "source_definition_matches": {
+        "heart failure": {
+          "broad": {
+            "matching_diagnosis_rows": 20837,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 13624,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "legacy": {
+            "matching_diagnosis_rows": 20865,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 13649,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          }
+        },
+        "pneumonia": {
+          "broad": {
+            "matching_diagnosis_rows": 11409,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 10397,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "legacy": {
+            "matching_diagnosis_rows": 11409,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 10397,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "narrow": {
+            "matching_diagnosis_rows": 2658,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 2407,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          }
+        },
+        "COPD": {
+          "broad": {
+            "matching_diagnosis_rows": 6422,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 6416,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "legacy": {
+            "matching_diagnosis_rows": 6743,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 6699,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          }
+        },
+        "sepsis": {
+          "broad": {
+            "matching_diagnosis_rows": 14182,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 6363,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "legacy": {
+            "matching_diagnosis_rows": 14403,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 6502,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "narrow": {
+            "matching_diagnosis_rows": 6412,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 6265,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          }
+        },
+        "pancreatitis": {
+          "broad": {
+            "matching_diagnosis_rows": 961,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 961,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          },
+          "legacy": {
+            "matching_diagnosis_rows": 1751,
+            "matching_unranked_diagnosis_rows": 0,
+            "matching_admissions": 1477,
+            "admissions_with_unranked_match": 0,
+            "admissions_with_unranked_match_and_no_seq1": 0
+          }
+        }
+      },
+      "adult_first_icu_index_rows": {
+        "heart failure:broad": {
+          "adult_first_icu_index_rows": 13447,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "pneumonia:broad": {
+          "adult_first_icu_index_rows": 10300,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "COPD:broad": {
+          "adult_first_icu_index_rows": 6297,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "sepsis:broad": {
+          "adult_first_icu_index_rows": 6312,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "pancreatitis:broad": {
+          "adult_first_icu_index_rows": 953,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "heart failure:narrow": {
+          "adult_first_icu_index_rows": 0,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "pneumonia:narrow": {
+          "adult_first_icu_index_rows": 2386,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "COPD:narrow": {
+          "adult_first_icu_index_rows": 0,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "sepsis:narrow": {
+          "adult_first_icu_index_rows": 6215,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "pancreatitis:narrow": {
+          "adult_first_icu_index_rows": 0,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "heart failure:legacy": {
+          "adult_first_icu_index_rows": 13471,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "pneumonia:legacy": {
+          "adult_first_icu_index_rows": 10300,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "COPD:legacy": {
+          "adult_first_icu_index_rows": 6577,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "sepsis:legacy": {
+          "adult_first_icu_index_rows": 6451,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        },
+        "pancreatitis:legacy": {
+          "adult_first_icu_index_rows": 1454,
+          "rows_with_unranked_matching_diagnosis": 0,
+          "rows_with_unknown_primary_status": 0,
+          "rows_with_unranked_match_but_confirmed_primary": 0
+        }
+      },
+      "grouping_source": "all DIAGNOSES_ICD rows in the hospital admission; primary status is unknown if an unranked matching code exists and no matching seq_num=1 is documented"
+    },
+    "adult_disease_admissions": 25417,
+    "admission_disease_rows": 38253,
+    "diseases": {
+      "COPD": 6577,
+      "heart failure": 13471,
+      "pancreatitis": 1454,
+      "pneumonia": 10300,
+      "sepsis": 6451
+    },
+    "age_topcoded_90_rows": 3005,
+    "age_exact_rows": 35248,
+    "missing_hospital_expire_flag": 0,
+    "chart_window_truncated_by_discharge": 1075,
+    "chart_window_truncated_by_death": 4,
+    "window_anchor_inconsistent": 44,
+    "death_within_24h_observed": 38209
+  },
+  "diagnosis_seq_num_quality": {
+    "scope": "all diagnosis rows in diagnoses_icd.csv.gz",
+    "diagnosis_rows": 651047,
+    "seq_num_missing_rows": 47,
+    "seq_num_invalid_nonmissing_rows": 0,
+    "seq_num_nonpositive_rows": 0,
+    "seq_num_unranked_rows": 47,
+    "matching_diagnosis_unranked_rows_proven_zero": false
+  },
+  "diagnosis_group_quality": {
+    "source_definition_matches": {
+      "heart failure": {
+        "broad": {
+          "matching_diagnosis_rows": 20837,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 13624,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "legacy": {
+          "matching_diagnosis_rows": 20865,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 13649,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        }
+      },
+      "pneumonia": {
+        "broad": {
+          "matching_diagnosis_rows": 11409,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 10397,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "legacy": {
+          "matching_diagnosis_rows": 11409,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 10397,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "narrow": {
+          "matching_diagnosis_rows": 2658,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 2407,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        }
+      },
+      "COPD": {
+        "broad": {
+          "matching_diagnosis_rows": 6422,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 6416,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "legacy": {
+          "matching_diagnosis_rows": 6743,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 6699,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        }
+      },
+      "sepsis": {
+        "broad": {
+          "matching_diagnosis_rows": 14182,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 6363,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "legacy": {
+          "matching_diagnosis_rows": 14403,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 6502,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "narrow": {
+          "matching_diagnosis_rows": 6412,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 6265,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        }
+      },
+      "pancreatitis": {
+        "broad": {
+          "matching_diagnosis_rows": 961,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 961,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        },
+        "legacy": {
+          "matching_diagnosis_rows": 1751,
+          "matching_unranked_diagnosis_rows": 0,
+          "matching_admissions": 1477,
+          "admissions_with_unranked_match": 0,
+          "admissions_with_unranked_match_and_no_seq1": 0
+        }
+      }
+    },
+    "adult_first_icu_index_rows": {
+      "heart failure:broad": {
+        "adult_first_icu_index_rows": 13447,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "pneumonia:broad": {
+        "adult_first_icu_index_rows": 10300,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "COPD:broad": {
+        "adult_first_icu_index_rows": 6297,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "sepsis:broad": {
+        "adult_first_icu_index_rows": 6312,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "pancreatitis:broad": {
+        "adult_first_icu_index_rows": 953,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "heart failure:narrow": {
+        "adult_first_icu_index_rows": 0,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "pneumonia:narrow": {
+        "adult_first_icu_index_rows": 2386,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "COPD:narrow": {
+        "adult_first_icu_index_rows": 0,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "sepsis:narrow": {
+        "adult_first_icu_index_rows": 6215,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "pancreatitis:narrow": {
+        "adult_first_icu_index_rows": 0,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "heart failure:legacy": {
+        "adult_first_icu_index_rows": 13471,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "pneumonia:legacy": {
+        "adult_first_icu_index_rows": 10300,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "COPD:legacy": {
+        "adult_first_icu_index_rows": 6577,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "sepsis:legacy": {
+        "adult_first_icu_index_rows": 6451,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      },
+      "pancreatitis:legacy": {
+        "adult_first_icu_index_rows": 1454,
+        "rows_with_unranked_matching_diagnosis": 0,
+        "rows_with_unknown_primary_status": 0,
+        "rows_with_unranked_match_but_confirmed_primary": 0
+      }
+    },
+    "grouping_source": "all DIAGNOSES_ICD rows in the hospital admission; primary status is unknown if an unranked matching code exists and no matching seq_num=1 is documented"
+  },
+  "dictionary_audit": {
+    "chart_dictionary_rows_audited": 28,
+    "lab_dictionary_rows_audited": 11,
+    "bands_itemid_51144_present": true,
+    "unused_pco2_candidate_itemids": [
+      50818,
+      50830
+    ]
+  }
+}

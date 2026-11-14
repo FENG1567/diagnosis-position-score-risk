@@ -1,0 +1,58 @@
+[
+  {
+    "repository": "hlzhou/peer-score",
+    "purpose": "assess reproducible fixed-score application before outcome contrasts",
+    "status": "retrieved",
+    "commit": "bad2996b233cb118302d7453f6bb356e72912176",
+    "url": "https://codeload.github.com/hlzhou/peer-score/zip/bad2996b233cb118302d7453f6bb356e72912176",
+    "sha256": "e701503ffc9519d9105aca71670c95acd560181ae1fbb63f967a20647b116e92",
+    "bytes": 766192,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "extracted_code_files": [
+      "LICENSE",
+      "README.md",
+      "src\\comparison_risk_scores.R",
+      "src\\data_processing\\README.md",
+      "src\\data_processing\\eicu\\eicu_extraction.sql",
+      "src\\data_processing\\eicu\\tables.py",
+      "src\\data_processing\\mimic\\mimic3buildtimeline.R",
+      "src\\data_processing\\mimic\\mimic_cleaner.R",
+      "src\\data_processing\\mimic\\mimic_cleanup.py",
+      "src\\data_processing\\mimic\\mimic_make_flfv.R",
+      "src\\data_processing\\shuffle_split.py",
+      "src\\eicu_eda.py",
+      "src\\model_results.ipynb",
+      "src\\pipeline.py",
+      "src\\preprocess.py",
+      "src\\show_grid_plots.ipynb"
+    ]
+  },
+  {
+    "repository": "RyllMartin/eICU_predicting_PE_ICU_mortality",
+    "purpose": "assess reproducible fixed-score application before outcome contrasts",
+    "status": "retrieved",
+    "commit": "d8a69b0ba4bf8b688dfe3e1bee1f9793efa13962",
+    "url": "https://codeload.github.com/RyllMartin/eICU_predicting_PE_ICU_mortality/zip/d8a69b0ba4bf8b688dfe3e1bee1f9793efa13962",
+    "sha256": "8851b1690199d7335d6465e4a7933bb74797152bfbeb0040b1593dd735342037",
+    "bytes": 743661,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    },
+    "extracted_code_files": [
+      "LICENSE",
+      "Predicting_PE_ICU_mortality_data_analysis.ipynb",
+      "Predicting_PE_ICU_mortality_data_extraction.ipynb",
+      "README.md"
+    ]
+  }
+]

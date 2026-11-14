@@ -1,0 +1,17 @@
+﻿design,replicate,level,method,arm,truth_pp,issued_lower_pp,issued_upper_pp,fullprecision_lower_pp,fullprecision_upper_pp,issued_rounded_covered,fullprecision_covered
+null_balanced_iid,210,1.0,group_risk,never,20.0,20.0,36.37,20.00177004500231,36.37139895166396,True,False
+null_balanced_iid,346,1.0,group_risk,principal,20.0,20.0,35.19,20.000286037856004,35.18810216285135,True,False
+null_balanced_iid,467,1.0,group_risk,principal,20.0,20.0,35.19,20.000286037856004,35.18810216285135,True,False
+null_balanced_iid,803,1.0,delta_s,never_minus_principal,0.0,-20.34,-0.0,-20.341793365570993,-0.004816546256308785,True,False
+null_heterogeneous_iid,712,1.0,delta_s,never_minus_principal,-10.0,-10.0,4.66,-9.996206400971925,4.657195591931639,True,False
+null_heterogeneous_iid,905,1.0,delta_s,never_minus_principal,-10.0,-10.0,5.37,-9.996870651386303,5.373826554657995,True,False
+heterogeneous_random_weights,607,3.0,group_risk,principal,35.0,8.4,35.0,8.401045210359566,34.99882037531024,True,False
+heterogeneous_random_weights,663,1.0,delta_s,never_minus_principal,-20.0,-20.0,2.21,-19.99843805929319,2.2134136017489743,True,False
+heterogeneous_random_weights,772,0.0,group_risk,never,30.0,30.0,52.03,30.000851592871285,52.03070244915082,True,False
+unequal_cluster_sizes,690,3.0,group_risk,never,60.0,60.0,70.66,60.001015768397245,70.66457242813767,True,False
+unequal_cluster_sizes,939,0.0,group_risk,principal,8.0,8.0,15.58,8.004386316423723,15.578628732321102,True,False
+near_boundary_risks,10,3.0,group_risk,principal,85.0,74.69,85.0,74.69151794267927,84.99641105209966,True,False
+near_boundary_risks,648,2.0,delta_s,never_minus_principal,4.999999999999993,-12.5,5.0,-12.498311780242878,4.9956842436594835,True,False
+rare_common_support_holdout,379,1.0,delta_s,never_minus_principal,4.999999999999999,5.0,21.34,4.998639449603635,21.341562138122704,False,True
+rare_common_support_holdout,626,0.0,group_risk,never,15.0,6.25,15.0,6.248541427963481,14.995769433376394,True,False
+no_common_support,25,1.0,group_risk,principal,20.0,11.05,20.0,11.048253231829237,19.99578976654123,True,False

@@ -1,0 +1,12 @@
+{
+  "analysis": "GCS measurement-source sensitivity after revised eICU primary results",
+  "reference": "https://eicu.mit.edu/eicutables/apacheapsvar/",
+  "main": "timed nursing GCS, original revised primary retained",
+  "alternatives": [
+    "timed nursing GCS with APACHE meds1 made unassessable",
+    "valid APACHE GCS preferred, timed nursing fallback, meds1 unassessable"
+  ],
+  "apache_gcs": "all E/V/M components within documented valid ranges, meds!=1",
+  "limitation": "APACHE day summary has protocol timing rather than a retained event timestamp",
+  "other_components": "identical repaired timed physiology, diagnosis groups, admission unit and endpoint"
+}

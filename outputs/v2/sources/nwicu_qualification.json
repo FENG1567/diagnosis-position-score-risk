@@ -1,0 +1,23 @@
+{
+  "archive": "D:\\\u6570\u636e\u5e93\u96c6\u5408\\NWICU\u6570\u636e\u5e93\\northwestern-icu-nwicu-database-0.1.0.zip",
+  "archive_bytes": 622528840,
+  "chart_dictionary_rows": 13,
+  "unique_chart_item_ids": 11,
+  "provenance": [
+    {
+      "member": "northwestern-icu-nwicu-database-0.1.0/data/nw_icu/d_items.csv.gz",
+      "sha256": "44939cefcfabc14a451a6d78e3ff42fd76acf39bc73a713f4e244dfe30375288",
+      "crc": 2303588916,
+      "member_bytes": 5299
+    },
+    {
+      "member": "northwestern-icu-nwicu-database-0.1.0/data/nw_hosp/d_labitems.csv.gz",
+      "sha256": "b64e06f38d19634abcd1d21bb3dfe298659341f30084ae7e03e4721ab992ee37",
+      "crc": 4223944456,
+      "member_bytes": 2818
+    }
+  ],
+  "scope": "dictionaries only, before clinical outcomes",
+  "source_url": "https://physionet.org/content/nwicu-northwestern-icu/0.1.0/",
+  "decision": "Fail planned complete-score supplementary application. Preserve required predictors as unavailable."
+}

@@ -1,0 +1,14 @@
+﻿Design (truth-defined n),C point / interval output (%),Mean Δ_w bias (pp),Conditional coverage (n),MCSE (pp),Tool state
+"Null, balanced IID (n=1,000)",100.00% / 100.00%,-0.099,"94.40% (n=1,000)",0.727,All intervals
+"Null, heterogeneous IID (n=1,000)",100.00% / 100.00%,-0.079,"93.90% (n=1,000)",0.757,All intervals
+"Heterogeneous random weights (n=1,000)",100.00% / 99.70%,0.026,94.48% (n=997),0.723,Some intervals
+"Cross-group repeated admissions (n=1,000)",100.00% / 100.00%,0.026,"94.10% (n=1,000)",0.745,All intervals
+"Unequal cluster sizes (n=1,000)",100.00% / 100.00%,0.060,"95.20% (n=1,000)",0.676,All intervals
+"Near-boundary risks (n=1,000)",100.00% / 61.70%,-0.024,95.95% (n=617),0.794,Some intervals
+"Partial structural support (n=1,000)",100.00% / 100.00%,-0.097,"94.30% (n=1,000)",0.733,All intervals
+Rare common-support holdout (n=691),100.00% / 0.00%,-0.022,— (0 on-target intervals),—,Point only
+"Few large clusters (n=1,000)",100.00% / 0.00%,0.237,— (0 on-target intervals),—,Point only
+no_common_support (n=0),0.00% / 0.00%,—,— (0 on-target intervals),—,No estimate
+"High ICC, unbalanced holdout (n=1,000)",100.00% / 100.00%,-0.042,"95.20% (n=1,000)",0.676,All intervals
+fine_cells (sparse boundary) (n=—),100.00% / 0.00%,-0.015,not reported,—,Point only
+tiny_arm (sparse boundary) (n=—),100.00% / 0.00%,-0.025,not reported,—,Point only
